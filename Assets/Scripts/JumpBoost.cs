@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -8,7 +7,8 @@ public class JumpBoost : MonoBehaviour
     private Rigidbody rb;
     private MeshRenderer meshRenderer;
     private BoxCollider boxCollider;
-    private VisualEffect vfx;
+    [SerializeField] private VisualEffect vfx;
+    [SerializeField] private string audioName;
 
     public float jumpBoostForce = 40f;
     public float respawnTime = 5f;
@@ -17,7 +17,6 @@ public class JumpBoost : MonoBehaviour
     {
         TryGetComponent(out meshRenderer);
         TryGetComponent(out boxCollider);
-        TryGetComponent(out vfx);
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -26,7 +25,7 @@ public class JumpBoost : MonoBehaviour
         {
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             rb.AddForce(transform.up * jumpBoostForce, ForceMode.VelocityChange);
-            AudioManager.instance.Play("JumpBoost");
+            AudioManager.instance.Play(audioName);
             StartCoroutine(ReEnable());
         }
     }

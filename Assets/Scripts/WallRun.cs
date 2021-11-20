@@ -17,10 +17,10 @@ public class WallRun : MonoBehaviour
     [SerializeField] private float wallRunJumpForce = 6f;
 
     [Header("Camera Effects")]
-    [SerializeField] private Camera cam;
-    [SerializeField] private float fov = 90f;
-    [SerializeField] private float wallRunfov = 110f;
-    [SerializeField] private float wallRunfovTime = 20f;
+    public Camera cam;
+    public float fov = 90f;
+    public float wallRunfov = 110f;
+    public float wallRunfovTime = 20f;
     [SerializeField] private float camTilt = 20f;
     [SerializeField] private float camTiltTime = 20f;
     [SerializeField] private float chromAb = 0.1f;
@@ -33,7 +33,7 @@ public class WallRun : MonoBehaviour
 
     private Rigidbody rb;
 
-    private bool isWallRunning = false;
+    public bool isWallRunning = false;
 
     private bool wallLeft = false;
     private bool wallRight = false;

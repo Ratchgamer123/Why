@@ -9,7 +9,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float movementMultiplier = 10f;
+    [SerializeField] private float wallRunningMultiplier = 20f;
     [SerializeField] private float airMultiplier = 0.4f;
+    [SerializeField] private float gravity = 9.81f;
 
     [Header("Sprinting")]
     [SerializeField] float walkSpeed = 4f;
@@ -37,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded;
 
+    WallRun wallRun;
+
     Vector3 moveDirection;
     Vector3 slopeMoveDirection;
 
@@ -46,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        wallRun = GetComponent<WallRun>();
         AudioManager.instance.Play("BackgroundMusic");
     }
 
@@ -63,8 +68,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         slopeMoveDirection = Vector3.ProjectOnPlane(moveDirection, slopeHit.normal);
-
-        
     }
 
     void MyInput()
@@ -100,7 +103,10 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        rb.AddForce(-transform.up * 9.81f, ForceMode.Force);
+        if(!wallRun.isWallRunning)
+        {
+            rb.AddForce(-transform.up * gravity, ForceMode.Acceleration);
+        }
         if (isGrounded && !OnSlope())
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
@@ -108,6 +114,10 @@ public class PlayerMovement : MonoBehaviour
         else if(isGrounded && OnSlope())
         {
             rb.AddForce(slopeMoveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
+        }
+        else if (wallRun.isWallRunning)
+        {
+            rb.AddForce(moveDirection.normalized * moveSpeed * wallRunningMultiplier, ForceMode.Acceleration);
         }
         else if (!isGrounded)
         {
@@ -120,10 +130,12 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(sprintKey) && isGrounded)
         {
             moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
+            wallRun.cam.fieldOfView = Mathf.Lerp(wallRun.cam.fieldOfView, wallRun.wallRunfov, wallRun.wallRunfovTime * Time.deltaTime);
         }
         else
         {
             moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
+            Mathf.Lerp(wallRun.cam.fieldOfView, wallRun.fov, wallRun.wallRunfovTime * Time.deltaTime);
         }
     }
 
