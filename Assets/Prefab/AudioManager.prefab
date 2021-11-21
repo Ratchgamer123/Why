@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6133900552383691866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6133900552383691865}
+  - component: {fileID: 6133900552383691864}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6133900552383691865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133900552383691866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6133900552383691864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133900552383691866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c16ce8117a1c0f4d924b3e5495b6d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PantaaOutro
+    audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: c06edb9f30ab9dd42aeed9ae78c49e70, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: WallRunJumpOff
+    audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: 3d4b84249fe678d469bac8fff9f33fdf, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: OnWallRun
+    audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: fb9829ff1d75e824c96621c19b62e983, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 1
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: JumpBoost
+    audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: a175f84e935b1ed4480776d78bf191cf, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: HugeJumpBoost
+    audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: cdca92b70f1949847968042d654de1b3, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: TheSweetestGroove
+    audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: 8e11089f6f4a6a94a8fe43396af38d85, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: BackgroundMusic2
+    audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: 8e11089f6f4a6a94a8fe43396af38d85, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}

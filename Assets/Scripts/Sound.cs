@@ -15,6 +15,7 @@ public class Sound
     public float pitch = 1f;
 
     public bool loop;
+    public float fadeOutSpeed;
 
     [HideInInspector]
     public AudioSource source;

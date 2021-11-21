@@ -56,7 +56,7 @@ MonoBehaviour:
   movementMultiplier: 10
   wallRunningMultiplier: 12
   airMultiplier: 0.5
-  gravity: 9.81
+  gravity: 19.62
   walkSpeed: 4
   sprintSpeed: 6
   acceleration: 10
@@ -101,7 +101,7 @@ MonoBehaviour:
   orientation: {fileID: 7386490803881533905}
   wallDistance: 0.6
   minimumJumpHeight: 1.5
-  wallRunGravity: -0.25
+  wallRunGravity: 0.5
   wallRunJumpForce: 10
   cam: {fileID: 0}
   fov: 90

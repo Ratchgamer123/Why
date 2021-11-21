@@ -51,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         wallRun = GetComponent<WallRun>();
-        AudioManager.instance.Play("BackgroundMusic");
     }
 
     private void Update()
