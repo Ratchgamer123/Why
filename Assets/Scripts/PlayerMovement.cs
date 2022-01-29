@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] Transform orientation;
 
     [Header("Movement")]
@@ -12,6 +13,20 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float wallRunningMultiplier = 20f;
     [SerializeField] private float airMultiplier = 0.4f;
     [SerializeField] private float gravity = 9.81f;
+
+    [Header("Camera")]
+    public float sensX;
+    public float sensY;
+    [SerializeField] Transform cam;
+    float mouseX;
+    float mouseY;
+
+    float multiplier = 0.01f;
+
+    float xRotation;
+    float yRotation;
+
+    public Quaternion TargetRotation { private set; get; }
 
     [Header("Sprinting")]
     [SerializeField] float walkSpeed = 4f;
@@ -51,6 +66,9 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         wallRun = GetComponent<WallRun>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        TargetRotation = transform.rotation;
     }
 
     private void Update()
@@ -58,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         
         MyInput();
+
         ControlDrag();
         ControlSpeed();
 
@@ -75,6 +94,17 @@ public class PlayerMovement : MonoBehaviour
         verticalMovement = Input.GetAxisRaw("Vertical");
 
         moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
+
+        mouseX = Input.GetAxisRaw("Mouse X");
+        mouseY = Input.GetAxisRaw("Mouse Y");
+
+        yRotation += mouseX * sensX * multiplier;
+        xRotation -= mouseY * sensY * multiplier;
+
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        cam.transform.localRotation = Quaternion.Euler(xRotation, yRotation, wallRun.tilt);
+        orientation.transform.localRotation = Quaternion.Euler(0, yRotation, 0);
     }
 
     private void Jump()
@@ -104,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(!wallRun.isWallRunning)
         {
-            rb.AddForce(-transform.up * gravity, ForceMode.Acceleration);
+            rb.AddForce(Physics.gravity * gravity, ForceMode.Acceleration);
         }
         if (isGrounded && !OnSlope())
         {
@@ -154,5 +184,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void ResetTargetRotation()
+    {
+        TargetRotation = Quaternion.LookRotation(transform.forward, Vector3.up);
     }
 }
