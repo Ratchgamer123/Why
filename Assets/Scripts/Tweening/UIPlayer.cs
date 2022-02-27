@@ -20,7 +20,7 @@ public class UIPlayer : MonoBehaviour
 
     private void OnDisable()
     {
-        Checkpoint.ShowNotification += CheckpointNotification;
+        Checkpoint.ShowNotification -= CheckpointNotification;
     }
 
     public void CheckpointNotification()

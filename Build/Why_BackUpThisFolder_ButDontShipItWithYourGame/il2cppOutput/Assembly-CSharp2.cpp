@@ -9504,11 +9504,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIPlayer_OnDisable_mB8A2EF06BB4EDB530E50
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Checkpoint.ShowNotification += CheckpointNotification;
+		// Checkpoint.ShowNotification -= CheckpointNotification;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)UIPlayer_CheckpointNotification_mDA017AC835690048516ABFC8AA3C09F937C7EDF0_RuntimeMethod_var), NULL);
-		Checkpoint_add_ShowNotification_m6C82735403A9C72DE81AECC7B58E7387A9A91284(L_0, NULL);
+		Checkpoint_remove_ShowNotification_m300AEA227681A6C48E9D4A904F90BED0D6000C44(L_0, NULL);
 		// }
 		return;
 	}

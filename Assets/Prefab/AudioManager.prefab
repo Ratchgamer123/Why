@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,14 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: PantaaOutro
-    audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
-    clip: {fileID: 8300000, guid: c06edb9f30ab9dd42aeed9ae78c49e70, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    fadeOutSpeed: 0
-    source: {fileID: 0}
   - name: WallRunJumpOff
     audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
     clip: {fileID: 8300000, guid: 3d4b84249fe678d469bac8fff9f33fdf, type: 3}
@@ -84,20 +77,20 @@ MonoBehaviour:
     loop: 0
     fadeOutSpeed: 0
     source: {fileID: 0}
-  - name: TheSweetestGroove
+  - name: Menu Song
     audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
-    clip: {fileID: 8300000, guid: 8e11089f6f4a6a94a8fe43396af38d85, type: 3}
-    volume: 0.2
+    clip: {fileID: 8300000, guid: 88ca8c46edc6eef48a2ca24f2d890072, type: 3}
+    volume: 0.8
     pitch: 1
-    loop: 0
-    fadeOutSpeed: 0
+    loop: 1
+    fadeOutSpeed: 2
     source: {fileID: 0}
-  - name: BackgroundMusic2
+  - name: End Song
     audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
-    clip: {fileID: 8300000, guid: 8e11089f6f4a6a94a8fe43396af38d85, type: 3}
-    volume: 0.2
+    clip: {fileID: 8300000, guid: 7c3a9a811ff32c948ab647dd75fc3add, type: 3}
+    volume: 0.8
     pitch: 1
-    loop: 0
-    fadeOutSpeed: 0
+    loop: 1
+    fadeOutSpeed: 2
     source: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
