@@ -32,8 +32,8 @@ public class UIPlayer : MonoBehaviour
     private IEnumerator CheckpointDelay()
     {
         tweenComplete = false;
-        checkpointNotification.transform.LeanMoveY(checkpointDestinationY, checkpointLerpTime).setEase(checkpointLerpType);
+        LeanTween.moveLocal(checkpointNotification, new Vector2(0.0f, checkpointDestinationY), checkpointLerpTime).setEase(checkpointLerpType).setIgnoreTimeScale(false);
         yield return new WaitForSeconds(1.5f);
-        checkpointNotification.transform.LeanMoveY(checkpointOriginY, checkpointLerpTime).setEase(checkpointLerpType).setOnComplete(() => tweenComplete = true);
+        LeanTween.moveLocal(checkpointNotification, new Vector2(0.0f, checkpointOriginY), checkpointLerpTime).setEase(checkpointLerpType).setIgnoreTimeScale(false).setOnComplete(() => tweenComplete = true);
     }
 }

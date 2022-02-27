@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkpointNotification: {fileID: 7864113324163819215}
   canvas: {fileID: 7864113324490549880}
-  checkpointDestinationY: 1050
-  checkpointOriginY: 1380
+  checkpointDestinationY: 500
+  checkpointOriginY: 840
   checkpointLerpTime: 1
   checkpointLerpType: 22

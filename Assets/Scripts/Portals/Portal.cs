@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
@@ -31,7 +32,7 @@ public class Portal : MonoBehaviour
         portalCam.enabled = false;
         trackedTravellers = new List<PortalTraveller>();
         screenMeshFilter = screen.GetComponent<MeshFilter>();
-        screen.material.SetInt("displayMask", 1);
+        screen.material.SetInteger("displayMask", 1);
     }
 
     void LateUpdate()
@@ -121,7 +122,7 @@ public class Portal : MonoBehaviour
         }
 
         // Hide screen so that camera can see through portal
-        screen.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+        screen.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
         linkedPortal.screen.material.SetInt("displayMask", 0);
 
         for (int i = startIndex; i < recursionLimit; i++)

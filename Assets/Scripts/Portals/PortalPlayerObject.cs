@@ -6,7 +6,7 @@ using UnityEngine;
 public class PortalPlayerObject : PortalTraveller
 {
     float rotTimeElapsed;
-    float rotLerpDuration = 0.75f;
+    float rotLerpDuration = 1.0f;
 
     public Vector3 desiredScale;
     public Vector3 originalScale;
@@ -22,11 +22,16 @@ public class PortalPlayerObject : PortalTraveller
     public override void Teleport(Transform fromPortal, Transform toPortal, Vector3 pos, Quaternion rot, bool isRotated)
     {
         base.Teleport(fromPortal, toPortal, pos, rot);
-        rigidbody.velocity = toPortal.TransformVector(fromPortal.InverseTransformVector(rigidbody.velocity));
+        
         rigidbody.angularVelocity = toPortal.TransformVector(fromPortal.InverseTransformVector(rigidbody.angularVelocity));
         if(isRotated)
         {
+            rigidbody.velocity = toPortal.TransformVector(fromPortal.InverseTransformVector(rigidbody.velocity)) * force;
             StartCoroutine(RotBack());
+        }
+        else
+        {
+            rigidbody.velocity = toPortal.TransformVector(fromPortal.InverseTransformVector(rigidbody.velocity));
         }
     }
 

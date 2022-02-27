@@ -14,18 +14,31 @@ public class UIMenu : MonoBehaviour
     public LeanTweenType easeType;
     public TMP_Text songTitle;
 
+    public GameObject mainMenu;
+    public GameObject settingsMenu;
+
+    public string menuSongName;
+
     private void Start()
     {
         StartCoroutine(TweenSongDisplay());
     }
     public void StartGame()
     {
-        AudioManager.instance.FakeFadeOut("GiveEmTheLove");
+        AudioManager.instance.FakeFadeOut(menuSongName);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void Settings()
+    public void SettingsMenuActivate()
     {
+        mainMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+
+    public void MainMenuActivate()
+    {
+        settingsMenu.SetActive(false);
+        mainMenu.SetActive(true);
     }
 
     public void ExitGame()
@@ -35,7 +48,7 @@ public class UIMenu : MonoBehaviour
 
     IEnumerator TweenSongDisplay()
     {
-        songTitle.SetText(AudioManager.instance.Play("GiveEmTheLove"));
+        songTitle.SetText(AudioManager.instance.Play(menuSongName));
         LeanTween.moveLocal(objectToTween, inPosition, secondsToMove).setEase(easeType).setIgnoreTimeScale(false);
         yield return new WaitForSeconds(secondsToWait);
         LeanTween.moveLocal(objectToTween, outPosition, secondsToMove).setEase(easeType).setIgnoreTimeScale(false);
