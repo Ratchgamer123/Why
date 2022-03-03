@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -23,6 +22,12 @@ public class UIMenu : MonoBehaviour
     {
         StartCoroutine(TweenSongDisplay());
     }
+
+    private void OnEnable()
+    {
+        StartCoroutine(TweenSongDisplay());
+    }
+
     public void StartGame()
     {
         AudioManager.instance.FakeFadeOut(menuSongName);

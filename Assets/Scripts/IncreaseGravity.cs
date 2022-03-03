@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class IncreaseGravity : MonoBehaviour
@@ -15,5 +13,13 @@ public class IncreaseGravity : MonoBehaviour
     private void FixedUpdate()
     {
         rb.AddForce(Physics.gravity * gravity, ForceMode.Acceleration);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Metal"))
+        {
+            AudioManager.instance.Play("Pling");
+        }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Portal
   - Ball
+  - Metal
   layers:
   - Default
   - TransparentFX

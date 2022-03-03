@@ -1793,333 +1793,337 @@ extern void ExitMover__ctor_m382417734CE654C0CC6E303CC1F8F79E47DA0FE1 (void);
 extern void IncreaseGravity_Awake_m2C6447C7CF0CDAE89C80394BF0412C2F0762BE25 (void);
 // 0x0000037B System.Void IncreaseGravity::FixedUpdate()
 extern void IncreaseGravity_FixedUpdate_m71BFFDEF9D86C811DD76B7393302B5081B7AC17F (void);
-// 0x0000037C System.Void IncreaseGravity::.ctor()
+// 0x0000037C System.Void IncreaseGravity::OnCollisionEnter(UnityEngine.Collision)
+extern void IncreaseGravity_OnCollisionEnter_mEC3550DF79B0BE807445B71D6D6F7411A0768365 (void);
+// 0x0000037D System.Void IncreaseGravity::.ctor()
 extern void IncreaseGravity__ctor_m54B5C78DFB182B3BEC69DF30455A2A0B69023379 (void);
-// 0x0000037D System.Void Interactor::Update()
+// 0x0000037E System.Void Interactor::Update()
 extern void Interactor_Update_m0EF1BA67BC48E4DE264B3774CE44BF7CFAEB39D4 (void);
-// 0x0000037E System.Void Interactor::FireRaycast()
+// 0x0000037F System.Void Interactor::FireRaycast()
 extern void Interactor_FireRaycast_m56FBCE30A8579BC0A6D478F9A387CA5BB8863815 (void);
-// 0x0000037F System.Void Interactor::.ctor()
+// 0x00000380 System.Void Interactor::.ctor()
 extern void Interactor__ctor_m1DA9140970B004EFDDF092C29D27EECF9C3F090D (void);
-// 0x00000380 System.Void JumpBoost::Start()
+// 0x00000381 System.Void JumpBoost::Start()
 extern void JumpBoost_Start_m6D2E84FE78025E2021DEE4AB6F3168B1A87D5582 (void);
-// 0x00000381 System.Void JumpBoost::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000382 System.Void JumpBoost::OnTriggerEnter(UnityEngine.Collider)
 extern void JumpBoost_OnTriggerEnter_m5303C4D7879D31DDF67C0AE7B1EA180C00636089 (void);
-// 0x00000382 System.Collections.IEnumerator JumpBoost::ReEnable()
+// 0x00000383 System.Collections.IEnumerator JumpBoost::ReEnable()
 extern void JumpBoost_ReEnable_m83BC412DD5A196AE59E1A9F356750CF287A97863 (void);
-// 0x00000383 System.Void JumpBoost::.ctor()
+// 0x00000384 System.Void JumpBoost::.ctor()
 extern void JumpBoost__ctor_m857AB73A57871C56F2FAA62FAF6E00ADAF1E16D6 (void);
-// 0x00000384 System.Void JumpBoost/<ReEnable>d__9::.ctor(System.Int32)
-extern void U3CReEnableU3Ed__9__ctor_mF3FAE17EB14FDD1618AC99DBC912EF4B710F7E5E (void);
-// 0x00000385 System.Void JumpBoost/<ReEnable>d__9::System.IDisposable.Dispose()
-extern void U3CReEnableU3Ed__9_System_IDisposable_Dispose_m3C0D04B6FEAC3A9B286EC007E71AAAB124965AED (void);
-// 0x00000386 System.Boolean JumpBoost/<ReEnable>d__9::MoveNext()
-extern void U3CReEnableU3Ed__9_MoveNext_m013FAE4884F462F9C25B951E30D7D95C0804F9A8 (void);
-// 0x00000387 System.Object JumpBoost/<ReEnable>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CReEnableU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCF18EDFB374BB907680C7B64F547B3BEFCAEE7FE (void);
-// 0x00000388 System.Void JumpBoost/<ReEnable>d__9::System.Collections.IEnumerator.Reset()
-extern void U3CReEnableU3Ed__9_System_Collections_IEnumerator_Reset_m362DCD9FEC972A71DE7E46BC9BDB7702522EAB96 (void);
-// 0x00000389 System.Object JumpBoost/<ReEnable>d__9::System.Collections.IEnumerator.get_Current()
-extern void U3CReEnableU3Ed__9_System_Collections_IEnumerator_get_Current_mFD76140526DAD217A7DD2CCED175E0D22647ABF0 (void);
-// 0x0000038A System.Void LoadNextLevel::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000385 System.Void JumpBoost/<ReEnable>d__10::.ctor(System.Int32)
+extern void U3CReEnableU3Ed__10__ctor_m40AB980F444B37DD2067C75D8AF683EA2A4A8CA9 (void);
+// 0x00000386 System.Void JumpBoost/<ReEnable>d__10::System.IDisposable.Dispose()
+extern void U3CReEnableU3Ed__10_System_IDisposable_Dispose_mD06FF90CF81AD97651F1ABA7EC4563ED33665B45 (void);
+// 0x00000387 System.Boolean JumpBoost/<ReEnable>d__10::MoveNext()
+extern void U3CReEnableU3Ed__10_MoveNext_mEE674C8B57ACFC432B30C9A46305A189A7357C17 (void);
+// 0x00000388 System.Object JumpBoost/<ReEnable>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CReEnableU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7A89596781E20A51EB2FB13241E6E275D1DD25AE (void);
+// 0x00000389 System.Void JumpBoost/<ReEnable>d__10::System.Collections.IEnumerator.Reset()
+extern void U3CReEnableU3Ed__10_System_Collections_IEnumerator_Reset_m1C9A9593831D7377F343A5BBF98ED52F033BFBBD (void);
+// 0x0000038A System.Object JumpBoost/<ReEnable>d__10::System.Collections.IEnumerator.get_Current()
+extern void U3CReEnableU3Ed__10_System_Collections_IEnumerator_get_Current_m7BD6B281A55FC06789FC8A79D6F9115A5B17783C (void);
+// 0x0000038B System.Void LoadNextLevel::OnCollisionEnter(UnityEngine.Collision)
 extern void LoadNextLevel_OnCollisionEnter_m9554D3A987C9ACE574367141C63DB15253F91BB6 (void);
-// 0x0000038B System.Void LoadNextLevel::.ctor()
+// 0x0000038C System.Void LoadNextLevel::.ctor()
 extern void LoadNextLevel__ctor_m96DA4E28AC30EBF145C5BA7C974B6DE004F0A07B (void);
-// 0x0000038C System.Void MoveCamera::Update()
+// 0x0000038D System.Void MoveCamera::Update()
 extern void MoveCamera_Update_mE6F636B6C3CDBA9DDC6BB61CBEBF6B2AE1A038C4 (void);
-// 0x0000038D System.Void MoveCamera::.ctor()
+// 0x0000038E System.Void MoveCamera::.ctor()
 extern void MoveCamera__ctor_m482685446D944F8C39671E937F0FCDE363291763 (void);
-// 0x0000038E System.Void Player::add_GetPlayerLocation(System.Action)
+// 0x0000038F System.Void Player::add_GetPlayerLocation(System.Action)
 extern void Player_add_GetPlayerLocation_m16778864F53DE30AD55B2710133B5F8394B978B5 (void);
-// 0x0000038F System.Void Player::remove_GetPlayerLocation(System.Action)
+// 0x00000390 System.Void Player::remove_GetPlayerLocation(System.Action)
 extern void Player_remove_GetPlayerLocation_m76DEF1765934DE0F312F764BE423E425B0DA9892 (void);
-// 0x00000390 System.Void Player::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000391 System.Void Player::OnCollisionEnter(UnityEngine.Collision)
 extern void Player_OnCollisionEnter_mD8FFD58F1755BCB20B74ECDD0BB365677FA639EE (void);
-// 0x00000391 System.Void Player::OnEnable()
+// 0x00000392 System.Void Player::OnEnable()
 extern void Player_OnEnable_mE0997C2EDE52E3BC53CCBF961D4FE375347F0906 (void);
-// 0x00000392 System.Void Player::OnDisable()
+// 0x00000393 System.Void Player::OnDisable()
 extern void Player_OnDisable_m37872CE0A672A116C94A05662826159004ECB59C (void);
-// 0x00000393 System.Void Player::SetPlayerTransform(UnityEngine.Transform)
+// 0x00000394 System.Void Player::SetPlayerTransform(UnityEngine.Transform)
 extern void Player_SetPlayerTransform_m4423A005052C04F728B5876BF13B744285E6527A (void);
-// 0x00000394 System.Void Player::.ctor()
+// 0x00000395 System.Void Player::.ctor()
 extern void Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D (void);
-// 0x00000395 System.Void PlayerMovement::set_TargetRotation(UnityEngine.Quaternion)
+// 0x00000396 System.Void PlayerMovement::set_TargetRotation(UnityEngine.Quaternion)
 extern void PlayerMovement_set_TargetRotation_m114DE329EB6DCBC35163E26BCD96F4CA46FB0068 (void);
-// 0x00000396 UnityEngine.Quaternion PlayerMovement::get_TargetRotation()
+// 0x00000397 UnityEngine.Quaternion PlayerMovement::get_TargetRotation()
 extern void PlayerMovement_get_TargetRotation_m816112DBF20FB5B01F80A3368B62715FF3713EFF (void);
-// 0x00000397 System.Void PlayerMovement::Start()
+// 0x00000398 System.Void PlayerMovement::Start()
 extern void PlayerMovement_Start_m83FD44DCA324CE3D05A71FD2E2991FCD743F003A (void);
-// 0x00000398 System.Void PlayerMovement::Update()
+// 0x00000399 System.Void PlayerMovement::Update()
 extern void PlayerMovement_Update_m5BB6CE35AF68EE00CFEB4BA5EBA17E10667551D3 (void);
-// 0x00000399 System.Void PlayerMovement::MyInput()
+// 0x0000039A System.Void PlayerMovement::MyInput()
 extern void PlayerMovement_MyInput_mF8CAC0AC3030D48D5DB318C2E6E6EA07A2377BC7 (void);
-// 0x0000039A System.Void PlayerMovement::Jump()
+// 0x0000039B System.Void PlayerMovement::Jump()
 extern void PlayerMovement_Jump_mCA26EA1D2892C47F04966998153F3FD4FFBCEB43 (void);
-// 0x0000039B System.Void PlayerMovement::ControlDrag()
+// 0x0000039C System.Void PlayerMovement::ControlDrag()
 extern void PlayerMovement_ControlDrag_m473DBF440BF464CA0C34189384B0799FC7F14443 (void);
-// 0x0000039C System.Void PlayerMovement::FixedUpdate()
+// 0x0000039D System.Void PlayerMovement::FixedUpdate()
 extern void PlayerMovement_FixedUpdate_m05F06EBAEB85F1B860ED042B83AD54F61DC53EFE (void);
-// 0x0000039D System.Void PlayerMovement::MovePlayer()
+// 0x0000039E System.Void PlayerMovement::MovePlayer()
 extern void PlayerMovement_MovePlayer_mD56624BEDCEDD1C1532CAD92DF819BA568E5F060 (void);
-// 0x0000039E System.Void PlayerMovement::ControlSpeed()
+// 0x0000039F System.Void PlayerMovement::ControlSpeed()
 extern void PlayerMovement_ControlSpeed_m4882E44BDA459F45ECC060106AAB8A6DB8DC0E49 (void);
-// 0x0000039F System.Boolean PlayerMovement::OnSlope()
+// 0x000003A0 System.Boolean PlayerMovement::OnSlope()
 extern void PlayerMovement_OnSlope_m11948B4DD756562F780DDE0764FA8A8856059397 (void);
-// 0x000003A0 System.Void PlayerMovement::ResetTargetRotation()
+// 0x000003A1 System.Void PlayerMovement::ResetTargetRotation()
 extern void PlayerMovement_ResetTargetRotation_m0AC1D92D3ECA967A0034796C385867B870657305 (void);
-// 0x000003A1 System.Void PlayerMovement::.ctor()
+// 0x000003A2 System.Void PlayerMovement::.ctor()
 extern void PlayerMovement__ctor_mB37559C5B0638161878D20E00B7C672FC38BBBAA (void);
-// 0x000003A2 System.Void PortalMover::OnEnable()
+// 0x000003A3 System.Void PortalMover::OnEnable()
 extern void PortalMover_OnEnable_m490B45464F0D433435B8F547CCF9C5A3A988CC5D (void);
-// 0x000003A3 System.Void PortalMover::OnDisable()
+// 0x000003A4 System.Void PortalMover::OnDisable()
 extern void PortalMover_OnDisable_m8EFF6CC51074AF7526C7A62895C3CDA93790288B (void);
-// 0x000003A4 System.Void PortalMover::MovePortal()
+// 0x000003A5 System.Void PortalMover::MovePortal()
 extern void PortalMover_MovePortal_m74718D6888F8FED1F006306E20EAE826EDDC822B (void);
-// 0x000003A5 System.Void PortalMover::.ctor()
+// 0x000003A6 System.Void PortalMover::.ctor()
 extern void PortalMover__ctor_m6F76235A89D1C0FE259CC1F632C564F1C901369C (void);
-// 0x000003A6 System.Boolean CameraUtility::VisibleFromCamera(UnityEngine.Renderer,UnityEngine.Camera)
+// 0x000003A7 System.Boolean CameraUtility::VisibleFromCamera(UnityEngine.Renderer,UnityEngine.Camera)
 extern void CameraUtility_VisibleFromCamera_m26674E52880CE7B3603DAE1AA65049F04D18D0CB (void);
-// 0x000003A7 System.Boolean CameraUtility::BoundsOverlap(UnityEngine.MeshFilter,UnityEngine.MeshFilter,UnityEngine.Camera)
+// 0x000003A8 System.Boolean CameraUtility::BoundsOverlap(UnityEngine.MeshFilter,UnityEngine.MeshFilter,UnityEngine.Camera)
 extern void CameraUtility_BoundsOverlap_m0E9C10D9360D5203EA1CFC8C98226D7D5E391CBC (void);
-// 0x000003A8 CameraUtility/MinMax3D CameraUtility::GetScreenRectFromBounds(UnityEngine.MeshFilter,UnityEngine.Camera)
+// 0x000003A9 CameraUtility/MinMax3D CameraUtility::GetScreenRectFromBounds(UnityEngine.MeshFilter,UnityEngine.Camera)
 extern void CameraUtility_GetScreenRectFromBounds_mE88F0AB56DC40C9C436563BA52B0F2BBDDCC5D87 (void);
-// 0x000003A9 System.Void CameraUtility::.cctor()
+// 0x000003AA System.Void CameraUtility::.cctor()
 extern void CameraUtility__cctor_mD83E84A17CD6C7032DDE2AD22914DDB5F6E04A3F (void);
-// 0x000003AA System.Void CameraUtility/MinMax3D::.ctor(System.Single,System.Single)
+// 0x000003AB System.Void CameraUtility/MinMax3D::.ctor(System.Single,System.Single)
 extern void MinMax3D__ctor_mA5308B72E84B28B8BC486DF4EA05AA00C4997ABB (void);
-// 0x000003AB System.Void CameraUtility/MinMax3D::AddPoint(UnityEngine.Vector3)
+// 0x000003AC System.Void CameraUtility/MinMax3D::AddPoint(UnityEngine.Vector3)
 extern void MinMax3D_AddPoint_m84750B49DEC2E739F22AC412F9EB11D24247C127 (void);
-// 0x000003AC System.Void MainCamera::Awake()
+// 0x000003AD System.Void MainCamera::Awake()
 extern void MainCamera_Awake_m672C4D88097D2C8D7E47835BCC376B9D440FFE3C (void);
-// 0x000003AD System.Void MainCamera::OnDisable()
+// 0x000003AE System.Void MainCamera::OnDisable()
 extern void MainCamera_OnDisable_m9AB3E4BF2635C3FF51A13832CC2D0C67E23689E4 (void);
-// 0x000003AE System.Void MainCamera::OnBeginCameraRendering(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera)
+// 0x000003AF System.Void MainCamera::OnBeginCameraRendering(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera)
 extern void MainCamera_OnBeginCameraRendering_m74D197CEEEF7691A547FCF6DD9A495B4272B2758 (void);
-// 0x000003AF System.Void MainCamera::.ctor()
+// 0x000003B0 System.Void MainCamera::.ctor()
 extern void MainCamera__ctor_mA99CB68D3BD9D1BAE6F441A44EB2EF657C6C61E5 (void);
-// 0x000003B0 System.Void Portal::Awake()
+// 0x000003B1 System.Void Portal::Awake()
 extern void Portal_Awake_m6620C9AA53086E99FB44F2F03C6DA4DD152B3EF6 (void);
-// 0x000003B1 System.Void Portal::LateUpdate()
+// 0x000003B2 System.Void Portal::LateUpdate()
 extern void Portal_LateUpdate_m0F794E3D70B8A5AA9A0F4FD4AE38955AB8AB9C0A (void);
-// 0x000003B2 System.Void Portal::HandleTravellers()
+// 0x000003B3 System.Void Portal::HandleTravellers()
 extern void Portal_HandleTravellers_m0F7839620AD2F745CBCF63FE949612F16002BD3A (void);
-// 0x000003B3 System.Void Portal::PrePortalRender()
+// 0x000003B4 System.Void Portal::PrePortalRender()
 extern void Portal_PrePortalRender_m01A4CDA0C9D5F04455D068ADAB29D3B828A7F5AB (void);
-// 0x000003B4 System.Void Portal::Render(UnityEngine.Rendering.ScriptableRenderContext)
+// 0x000003B5 System.Void Portal::Render(UnityEngine.Rendering.ScriptableRenderContext)
 extern void Portal_Render_m3DFFFA4C66F052F9B98B9688491448D4020C8F48 (void);
-// 0x000003B5 System.Void Portal::HandleClipping()
+// 0x000003B6 System.Void Portal::HandleClipping()
 extern void Portal_HandleClipping_m656AFA113EC9ED8ABF00290FBD1C6F437D6CCB0C (void);
-// 0x000003B6 System.Void Portal::PostPortalRender()
+// 0x000003B7 System.Void Portal::PostPortalRender()
 extern void Portal_PostPortalRender_m1F9A0F2C1B9A049744C9D09D6C8C0C34238B22BC (void);
-// 0x000003B7 System.Void Portal::CreateViewTexture()
+// 0x000003B8 System.Void Portal::CreateViewTexture()
 extern void Portal_CreateViewTexture_m9DBFD94BF2DD1772F9A681E5AB371E69FE1302A0 (void);
-// 0x000003B8 System.Single Portal::ProtectScreenFromClipping(UnityEngine.Vector3)
+// 0x000003B9 System.Single Portal::ProtectScreenFromClipping(UnityEngine.Vector3)
 extern void Portal_ProtectScreenFromClipping_m819B2144F3C67AAC917B314CDFCBE529FC65C07C (void);
-// 0x000003B9 System.Void Portal::UpdateSliceParams(PortalTraveller)
+// 0x000003BA System.Void Portal::UpdateSliceParams(PortalTraveller)
 extern void Portal_UpdateSliceParams_mEEAECC1F69821024F1AF1A7B2DFE09ABD49E74C2 (void);
-// 0x000003BA System.Void Portal::SetNearClipPlane()
+// 0x000003BB System.Void Portal::SetNearClipPlane()
 extern void Portal_SetNearClipPlane_m6EB1CF7EACAEA4502D97BE368EDC0367FFCC684E (void);
-// 0x000003BB System.Void Portal::OnTravellerEnterPortal(PortalTraveller)
+// 0x000003BC System.Void Portal::OnTravellerEnterPortal(PortalTraveller)
 extern void Portal_OnTravellerEnterPortal_m64425A2CC70915F24432A552BC6F8517FB095B35 (void);
-// 0x000003BC System.Void Portal::OnTriggerEnter(UnityEngine.Collider)
+// 0x000003BD System.Void Portal::OnTriggerEnter(UnityEngine.Collider)
 extern void Portal_OnTriggerEnter_mFD79B3129D13A3232918E9DAC1D25F349DEF68CB (void);
-// 0x000003BD System.Void Portal::OnTriggerExit(UnityEngine.Collider)
+// 0x000003BE System.Void Portal::OnTriggerExit(UnityEngine.Collider)
 extern void Portal_OnTriggerExit_m56BB9E87FF0E4DF84AC0892CE10B1DEBC029BB41 (void);
-// 0x000003BE System.Int32 Portal::SideOfPortal(UnityEngine.Vector3)
+// 0x000003BF System.Int32 Portal::SideOfPortal(UnityEngine.Vector3)
 extern void Portal_SideOfPortal_mE3BA8FF827C04E5383A7F11D4752995D4BF33C24 (void);
-// 0x000003BF System.Boolean Portal::SameSideOfPortal(UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000003C0 System.Boolean Portal::SameSideOfPortal(UnityEngine.Vector3,UnityEngine.Vector3)
 extern void Portal_SameSideOfPortal_mCF14EF1FE68371F936434A67430474E8411B1FA8 (void);
-// 0x000003C0 UnityEngine.Vector3 Portal::get_portalCamPos()
+// 0x000003C1 UnityEngine.Vector3 Portal::get_portalCamPos()
 extern void Portal_get_portalCamPos_m28D12E113A04E8728983722D57E49274B4497C63 (void);
-// 0x000003C1 System.Void Portal::OnValidate()
+// 0x000003C2 System.Void Portal::OnValidate()
 extern void Portal_OnValidate_m9368286258A36C0730C9C0B643549F371E89DE2D (void);
-// 0x000003C2 System.Void Portal::.ctor()
+// 0x000003C3 System.Void Portal::.ctor()
 extern void Portal__ctor_m316CAB34F7BD7FA0E0600A5C2C3FD85D593B727D (void);
-// 0x000003C3 System.Void PortalPhysicsObject::Awake()
+// 0x000003C4 System.Void PortalPhysicsObject::Awake()
 extern void PortalPhysicsObject_Awake_mFB26DF0492CE292959115528FC6A387C0895BA20 (void);
-// 0x000003C4 System.Void PortalPhysicsObject::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x000003C5 System.Void PortalPhysicsObject::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void PortalPhysicsObject_Teleport_mB767025135F8F27D5283B1F1E6ABE92E33EFE5E6 (void);
-// 0x000003C5 System.Collections.IEnumerator PortalPhysicsObject::RotBack()
+// 0x000003C6 System.Collections.IEnumerator PortalPhysicsObject::RotBack()
 extern void PortalPhysicsObject_RotBack_m7438AB85B7A5480A9725F91951B6D7D39DB59F3D (void);
-// 0x000003C6 System.Void PortalPhysicsObject::.ctor()
+// 0x000003C7 System.Void PortalPhysicsObject::.ctor()
 extern void PortalPhysicsObject__ctor_mBBF49CC5AFDA83BAC4763BA5842B107406B7A48B (void);
-// 0x000003C7 System.Void PortalPhysicsObject/<RotBack>d__6::.ctor(System.Int32)
+// 0x000003C8 System.Void PortalPhysicsObject/<RotBack>d__6::.ctor(System.Int32)
 extern void U3CRotBackU3Ed__6__ctor_m234E70C02E5FA8B886D145B998EEB018A70E5B4E (void);
-// 0x000003C8 System.Void PortalPhysicsObject/<RotBack>d__6::System.IDisposable.Dispose()
+// 0x000003C9 System.Void PortalPhysicsObject/<RotBack>d__6::System.IDisposable.Dispose()
 extern void U3CRotBackU3Ed__6_System_IDisposable_Dispose_mF24016EA70DF7DC856EF279DC09ABE80AD5C44D8 (void);
-// 0x000003C9 System.Boolean PortalPhysicsObject/<RotBack>d__6::MoveNext()
+// 0x000003CA System.Boolean PortalPhysicsObject/<RotBack>d__6::MoveNext()
 extern void U3CRotBackU3Ed__6_MoveNext_mB4AEC745648CD1A042DD3E4527D401920AAC7116 (void);
-// 0x000003CA System.Object PortalPhysicsObject/<RotBack>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000003CB System.Object PortalPhysicsObject/<RotBack>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRotBackU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA4A6EF28768FA8132D429A920A9FF5475BC01725 (void);
-// 0x000003CB System.Void PortalPhysicsObject/<RotBack>d__6::System.Collections.IEnumerator.Reset()
+// 0x000003CC System.Void PortalPhysicsObject/<RotBack>d__6::System.Collections.IEnumerator.Reset()
 extern void U3CRotBackU3Ed__6_System_Collections_IEnumerator_Reset_mFD5BE02DA5AD1C7B8ECA3040A3CF63DE66EC3246 (void);
-// 0x000003CC System.Object PortalPhysicsObject/<RotBack>d__6::System.Collections.IEnumerator.get_Current()
+// 0x000003CD System.Object PortalPhysicsObject/<RotBack>d__6::System.Collections.IEnumerator.get_Current()
 extern void U3CRotBackU3Ed__6_System_Collections_IEnumerator_get_Current_mDED1064D6A801CCAFB29D57EB6FAAE6DD6745DF5 (void);
-// 0x000003CD System.Void PortalPlayerObject::Awake()
+// 0x000003CE System.Void PortalPlayerObject::Awake()
 extern void PortalPlayerObject_Awake_mB099B138D63E335CCE88F00B8EFA1536AFC6CEC4 (void);
-// 0x000003CE System.Void PortalPlayerObject::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
+// 0x000003CF System.Void PortalPlayerObject::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
 extern void PortalPlayerObject_Teleport_m9AAE4C90401E0EAB04A7318C3B6AAF83BE0D401E (void);
-// 0x000003CF System.Void PortalPlayerObject::EnterPortalThreshold(System.Boolean)
+// 0x000003D0 System.Void PortalPlayerObject::EnterPortalThreshold(System.Boolean)
 extern void PortalPlayerObject_EnterPortalThreshold_mC47737B550D8A39B0603806B3A8D1E1373BE208C (void);
-// 0x000003D0 System.Void PortalPlayerObject::ExitPortalThreshold(System.Boolean)
+// 0x000003D1 System.Void PortalPlayerObject::ExitPortalThreshold(System.Boolean)
 extern void PortalPlayerObject_ExitPortalThreshold_m4AE04CEE749D13ED167172C619A6645988F05C18 (void);
-// 0x000003D1 System.Void PortalPlayerObject::AvoidClipping(UnityEngine.Vector3)
+// 0x000003D2 System.Void PortalPlayerObject::AvoidClipping(UnityEngine.Vector3)
 extern void PortalPlayerObject_AvoidClipping_m046FE5E45773468ECE71917C1A502A3FDDBDFC50 (void);
-// 0x000003D2 System.Collections.IEnumerator PortalPlayerObject::RotBack()
+// 0x000003D3 System.Collections.IEnumerator PortalPlayerObject::RotBack()
 extern void PortalPlayerObject_RotBack_mC4FF4A82F5D300591279C0B27DACC0BE6DDEC377 (void);
-// 0x000003D3 System.Void PortalPlayerObject::.ctor()
+// 0x000003D4 System.Void PortalPlayerObject::.ctor()
 extern void PortalPlayerObject__ctor_m87538970C81A922E24ABC2DE94946F39B41C8982 (void);
-// 0x000003D4 System.Void PortalPlayerObject/<RotBack>d__11::.ctor(System.Int32)
+// 0x000003D5 System.Void PortalPlayerObject/<RotBack>d__11::.ctor(System.Int32)
 extern void U3CRotBackU3Ed__11__ctor_m09FB244663A7476FBC28E5B20216EF893DE3054E (void);
-// 0x000003D5 System.Void PortalPlayerObject/<RotBack>d__11::System.IDisposable.Dispose()
+// 0x000003D6 System.Void PortalPlayerObject/<RotBack>d__11::System.IDisposable.Dispose()
 extern void U3CRotBackU3Ed__11_System_IDisposable_Dispose_mEC57A8BDE5478DE56AA66155E4FBC4F9D501B178 (void);
-// 0x000003D6 System.Boolean PortalPlayerObject/<RotBack>d__11::MoveNext()
+// 0x000003D7 System.Boolean PortalPlayerObject/<RotBack>d__11::MoveNext()
 extern void U3CRotBackU3Ed__11_MoveNext_m7143431E55C3B1F76C47C93D95BF510D0F174A38 (void);
-// 0x000003D7 System.Object PortalPlayerObject/<RotBack>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000003D8 System.Object PortalPlayerObject/<RotBack>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRotBackU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8CEF1C95C184702F74D8386CCA88668816AD100F (void);
-// 0x000003D8 System.Void PortalPlayerObject/<RotBack>d__11::System.Collections.IEnumerator.Reset()
+// 0x000003D9 System.Void PortalPlayerObject/<RotBack>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CRotBackU3Ed__11_System_Collections_IEnumerator_Reset_m6AF3017D1DD4E77FD5E53114F27BB0C37CCA873F (void);
-// 0x000003D9 System.Object PortalPlayerObject/<RotBack>d__11::System.Collections.IEnumerator.get_Current()
+// 0x000003DA System.Object PortalPlayerObject/<RotBack>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CRotBackU3Ed__11_System_Collections_IEnumerator_get_Current_m42B180235805FE44FDC3472CB8186426A1EBF58C (void);
-// 0x000003DA UnityEngine.GameObject PortalTraveller::get_graphicsClone()
+// 0x000003DB UnityEngine.GameObject PortalTraveller::get_graphicsClone()
 extern void PortalTraveller_get_graphicsClone_m69AA1583C9D3929C1FE4A7E56FD4E5C2094FBDE0 (void);
-// 0x000003DB System.Void PortalTraveller::set_graphicsClone(UnityEngine.GameObject)
+// 0x000003DC System.Void PortalTraveller::set_graphicsClone(UnityEngine.GameObject)
 extern void PortalTraveller_set_graphicsClone_mB241AC1E8C7F0E3C5D4DC76CFB1B57CDC0F4820E (void);
-// 0x000003DC UnityEngine.Vector3 PortalTraveller::get_previousOffsetFromPortal()
+// 0x000003DD UnityEngine.Vector3 PortalTraveller::get_previousOffsetFromPortal()
 extern void PortalTraveller_get_previousOffsetFromPortal_mB0C86FF26142C871106B40834F6F35C7CA8C36B7 (void);
-// 0x000003DD System.Void PortalTraveller::set_previousOffsetFromPortal(UnityEngine.Vector3)
+// 0x000003DE System.Void PortalTraveller::set_previousOffsetFromPortal(UnityEngine.Vector3)
 extern void PortalTraveller_set_previousOffsetFromPortal_m21D226C0F51219F5F3D498791C1040588F7433F0 (void);
-// 0x000003DE UnityEngine.Material[] PortalTraveller::get_originalMaterials()
+// 0x000003DF UnityEngine.Material[] PortalTraveller::get_originalMaterials()
 extern void PortalTraveller_get_originalMaterials_m15C291E2B1810C4AE3B58E290F3D35DF37C39C04 (void);
-// 0x000003DF System.Void PortalTraveller::set_originalMaterials(UnityEngine.Material[])
+// 0x000003E0 System.Void PortalTraveller::set_originalMaterials(UnityEngine.Material[])
 extern void PortalTraveller_set_originalMaterials_m7431F3C41650AC4C3D28C8F9EE860AC75655092A (void);
-// 0x000003E0 UnityEngine.Material[] PortalTraveller::get_cloneMaterials()
+// 0x000003E1 UnityEngine.Material[] PortalTraveller::get_cloneMaterials()
 extern void PortalTraveller_get_cloneMaterials_m7B9324A0D30C170B8278EF2B20A17FA63378CD71 (void);
-// 0x000003E1 System.Void PortalTraveller::set_cloneMaterials(UnityEngine.Material[])
+// 0x000003E2 System.Void PortalTraveller::set_cloneMaterials(UnityEngine.Material[])
 extern void PortalTraveller_set_cloneMaterials_mDA5345F84EC18325F168096243B24E25D48E1251 (void);
-// 0x000003E2 System.Void PortalTraveller::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x000003E3 System.Void PortalTraveller::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void PortalTraveller_Teleport_m5BCF15D1CA068C6F2BD9E841768FC11038CD249F (void);
-// 0x000003E3 System.Void PortalTraveller::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
+// 0x000003E4 System.Void PortalTraveller::Teleport(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
 extern void PortalTraveller_Teleport_m9DC78CFD38322E68AB8FD048CCF8C9EDB584F12D (void);
-// 0x000003E4 System.Void PortalTraveller::EnterPortalThreshold(System.Boolean)
+// 0x000003E5 System.Void PortalTraveller::EnterPortalThreshold(System.Boolean)
 extern void PortalTraveller_EnterPortalThreshold_m52FFB3226EAB68F70EC53124C56D935C4F17BF7C (void);
-// 0x000003E5 System.Void PortalTraveller::ExitPortalThreshold(System.Boolean)
+// 0x000003E6 System.Void PortalTraveller::ExitPortalThreshold(System.Boolean)
 extern void PortalTraveller_ExitPortalThreshold_mA54B3B6F51FA788CE538D956E42C6D6D851C1475 (void);
-// 0x000003E6 System.Void PortalTraveller::SetSliceOffsetDst(System.Single,System.Boolean)
+// 0x000003E7 System.Void PortalTraveller::SetSliceOffsetDst(System.Single,System.Boolean)
 extern void PortalTraveller_SetSliceOffsetDst_m2446F0C34FDB5E70F1DC2935BBDC1A90B4295EF2 (void);
-// 0x000003E7 UnityEngine.Material[] PortalTraveller::GetMaterials(UnityEngine.GameObject)
+// 0x000003E8 UnityEngine.Material[] PortalTraveller::GetMaterials(UnityEngine.GameObject)
 extern void PortalTraveller_GetMaterials_m7465C7ACB719E56073C605F7E0FC0A2DC6F784A0 (void);
-// 0x000003E8 System.Void PortalTraveller::.ctor()
+// 0x000003E9 System.Void PortalTraveller::.ctor()
 extern void PortalTraveller__ctor_m053004A983D71DB0858F44D953F5CCDD0E827057 (void);
-// 0x000003E9 System.Void SettingsMenu::Start()
+// 0x000003EA System.Void SettingsMenu::Start()
 extern void SettingsMenu_Start_mE2F6C7DC6F8D450A9CB8F4DB9E432132B7CD8E5A (void);
-// 0x000003EA System.Void SettingsMenu::ChangeVSyncState(UnityEngine.UI.Image)
+// 0x000003EB System.Void SettingsMenu::ChangeVSyncState(UnityEngine.UI.Image)
 extern void SettingsMenu_ChangeVSyncState_m5EB46D5F84FFE52C3430ADB110857CCFE7481D49 (void);
-// 0x000003EB System.Void SettingsMenu::SetResolution(System.Int32)
+// 0x000003EC System.Void SettingsMenu::SetResolution(System.Int32)
 extern void SettingsMenu_SetResolution_mB147D7B1A2F86103070809A7577ABD7AA19F3B5B (void);
-// 0x000003EC System.Void SettingsMenu::SetVolume(System.Single)
+// 0x000003ED System.Void SettingsMenu::SetVolume(System.Single)
 extern void SettingsMenu_SetVolume_m90D484F0D26C9B1861D0D3BD4C9987B4FC907789 (void);
-// 0x000003ED System.Void SettingsMenu::SetFullscreen(UnityEngine.UI.Image)
+// 0x000003EE System.Void SettingsMenu::SetFullscreen(UnityEngine.UI.Image)
 extern void SettingsMenu_SetFullscreen_m73AB9994FA4DFB35B84507D2CF08F30EF2C5E452 (void);
-// 0x000003EE System.Void SettingsMenu::SetAntiAliasing(System.Int32)
+// 0x000003EF System.Void SettingsMenu::SetAntiAliasing(System.Int32)
 extern void SettingsMenu_SetAntiAliasing_mB8D95CFD1A731238B8C589FB7E4929D1FF44D970 (void);
-// 0x000003EF System.Void SettingsMenu::.ctor()
+// 0x000003F0 System.Void SettingsMenu::.ctor()
 extern void SettingsMenu__ctor_mAB642D09DCFB585F2998C81DE33DD08C5C420E1C (void);
-// 0x000003F0 System.Void SettingsMenu/<>c::.cctor()
+// 0x000003F1 System.Void SettingsMenu/<>c::.cctor()
 extern void U3CU3Ec__cctor_m6C33CB666EBAE1AF4EA7EA0B2B1AC9D611FA4032 (void);
-// 0x000003F1 System.Void SettingsMenu/<>c::.ctor()
+// 0x000003F2 System.Void SettingsMenu/<>c::.ctor()
 extern void U3CU3Ec__ctor_m7D5CCAE9A03E5804E614CF76CB646EC0990E9B38 (void);
-// 0x000003F2 UnityEngine.Resolution SettingsMenu/<>c::<Start>b__7_0(UnityEngine.Resolution)
+// 0x000003F3 UnityEngine.Resolution SettingsMenu/<>c::<Start>b__7_0(UnityEngine.Resolution)
 extern void U3CU3Ec_U3CStartU3Eb__7_0_mC09475A83D501E007E6DEC06AD6051083F55BF3A (void);
-// 0x000003F3 System.Void Sound::.ctor()
+// 0x000003F4 System.Void Sound::.ctor()
 extern void Sound__ctor_m5DD7C9F71B98D5670BBDD05F6D6FCDF43DC9EA8F (void);
-// 0x000003F4 System.Void SpinningScript::Start()
+// 0x000003F5 System.Void SpinningScript::Start()
 extern void SpinningScript_Start_mC9FD9C818C5374FA09E4D9239219C80D068DDE41 (void);
-// 0x000003F5 System.Void SpinningScript::.ctor()
+// 0x000003F6 System.Void SpinningScript::.ctor()
 extern void SpinningScript__ctor_mED8D5B0DF8275ECF9B59544AF651529DC576D7A3 (void);
-// 0x000003F6 System.Void SubtitleManager::Awake()
+// 0x000003F7 System.Void SubtitleManager::Awake()
 extern void SubtitleManager_Awake_m71162314F938F71875680587826EB357884BC15D (void);
-// 0x000003F7 System.Void SubtitleManager::.ctor()
+// 0x000003F8 System.Void SubtitleManager::.ctor()
 extern void SubtitleManager__ctor_m583E4A1593E39231C291289A77EB907AF3240731 (void);
-// 0x000003F8 System.Void SubtitleSequence::.ctor()
+// 0x000003F9 System.Void SubtitleSequence::.ctor()
 extern void SubtitleSequence__ctor_m48D49D96025DDEEC56D3DB5FB645B0A5401D4A4B (void);
-// 0x000003F9 System.Void TriggerLerper::OnTriggerEnter(UnityEngine.Collider)
+// 0x000003FA System.Void TriggerLerper::OnTriggerEnter(UnityEngine.Collider)
 extern void TriggerLerper_OnTriggerEnter_mD3E7A90864E9B703577CB2D0EFBEC537B9B02961 (void);
-// 0x000003FA System.Void TriggerLerper::Lerp()
+// 0x000003FB System.Void TriggerLerper::Lerp()
 extern void TriggerLerper_Lerp_mA2A5256E9A11330CB77735CF57DA104FBB74EDE2 (void);
-// 0x000003FB System.Void TriggerLerper::.ctor()
+// 0x000003FC System.Void TriggerLerper::.ctor()
 extern void TriggerLerper__ctor_m5510B5392F9690B9EA5AA05A468E7EDA2AA44244 (void);
-// 0x000003FC System.Void UIPlayer::OnEnable()
+// 0x000003FD System.Void UIPlayer::OnEnable()
 extern void UIPlayer_OnEnable_m934B65E0F0F54A2B27EC551D10A91502D29D7ED9 (void);
-// 0x000003FD System.Void UIPlayer::OnDisable()
+// 0x000003FE System.Void UIPlayer::OnDisable()
 extern void UIPlayer_OnDisable_mB8A2EF06BB4EDB530E506CB4FDD934DFFFA9D20A (void);
-// 0x000003FE System.Void UIPlayer::CheckpointNotification()
+// 0x000003FF System.Void UIPlayer::CheckpointNotification()
 extern void UIPlayer_CheckpointNotification_mDA017AC835690048516ABFC8AA3C09F937C7EDF0 (void);
-// 0x000003FF System.Collections.IEnumerator UIPlayer::CheckpointDelay()
+// 0x00000400 System.Collections.IEnumerator UIPlayer::CheckpointDelay()
 extern void UIPlayer_CheckpointDelay_m15288E8C41E88486D12F8DE679207EFE9ADCAA80 (void);
-// 0x00000400 System.Void UIPlayer::.ctor()
+// 0x00000401 System.Void UIPlayer::.ctor()
 extern void UIPlayer__ctor_mE5C29EE793AC925F3ADC72EE951A8375BA314F2A (void);
-// 0x00000401 System.Void UIPlayer::<CheckpointDelay>b__10_0()
+// 0x00000402 System.Void UIPlayer::<CheckpointDelay>b__10_0()
 extern void UIPlayer_U3CCheckpointDelayU3Eb__10_0_mC327DB37CFCF51D1370D39B0298A2D0F7D0F61D4 (void);
-// 0x00000402 System.Void UIPlayer/<CheckpointDelay>d__10::.ctor(System.Int32)
+// 0x00000403 System.Void UIPlayer/<CheckpointDelay>d__10::.ctor(System.Int32)
 extern void U3CCheckpointDelayU3Ed__10__ctor_mE2C796B87E1B7B42B2DBDA93C51DC771591B538D (void);
-// 0x00000403 System.Void UIPlayer/<CheckpointDelay>d__10::System.IDisposable.Dispose()
+// 0x00000404 System.Void UIPlayer/<CheckpointDelay>d__10::System.IDisposable.Dispose()
 extern void U3CCheckpointDelayU3Ed__10_System_IDisposable_Dispose_m8AF58DF7597E23076B7BF3C4807E58BE2B293E97 (void);
-// 0x00000404 System.Boolean UIPlayer/<CheckpointDelay>d__10::MoveNext()
+// 0x00000405 System.Boolean UIPlayer/<CheckpointDelay>d__10::MoveNext()
 extern void U3CCheckpointDelayU3Ed__10_MoveNext_mDC77D1C7FA82FE8BBA4D7B28A2AF31234AAB06F3 (void);
-// 0x00000405 System.Object UIPlayer/<CheckpointDelay>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000406 System.Object UIPlayer/<CheckpointDelay>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCheckpointDelayU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m30CFFA3ACE2D6EAE7BCA78C3C11A1F4C0948F855 (void);
-// 0x00000406 System.Void UIPlayer/<CheckpointDelay>d__10::System.Collections.IEnumerator.Reset()
+// 0x00000407 System.Void UIPlayer/<CheckpointDelay>d__10::System.Collections.IEnumerator.Reset()
 extern void U3CCheckpointDelayU3Ed__10_System_Collections_IEnumerator_Reset_mE4EF00B1106774693C21C1DCE7D85A3B2FF604D1 (void);
-// 0x00000407 System.Object UIPlayer/<CheckpointDelay>d__10::System.Collections.IEnumerator.get_Current()
+// 0x00000408 System.Object UIPlayer/<CheckpointDelay>d__10::System.Collections.IEnumerator.get_Current()
 extern void U3CCheckpointDelayU3Ed__10_System_Collections_IEnumerator_get_Current_m18C030FE2CFD4FD6D0AC8680D535E5AF1284C8DF (void);
-// 0x00000408 System.Void UIMenu::Start()
+// 0x00000409 System.Void UIMenu::Start()
 extern void UIMenu_Start_mF0E258EFB1FC57BF32C0CB5183688284323BFF13 (void);
-// 0x00000409 System.Void UIMenu::StartGame()
+// 0x0000040A System.Void UIMenu::OnEnable()
+extern void UIMenu_OnEnable_m3C0B029D3DAED07E3359CBCD4A1A68BAAD5E2B1C (void);
+// 0x0000040B System.Void UIMenu::StartGame()
 extern void UIMenu_StartGame_m2CA6A643FB16135901A346BEB561A8927653B5BC (void);
-// 0x0000040A System.Void UIMenu::SettingsMenuActivate()
+// 0x0000040C System.Void UIMenu::SettingsMenuActivate()
 extern void UIMenu_SettingsMenuActivate_m8AB7F3AC1D8212BDC0BFBFB62E918E4F47FC65A3 (void);
-// 0x0000040B System.Void UIMenu::MainMenuActivate()
+// 0x0000040D System.Void UIMenu::MainMenuActivate()
 extern void UIMenu_MainMenuActivate_m301DF1DDE87F7BBA8B1B1B72DF4D3783A108EE49 (void);
-// 0x0000040C System.Void UIMenu::ExitGame()
+// 0x0000040E System.Void UIMenu::ExitGame()
 extern void UIMenu_ExitGame_m18383E2F576D22E8EC179E7E888C5FB267ADB2AB (void);
-// 0x0000040D System.Collections.IEnumerator UIMenu::TweenSongDisplay()
+// 0x0000040F System.Collections.IEnumerator UIMenu::TweenSongDisplay()
 extern void UIMenu_TweenSongDisplay_mCDD35DCFC6CBB49F3EFB0CCC3B2968AE4D2EDBA8 (void);
-// 0x0000040E System.Void UIMenu::.ctor()
+// 0x00000410 System.Void UIMenu::.ctor()
 extern void UIMenu__ctor_m3382AC3B4091E96F32BDC15216F9CE597719BA0B (void);
-// 0x0000040F System.Void UIMenu/<TweenSongDisplay>d__15::.ctor(System.Int32)
-extern void U3CTweenSongDisplayU3Ed__15__ctor_mAD86C931B1D77BA4BAEFA1027FC46C66EA36FB95 (void);
-// 0x00000410 System.Void UIMenu/<TweenSongDisplay>d__15::System.IDisposable.Dispose()
-extern void U3CTweenSongDisplayU3Ed__15_System_IDisposable_Dispose_mFA8457D111CA6E4525D8657A728DFD4DE3FF0F25 (void);
-// 0x00000411 System.Boolean UIMenu/<TweenSongDisplay>d__15::MoveNext()
-extern void U3CTweenSongDisplayU3Ed__15_MoveNext_mAA9A3C8EC75DCA206A90EF98405D4E09D3A1C92E (void);
-// 0x00000412 System.Object UIMenu/<TweenSongDisplay>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CTweenSongDisplayU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m374F229DA8C485C55EC77B0B3F1F46B45A6D6B35 (void);
-// 0x00000413 System.Void UIMenu/<TweenSongDisplay>d__15::System.Collections.IEnumerator.Reset()
-extern void U3CTweenSongDisplayU3Ed__15_System_Collections_IEnumerator_Reset_m1F3F0B01DC3E40027D7B5F7BAFF8C15B1F0D082C (void);
-// 0x00000414 System.Object UIMenu/<TweenSongDisplay>d__15::System.Collections.IEnumerator.get_Current()
-extern void U3CTweenSongDisplayU3Ed__15_System_Collections_IEnumerator_get_Current_m7B7D87546AA8E2937CB69823318E19F7889F000D (void);
-// 0x00000415 System.Single WallRun::get_tilt()
+// 0x00000411 System.Void UIMenu/<TweenSongDisplay>d__16::.ctor(System.Int32)
+extern void U3CTweenSongDisplayU3Ed__16__ctor_mCFCC1FE6F588449D576488BE42D239373B81539E (void);
+// 0x00000412 System.Void UIMenu/<TweenSongDisplay>d__16::System.IDisposable.Dispose()
+extern void U3CTweenSongDisplayU3Ed__16_System_IDisposable_Dispose_mFBF73DA59E646DA79C0F7464A2E279DCAD77F873 (void);
+// 0x00000413 System.Boolean UIMenu/<TweenSongDisplay>d__16::MoveNext()
+extern void U3CTweenSongDisplayU3Ed__16_MoveNext_m8B301E73DD33CEE61E6D9D101576DDADCC5231E6 (void);
+// 0x00000414 System.Object UIMenu/<TweenSongDisplay>d__16::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTweenSongDisplayU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9110D95DE31D4A2D3689A6565A8609F291AF4BA4 (void);
+// 0x00000415 System.Void UIMenu/<TweenSongDisplay>d__16::System.Collections.IEnumerator.Reset()
+extern void U3CTweenSongDisplayU3Ed__16_System_Collections_IEnumerator_Reset_m7F9B9B72502B97DFA27E8730FADDF8642F2D1562 (void);
+// 0x00000416 System.Object UIMenu/<TweenSongDisplay>d__16::System.Collections.IEnumerator.get_Current()
+extern void U3CTweenSongDisplayU3Ed__16_System_Collections_IEnumerator_get_Current_m527057A657864B652A9EAA90976B645BDD5EFEA8 (void);
+// 0x00000417 System.Single WallRun::get_tilt()
 extern void WallRun_get_tilt_m23F64E0D382CD2E96F66BD95E3AC211DFB6AAF73 (void);
-// 0x00000416 System.Void WallRun::set_tilt(System.Single)
+// 0x00000418 System.Void WallRun::set_tilt(System.Single)
 extern void WallRun_set_tilt_mD1AC5B97DD9D3C7811F1C1A8B9CD6543F44AF7C2 (void);
-// 0x00000417 System.Void WallRun::Start()
+// 0x00000419 System.Void WallRun::Start()
 extern void WallRun_Start_mB1BE0101A61D9C26453752052AF9665DDC7853A7 (void);
-// 0x00000418 System.Boolean WallRun::AbleToWallRun()
+// 0x0000041A System.Boolean WallRun::AbleToWallRun()
 extern void WallRun_AbleToWallRun_m198FFB2340907FF8B83140B45762E626CA59F3F4 (void);
-// 0x00000419 System.Void WallRun::CheckWall()
+// 0x0000041B System.Void WallRun::CheckWall()
 extern void WallRun_CheckWall_mD7185F52655D9AD979D2E3AC52756C7FC5265EB5 (void);
-// 0x0000041A System.Void WallRun::Update()
+// 0x0000041C System.Void WallRun::Update()
 extern void WallRun_Update_mD56C6EA78C65AA76F8A639433D9680494F694137 (void);
-// 0x0000041B System.Void WallRun::StartWallRun()
+// 0x0000041D System.Void WallRun::StartWallRun()
 extern void WallRun_StartWallRun_m8646DA307709B4B5CF18DBD260FEB19024F44B68 (void);
-// 0x0000041C System.Void WallRun::StopWallRun()
+// 0x0000041E System.Void WallRun::StopWallRun()
 extern void WallRun_StopWallRun_m2B20FD7630DEE556105987B779D46D571C72A5C7 (void);
-// 0x0000041D System.Void WallRun::.ctor()
+// 0x0000041F System.Void WallRun::.ctor()
 extern void WallRun__ctor_m7977E3AED575D1E62F9B522A6394F0E4356E77AA (void);
-// 0x0000041E System.Void DentedPixel.LeanDummy::.ctor()
+// 0x00000420 System.Void DentedPixel.LeanDummy::.ctor()
 extern void LeanDummy__ctor_mAD97A9FAAAF771BEC38CA22F2CBA2DBA31E609CC (void);
-static Il2CppMethodPointer s_methodPointers[1054] = 
+static Il2CppMethodPointer s_methodPointers[1056] = 
 {
 	LeanAudioStream__ctor_m89A93BBB6C83C4597B0AE6004BBCE393CA574412,
 	LeanAudioStream_OnAudioRead_m635E6EC51B4B3A5E44559194A0FE44767F95DF0B,
@@ -3012,6 +3016,7 @@ static Il2CppMethodPointer s_methodPointers[1054] =
 	NULL,
 	IncreaseGravity_Awake_m2C6447C7CF0CDAE89C80394BF0412C2F0762BE25,
 	IncreaseGravity_FixedUpdate_m71BFFDEF9D86C811DD76B7393302B5081B7AC17F,
+	IncreaseGravity_OnCollisionEnter_mEC3550DF79B0BE807445B71D6D6F7411A0768365,
 	IncreaseGravity__ctor_m54B5C78DFB182B3BEC69DF30455A2A0B69023379,
 	Interactor_Update_m0EF1BA67BC48E4DE264B3774CE44BF7CFAEB39D4,
 	Interactor_FireRaycast_m56FBCE30A8579BC0A6D478F9A387CA5BB8863815,
@@ -3020,12 +3025,12 @@ static Il2CppMethodPointer s_methodPointers[1054] =
 	JumpBoost_OnTriggerEnter_m5303C4D7879D31DDF67C0AE7B1EA180C00636089,
 	JumpBoost_ReEnable_m83BC412DD5A196AE59E1A9F356750CF287A97863,
 	JumpBoost__ctor_m857AB73A57871C56F2FAA62FAF6E00ADAF1E16D6,
-	U3CReEnableU3Ed__9__ctor_mF3FAE17EB14FDD1618AC99DBC912EF4B710F7E5E,
-	U3CReEnableU3Ed__9_System_IDisposable_Dispose_m3C0D04B6FEAC3A9B286EC007E71AAAB124965AED,
-	U3CReEnableU3Ed__9_MoveNext_m013FAE4884F462F9C25B951E30D7D95C0804F9A8,
-	U3CReEnableU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCF18EDFB374BB907680C7B64F547B3BEFCAEE7FE,
-	U3CReEnableU3Ed__9_System_Collections_IEnumerator_Reset_m362DCD9FEC972A71DE7E46BC9BDB7702522EAB96,
-	U3CReEnableU3Ed__9_System_Collections_IEnumerator_get_Current_mFD76140526DAD217A7DD2CCED175E0D22647ABF0,
+	U3CReEnableU3Ed__10__ctor_m40AB980F444B37DD2067C75D8AF683EA2A4A8CA9,
+	U3CReEnableU3Ed__10_System_IDisposable_Dispose_mD06FF90CF81AD97651F1ABA7EC4563ED33665B45,
+	U3CReEnableU3Ed__10_MoveNext_mEE674C8B57ACFC432B30C9A46305A189A7357C17,
+	U3CReEnableU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7A89596781E20A51EB2FB13241E6E275D1DD25AE,
+	U3CReEnableU3Ed__10_System_Collections_IEnumerator_Reset_m1C9A9593831D7377F343A5BBF98ED52F033BFBBD,
+	U3CReEnableU3Ed__10_System_Collections_IEnumerator_get_Current_m7BD6B281A55FC06789FC8A79D6F9115A5B17783C,
 	LoadNextLevel_OnCollisionEnter_m9554D3A987C9ACE574367141C63DB15253F91BB6,
 	LoadNextLevel__ctor_m96DA4E28AC30EBF145C5BA7C974B6DE004F0A07B,
 	MoveCamera_Update_mE6F636B6C3CDBA9DDC6BB61CBEBF6B2AE1A038C4,
@@ -3153,18 +3158,19 @@ static Il2CppMethodPointer s_methodPointers[1054] =
 	U3CCheckpointDelayU3Ed__10_System_Collections_IEnumerator_Reset_mE4EF00B1106774693C21C1DCE7D85A3B2FF604D1,
 	U3CCheckpointDelayU3Ed__10_System_Collections_IEnumerator_get_Current_m18C030FE2CFD4FD6D0AC8680D535E5AF1284C8DF,
 	UIMenu_Start_mF0E258EFB1FC57BF32C0CB5183688284323BFF13,
+	UIMenu_OnEnable_m3C0B029D3DAED07E3359CBCD4A1A68BAAD5E2B1C,
 	UIMenu_StartGame_m2CA6A643FB16135901A346BEB561A8927653B5BC,
 	UIMenu_SettingsMenuActivate_m8AB7F3AC1D8212BDC0BFBFB62E918E4F47FC65A3,
 	UIMenu_MainMenuActivate_m301DF1DDE87F7BBA8B1B1B72DF4D3783A108EE49,
 	UIMenu_ExitGame_m18383E2F576D22E8EC179E7E888C5FB267ADB2AB,
 	UIMenu_TweenSongDisplay_mCDD35DCFC6CBB49F3EFB0CCC3B2968AE4D2EDBA8,
 	UIMenu__ctor_m3382AC3B4091E96F32BDC15216F9CE597719BA0B,
-	U3CTweenSongDisplayU3Ed__15__ctor_mAD86C931B1D77BA4BAEFA1027FC46C66EA36FB95,
-	U3CTweenSongDisplayU3Ed__15_System_IDisposable_Dispose_mFA8457D111CA6E4525D8657A728DFD4DE3FF0F25,
-	U3CTweenSongDisplayU3Ed__15_MoveNext_mAA9A3C8EC75DCA206A90EF98405D4E09D3A1C92E,
-	U3CTweenSongDisplayU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m374F229DA8C485C55EC77B0B3F1F46B45A6D6B35,
-	U3CTweenSongDisplayU3Ed__15_System_Collections_IEnumerator_Reset_m1F3F0B01DC3E40027D7B5F7BAFF8C15B1F0D082C,
-	U3CTweenSongDisplayU3Ed__15_System_Collections_IEnumerator_get_Current_m7B7D87546AA8E2937CB69823318E19F7889F000D,
+	U3CTweenSongDisplayU3Ed__16__ctor_mCFCC1FE6F588449D576488BE42D239373B81539E,
+	U3CTweenSongDisplayU3Ed__16_System_IDisposable_Dispose_mFBF73DA59E646DA79C0F7464A2E279DCAD77F873,
+	U3CTweenSongDisplayU3Ed__16_MoveNext_m8B301E73DD33CEE61E6D9D101576DDADCC5231E6,
+	U3CTweenSongDisplayU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9110D95DE31D4A2D3689A6565A8609F291AF4BA4,
+	U3CTweenSongDisplayU3Ed__16_System_Collections_IEnumerator_Reset_m7F9B9B72502B97DFA27E8730FADDF8642F2D1562,
+	U3CTweenSongDisplayU3Ed__16_System_Collections_IEnumerator_get_Current_m527057A657864B652A9EAA90976B645BDD5EFEA8,
 	WallRun_get_tilt_m23F64E0D382CD2E96F66BD95E3AC211DFB6AAF73,
 	WallRun_set_tilt_mD1AC5B97DD9D3C7811F1C1A8B9CD6543F44AF7C2,
 	WallRun_Start_mB1BE0101A61D9C26453752052AF9665DDC7853A7,
@@ -3180,10 +3186,10 @@ extern void MinMax3D__ctor_mA5308B72E84B28B8BC486DF4EA05AA00C4997ABB_AdjustorThu
 extern void MinMax3D_AddPoint_m84750B49DEC2E739F22AC412F9EB11D24247C127_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
 {
-	{ 0x060003AA, MinMax3D__ctor_mA5308B72E84B28B8BC486DF4EA05AA00C4997ABB_AdjustorThunk },
-	{ 0x060003AB, MinMax3D_AddPoint_m84750B49DEC2E739F22AC412F9EB11D24247C127_AdjustorThunk },
+	{ 0x060003AB, MinMax3D__ctor_mA5308B72E84B28B8BC486DF4EA05AA00C4997ABB_AdjustorThunk },
+	{ 0x060003AC, MinMax3D_AddPoint_m84750B49DEC2E739F22AC412F9EB11D24247C127_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[1054] = 
+static const int32_t s_InvokerIndices[1056] = 
 {
 	4951,
 	4951,
@@ -4076,6 +4082,7 @@ static const int32_t s_InvokerIndices[1054] =
 	0,
 	6211,
 	6211,
+	4951,
 	6211,
 	6211,
 	6211,
@@ -4221,6 +4228,7 @@ static const int32_t s_InvokerIndices[1054] =
 	6211,
 	6211,
 	6211,
+	6211,
 	6085,
 	6211,
 	4923,
@@ -4244,7 +4252,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	1054,
+	1056,
 	s_methodPointers,
 	2,
 	s_adjustorThunks,
