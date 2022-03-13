@@ -8,15 +8,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform orientation;
 
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 6f;
-    [SerializeField] private float movementMultiplier = 10f;
-    [SerializeField] private float wallRunningMultiplier = 20f;
-    [SerializeField] private float airMultiplier = 0.4f;
-    [SerializeField] private float gravity = 9.81f;
+    [SerializeField] private float moveSpeed = 20.0f;
+    [SerializeField] private float movementMultiplier = 10.0f;
+    [SerializeField] private float wallRunningMultiplier = 12.0f;
+    [SerializeField] private float airMultiplier = 0.5f;
+    [SerializeField] private float gravity = 3.0f;
 
     [Header("Camera")]
-    public float sensX;
-    public float sensY;
+    public float sensX = 50.0f;
+    public float sensY = 50.0f;
     [SerializeField] Transform cam;
     float mouseX;
     float mouseY;
@@ -29,20 +29,20 @@ public class PlayerMovement : MonoBehaviour
     public Quaternion TargetRotation { private set; get; }
 
     [Header("Sprinting")]
-    [SerializeField] float walkSpeed = 4f;
-    [SerializeField] float sprintSpeed = 6f;
-    [SerializeField] float acceleration = 10f;
+    [SerializeField] float walkSpeed = 4.0f;
+    [SerializeField] float sprintSpeed = 6.0f;
+    [SerializeField] float acceleration = 10.0f;
 
     [Header("Jumping")]
-    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float jumpForce = 27.0f;
 
     [Header("Keybinds")]
     [SerializeField] KeyCode jumpKey = KeyCode.Space;
     [SerializeField] KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Drag")]
-    [SerializeField] private float groundDrag = 6f;
-    [SerializeField] private float airDrag = 2f;
+    [SerializeField] private float groundDrag = 6.0f;
+    [SerializeField] private float airDrag = 2.0f;
 
     float horizontalMovement;
     float verticalMovement;
@@ -61,13 +61,28 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    private void Awake()
+    {
+        if (!PlayerPrefs.HasKey("playerSensX") || !PlayerPrefs.HasKey("playerSensY"))
+        {
+            PlayerPrefs.SetFloat("playerSensX", 50.0f);
+            PlayerPrefs.SetFloat("playerSensY", 50.0f);
+        }
+
+        sensX = PlayerPrefs.GetFloat("playerSensX");
+        sensY = PlayerPrefs.GetFloat("playerSensY");
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+
         wallRun = GetComponent<WallRun>();
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
         TargetRotation = transform.rotation;
     }
 

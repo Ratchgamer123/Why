@@ -519,6 +519,8 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// UnityEngine.InputSystem.InputActionMap
+struct InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09;
 // System.InvalidOperationException
 struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB;
 // System.Runtime.CompilerServices.IsUnmanagedAttribute
@@ -4564,38 +4566,40 @@ struct DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672  : public RuntimeO
 	DebugActionDescU5BU5D_t4E2759E60EB786DE189B8646D7E7BC5DEACE9703* ___m_DebugActions_11;
 	// UnityEngine.Rendering.DebugActionState[] UnityEngine.Rendering.DebugManager::m_DebugActionStates
 	DebugActionStateU5BU5D_tEDECDC92D0831CE3393A86713996A09454D0B733* ___m_DebugActionStates_12;
+	// UnityEngine.InputSystem.InputActionMap UnityEngine.Rendering.DebugManager::debugActionMap
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* ___debugActionMap_13;
 	// System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Rendering.DebugUI/Panel> UnityEngine.Rendering.DebugManager::m_ReadOnlyPanels
-	ReadOnlyCollection_1_tF0FFDCC1E1E5FFF308EA742DAB59C57038E63299* ___m_ReadOnlyPanels_14;
+	ReadOnlyCollection_1_tF0FFDCC1E1E5FFF308EA742DAB59C57038E63299* ___m_ReadOnlyPanels_15;
 	// System.Collections.Generic.List`1<UnityEngine.Rendering.DebugUI/Panel> UnityEngine.Rendering.DebugManager::m_Panels
-	List_1_t761CB6AB53A1E86522C5172FA0AB1A4E725A013F* ___m_Panels_15;
+	List_1_t761CB6AB53A1E86522C5172FA0AB1A4E725A013F* ___m_Panels_16;
 	// System.Action`1<System.Boolean> UnityEngine.Rendering.DebugManager::onDisplayRuntimeUIChanged
-	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___onDisplayRuntimeUIChanged_16;
+	Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___onDisplayRuntimeUIChanged_17;
 	// System.Action UnityEngine.Rendering.DebugManager::onSetDirty
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___onSetDirty_17;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___onSetDirty_18;
 	// System.Action UnityEngine.Rendering.DebugManager::resetData
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___resetData_18;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___resetData_19;
 	// System.Boolean UnityEngine.Rendering.DebugManager::refreshEditorRequested
-	bool ___refreshEditorRequested_19;
+	bool ___refreshEditorRequested_20;
 	// System.Nullable`1<System.Int32> UnityEngine.Rendering.DebugManager::m_RequestedPanelIndex
-	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___m_RequestedPanelIndex_20;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___m_RequestedPanelIndex_21;
 	// UnityEngine.GameObject UnityEngine.Rendering.DebugManager::m_Root
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_Root_21;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_Root_22;
 	// UnityEngine.Rendering.UI.DebugUIHandlerCanvas UnityEngine.Rendering.DebugManager::m_RootUICanvas
-	DebugUIHandlerCanvas_t42F6FDECA89A5D5F3C1534DC37FABB37E1401209* ___m_RootUICanvas_22;
+	DebugUIHandlerCanvas_t42F6FDECA89A5D5F3C1534DC37FABB37E1401209* ___m_RootUICanvas_23;
 	// UnityEngine.GameObject UnityEngine.Rendering.DebugManager::m_PersistentRoot
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_PersistentRoot_23;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_PersistentRoot_24;
 	// UnityEngine.Rendering.UI.DebugUIHandlerPersistentCanvas UnityEngine.Rendering.DebugManager::m_RootUIPersistentCanvas
-	DebugUIHandlerPersistentCanvas_tC4C96BD52F7E1FF302C31269BB744E0D688FAC2D* ___m_RootUIPersistentCanvas_24;
+	DebugUIHandlerPersistentCanvas_tC4C96BD52F7E1FF302C31269BB744E0D688FAC2D* ___m_RootUIPersistentCanvas_25;
 	// System.Boolean UnityEngine.Rendering.DebugManager::m_EditorOpen
-	bool ___m_EditorOpen_25;
+	bool ___m_EditorOpen_26;
 	// System.Boolean UnityEngine.Rendering.DebugManager::m_EnableRuntimeUI
-	bool ___m_EnableRuntimeUI_26;
+	bool ___m_EnableRuntimeUI_27;
 };
 
 struct DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_StaticFields
 {
 	// System.Lazy`1<UnityEngine.Rendering.DebugManager> UnityEngine.Rendering.DebugManager::s_Instance
-	Lazy_1_t07F21D0B542171B9535B96E3CE293999A8522162* ___s_Instance_13;
+	Lazy_1_t07F21D0B542171B9535B96E3CE293999A8522162* ___s_Instance_14;
 };
 
 // System.Delegate
@@ -23225,7 +23229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RegId_Equals_m42741BC96AB73BD66C8E071FC5
 		L_6 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_5, NULL);
 		NullCheck(L_4);
 		bool L_7;
-		L_7 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(118 /* System.Boolean System.Type::Equals(System.Type) */, L_4, L_6);
+		L_7 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119 /* System.Boolean System.Type::Equals(System.Type) */, L_4, L_6);
 		if (L_7)
 		{
 			goto IL_0022;

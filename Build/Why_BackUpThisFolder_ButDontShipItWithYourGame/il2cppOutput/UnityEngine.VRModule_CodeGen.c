@@ -38,9 +38,11 @@ extern void XRSettings_get_supportedDevices_mEF86DEEEEBBE9CABC4372C707C0A3D6D958
 extern void XRSettings_get_stereoRenderingMode_mB194A58846A080153AC66A75F422600EE1BF1C8C (void);
 // 0x0000000D System.Void UnityEngine.XR.XRSettings::get_eyeTextureDesc_Injected(UnityEngine.RenderTextureDescriptor&)
 extern void XRSettings_get_eyeTextureDesc_Injected_m34E7723D7493113CDE5A18D5C7A9F051E5C9DDC3 (void);
-// 0x0000000E System.Void UnityEngine.XR.XRDevice::InvokeDeviceLoaded(System.String)
+// 0x0000000E System.Void UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
+extern void XRDevice_DisableAutoXRCameraTracking_mDFDDD1D32A4D623A5448533B5E8E02B9536A25DC (void);
+// 0x0000000F System.Void UnityEngine.XR.XRDevice::InvokeDeviceLoaded(System.String)
 extern void XRDevice_InvokeDeviceLoaded_m07DEE6645B38728C7B8615DAAD6BE592C1DC59F9 (void);
-static Il2CppMethodPointer s_methodPointers[14] = 
+static Il2CppMethodPointer s_methodPointers[15] = 
 {
 	XRSettings_get_enabled_m5ECD63DA0B306F7A3FBFD6B67A5B0702F8AEFB54,
 	XRSettings_get_isDeviceActive_m05C0035E5985667632BBE1BD972C611A674039DC,
@@ -55,30 +57,32 @@ static Il2CppMethodPointer s_methodPointers[14] =
 	XRSettings_get_supportedDevices_mEF86DEEEEBBE9CABC4372C707C0A3D6D958E9FAF,
 	XRSettings_get_stereoRenderingMode_mB194A58846A080153AC66A75F422600EE1BF1C8C,
 	XRSettings_get_eyeTextureDesc_Injected_m34E7723D7493113CDE5A18D5C7A9F051E5C9DDC3,
+	XRDevice_DisableAutoXRCameraTracking_mDFDDD1D32A4D623A5448533B5E8E02B9536A25DC,
 	XRDevice_InvokeDeviceLoaded_m07DEE6645B38728C7B8615DAAD6BE592C1DC59F9,
 };
-static const int32_t s_InvokerIndices[14] = 
+static const int32_t s_InvokerIndices[15] = 
 {
-	11074,
-	11074,
-	11078,
-	10340,
-	11048,
-	11048,
-	11071,
-	11078,
-	11078,
-	11055,
-	11055,
-	11048,
-	10324,
-	10332,
+	12918,
+	12918,
+	12986,
+	12132,
+	12946,
+	12946,
+	12977,
+	12986,
+	12986,
+	12954,
+	12954,
+	12946,
+	12113,
+	10703,
+	12125,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule = 
 {
 	"UnityEngine.VRModule.dll",
-	14,
+	15,
 	s_methodPointers,
 	0,
 	NULL,

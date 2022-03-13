@@ -7020,10 +7020,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_spotAngle_m28B2CD7ADE25422693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_innerSpotAngle_mFDCE5C31ABF638A8B515F5088F12225D23D3406C (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Rendering.LensFlareCommonSRP::ShapeAttenuationSpotConeLight(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LensFlareCommonSRP_ShapeAttenuationSpotConeLight_mDE84D26A73023F57D52694A3F8FB6E0B0FB8D138 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___wo1, float ___spotAngle2, float ___innerSpotPercent013, const RuntimeMethod* method) ;
-// System.Int32 UnityEngine.Screen::get_width()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mCA5D955A53CF6D29C8C7118D517D0FC84AE8056C (const RuntimeMethod* method) ;
-// System.Int32 UnityEngine.Screen::get_height()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m624DD2D53F34087064E3B9D09AC2207DB4E86CA8 (const RuntimeMethod* method) ;
 // System.Void System.Func`4<UnityEngine.Light,UnityEngine.Camera,UnityEngine.Vector3,System.Single>::.ctor(System.Object,System.IntPtr)
 inline void Func_4__ctor_mCB654A521C926308B7947FC97B239C5A7847D677 (Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -22489,7 +22485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PostProcessPass_DoLensFlareDatadriven_m7
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_8;
 		L_8 = Matrix4x4_op_Multiply_m7649669D493400913FF60AFB04B1C19F14E0FDB0(L_4, L_7, NULL);
 		V_1 = L_8;
-		// LensFlareCommonSRP.DoLensFlareDataDrivenCommon(m_Materials.lensFlareDataDriven, LensFlareCommonSRP.Instance, camera, (float)Screen.width, (float)Screen.height,
+		// LensFlareCommonSRP.DoLensFlareDataDrivenCommon(m_Materials.lensFlareDataDriven, LensFlareCommonSRP.Instance, camera, (float)m_Descriptor.width, (float)m_Descriptor.height,
 		//     usePanini, paniniDistance, paniniCropToFit,
 		//     true,
 		//     camera.transform.position,
@@ -22507,69 +22503,71 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PostProcessPass_DoLensFlareDatadriven_m7
 		LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135* L_11;
 		L_11 = LensFlareCommonSRP_get_Instance_m9AF4EBE53C341469863DC601A5E7A9AE9C231189(NULL);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_12 = ___camera0;
-		int32_t L_13;
-		L_13 = Screen_get_width_mCA5D955A53CF6D29C8C7118D517D0FC84AE8056C(NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_13 = (&__this->___m_Descriptor_24);
 		int32_t L_14;
-		L_14 = Screen_get_height_m624DD2D53F34087064E3B9D09AC2207DB4E86CA8(NULL);
-		bool L_15 = ___usePanini3;
-		float L_16 = ___paniniDistance4;
-		float L_17 = ___paniniCropToFit5;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_18 = ___camera0;
-		NullCheck(L_18);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
-		L_19 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_18, NULL);
-		NullCheck(L_19);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		L_20 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_19, NULL);
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_21 = V_1;
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_22 = ___cmd1;
-		RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B L_23 = ___source2;
+		L_14 = RenderTextureDescriptor_get_width_mB159E4EB08B23B19CCCFADB465864361FB840BFF_inline(L_13, NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_15 = (&__this->___m_Descriptor_24);
+		int32_t L_16;
+		L_16 = RenderTextureDescriptor_get_height_m1006F9AA45029715C552C8A8C2F102F63D3A91EC_inline(L_15, NULL);
+		bool L_17 = ___usePanini3;
+		float L_18 = ___paniniDistance4;
+		float L_19 = ___paniniCropToFit5;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_20 = ___camera0;
+		NullCheck(L_20);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_20, NULL);
+		NullCheck(L_21);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_21, NULL);
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_23 = V_1;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_24 = ___cmd1;
+		RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B L_25 = ___source2;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var);
-		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_24 = ((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9__67_0_1;
-		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_25 = L_24;
-		G_B1_0 = L_25;
-		G_B1_1 = L_23;
-		G_B1_2 = L_22;
-		G_B1_3 = L_21;
-		G_B1_4 = L_20;
+		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_26 = ((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9__67_0_1;
+		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_27 = L_26;
+		G_B1_0 = L_27;
+		G_B1_1 = L_25;
+		G_B1_2 = L_24;
+		G_B1_3 = L_23;
+		G_B1_4 = L_22;
 		G_B1_5 = 1;
-		G_B1_6 = L_17;
-		G_B1_7 = L_16;
-		G_B1_8 = L_15;
-		G_B1_9 = ((float)L_14);
-		G_B1_10 = ((float)L_13);
+		G_B1_6 = L_19;
+		G_B1_7 = L_18;
+		G_B1_8 = L_17;
+		G_B1_9 = ((float)L_16);
+		G_B1_10 = ((float)L_14);
 		G_B1_11 = L_12;
 		G_B1_12 = L_11;
 		G_B1_13 = L_10;
-		if (L_25)
+		if (L_27)
 		{
-			G_B2_0 = L_25;
-			G_B2_1 = L_23;
-			G_B2_2 = L_22;
-			G_B2_3 = L_21;
-			G_B2_4 = L_20;
+			G_B2_0 = L_27;
+			G_B2_1 = L_25;
+			G_B2_2 = L_24;
+			G_B2_3 = L_23;
+			G_B2_4 = L_22;
 			G_B2_5 = 1;
-			G_B2_6 = L_17;
-			G_B2_7 = L_16;
-			G_B2_8 = L_15;
-			G_B2_9 = ((float)L_14);
-			G_B2_10 = ((float)L_13);
+			G_B2_6 = L_19;
+			G_B2_7 = L_18;
+			G_B2_8 = L_17;
+			G_B2_9 = ((float)L_16);
+			G_B2_10 = ((float)L_14);
 			G_B2_11 = L_12;
 			G_B2_12 = L_11;
 			G_B2_13 = L_10;
-			goto IL_0091;
+			goto IL_009d;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var);
-		U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D* L_26 = ((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9_0;
-		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_27 = (Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE*)il2cpp_codegen_object_new(Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE_il2cpp_TypeInfo_var);
-		NullCheck(L_27);
-		Func_4__ctor_mCB654A521C926308B7947FC97B239C5A7847D677(L_27, L_26, (intptr_t)((void*)U3CU3Ec_U3CDoLensFlareDatadrivenU3Eb__67_0_mFE2B73A17BC04055C9EBE71CBE34B07B93845682_RuntimeMethod_var), NULL);
-		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_28 = L_27;
-		((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9__67_0_1 = L_28;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9__67_0_1), (void*)L_28);
-		G_B2_0 = L_28;
+		U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D* L_28 = ((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_29 = (Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE*)il2cpp_codegen_object_new(Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE_il2cpp_TypeInfo_var);
+		NullCheck(L_29);
+		Func_4__ctor_mCB654A521C926308B7947FC97B239C5A7847D677(L_29, L_28, (intptr_t)((void*)U3CU3Ec_U3CDoLensFlareDatadrivenU3Eb__67_0_mFE2B73A17BC04055C9EBE71CBE34B07B93845682_RuntimeMethod_var), NULL);
+		Func_4_t10E373E09E0663CA58211D9753566AB17B869CFE* L_30 = L_29;
+		((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9__67_0_1 = L_30;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t3284589A02BB4D190E3BABE34DE8A00BACDB390D_il2cpp_TypeInfo_var))->___U3CU3E9__67_0_1), (void*)L_30);
+		G_B2_0 = L_30;
 		G_B2_1 = G_B1_1;
 		G_B2_2 = G_B1_2;
 		G_B2_3 = G_B1_3;
@@ -22585,20 +22583,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PostProcessPass_DoLensFlareDatadriven_m7
 		G_B2_13 = G_B1_13;
 	}
 
-IL_0091:
+IL_009d:
 	{
 		il2cpp_codegen_runtime_class_init_inline(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var);
-		int32_t L_29 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareOcclusionTex_36;
-		int32_t L_30 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareOcclusionIndex_37;
-		int32_t L_31 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareTex_38;
-		int32_t L_32 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareColorValue_39;
-		int32_t L_33 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData0_40;
-		int32_t L_34 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData1_41;
-		int32_t L_35 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData2_42;
-		int32_t L_36 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData3_43;
-		int32_t L_37 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData4_44;
+		int32_t L_31 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareOcclusionTex_36;
+		int32_t L_32 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareOcclusionIndex_37;
+		int32_t L_33 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareTex_38;
+		int32_t L_34 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareColorValue_39;
+		int32_t L_35 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData0_40;
+		int32_t L_36 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData1_41;
+		int32_t L_37 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData2_42;
+		int32_t L_38 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData3_43;
+		int32_t L_39 = ((ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_StaticFields*)il2cpp_codegen_static_fields_for(ShaderConstants_tD0F4CA31162ABAB2DA66CBBD07ED52A4C1CAD3FC_il2cpp_TypeInfo_var))->____FlareData4_44;
 		il2cpp_codegen_runtime_class_init_inline(LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_il2cpp_TypeInfo_var);
-		LensFlareCommonSRP_DoLensFlareDataDrivenCommon_m15611A3C8EC2005E50C2BD5807A996728E27A65E(G_B2_13, G_B2_12, G_B2_11, G_B2_10, G_B2_9, G_B2_8, G_B2_7, G_B2_6, (bool)G_B2_5, G_B2_4, G_B2_3, G_B2_2, G_B2_1, G_B2_0, L_29, L_30, L_31, L_32, L_33, L_34, L_35, L_36, L_37, (bool)0, NULL);
+		LensFlareCommonSRP_DoLensFlareDataDrivenCommon_m15611A3C8EC2005E50C2BD5807A996728E27A65E(G_B2_13, G_B2_12, G_B2_11, G_B2_10, G_B2_9, G_B2_8, G_B2_7, G_B2_6, (bool)G_B2_5, G_B2_4, G_B2_3, G_B2_2, G_B2_1, G_B2_0, L_31, L_32, L_33, L_34, L_35, L_36, L_37, L_38, L_39, (bool)0, NULL);
 		// }
 		return;
 	}

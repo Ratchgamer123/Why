@@ -4,10 +4,12 @@ public class IncreaseGravity : MonoBehaviour
 {
     [SerializeField] private float gravity = 1.0f;
     private Rigidbody rb;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -19,7 +21,7 @@ public class IncreaseGravity : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Metal"))
         {
-            AudioManager.instance.Play("Pling");
+            audioSource.Play();
         }
     }
 }

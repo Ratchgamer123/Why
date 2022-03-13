@@ -7,7 +7,7 @@ Library: lib_burst_generated
 --float-precision=Standard
 --format=Coff
 --disable-warnings=BC1370
---compilation-defines=UNITY_2021_2_13
+--compilation-defines=UNITY_2021_2_15
 --compilation-defines=UNITY_2021_2
 --compilation-defines=UNITY_2021
 --compilation-defines=UNITY_5_3_OR_NEWER
@@ -107,6 +107,7 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_TERRAIN
 --compilation-defines=ENABLE_TILEMAP
 --compilation-defines=ENABLE_TIMELINE
+--compilation-defines=ENABLE_INPUT_SYSTEM
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
@@ -117,6 +118,12 @@ Library: lib_burst_generated
 --compilation-defines=CSHARP_7_3_OR_NEWER
 --compilation-defines=ENABLE_VR_MODULE
 --compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_VR
+--compilation-defines=UNITY_XR_AVAILABLE
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS2D
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_UI
 --compilation-defines=VISUAL_EFFECT_GRAPH_0_0_1_OR_NEWER
 --compilation-defines=ENABLE_BURST_1_0_0_OR_NEWER
 --compilation-defines=USING_ANIMATION_MODULE
@@ -126,6 +133,7 @@ Library: lib_burst_generated
 --compilation-defines=VFX_HAS_UI
 --compilation-defines=VFX_HAS_PHYSICS
 --compilation-defines=VFX_HAS_AUDIO
+--compilation-defines=VFX_HAS_INPUT_SYSTEM_PACKAGE
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=USING_PARTICLE_SYSTEM
 --linker-options=PdbAltPath="Why_Data/Plugins/x86_64"
@@ -134,6 +142,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.Runtime.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
+--root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.InputSystem.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
@@ -173,7 +182,7 @@ Library: lib_burst_generated
 --float-precision=Standard
 --format=Coff
 --disable-warnings=BC1370
---compilation-defines=UNITY_2021_2_13
+--compilation-defines=UNITY_2021_2_15
 --compilation-defines=UNITY_2021_2
 --compilation-defines=UNITY_2021
 --compilation-defines=UNITY_5_3_OR_NEWER
@@ -273,6 +282,7 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_TERRAIN
 --compilation-defines=ENABLE_TILEMAP
 --compilation-defines=ENABLE_TIMELINE
+--compilation-defines=ENABLE_INPUT_SYSTEM
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
@@ -283,6 +293,12 @@ Library: lib_burst_generated
 --compilation-defines=CSHARP_7_3_OR_NEWER
 --compilation-defines=ENABLE_VR_MODULE
 --compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_VR
+--compilation-defines=UNITY_XR_AVAILABLE
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS2D
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_UI
 --compilation-defines=VISUAL_EFFECT_GRAPH_0_0_1_OR_NEWER
 --compilation-defines=ENABLE_BURST_1_0_0_OR_NEWER
 --compilation-defines=USING_ANIMATION_MODULE
@@ -292,6 +308,7 @@ Library: lib_burst_generated
 --compilation-defines=VFX_HAS_UI
 --compilation-defines=VFX_HAS_PHYSICS
 --compilation-defines=VFX_HAS_AUDIO
+--compilation-defines=VFX_HAS_INPUT_SYSTEM_PACKAGE
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=USING_PARTICLE_SYSTEM
 --linker-options=PdbAltPath="Why_Data/Plugins/x86_64"
@@ -300,6 +317,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.Runtime.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
+--root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.InputSystem.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=C:\Users\traut\Desktop\Why\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll

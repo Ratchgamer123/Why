@@ -86,8 +86,8 @@ MonoBehaviour:
     fadeOutSpeed: 2
     source: {fileID: 0}
   - name: End Song
-    audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
-    clip: {fileID: 8300000, guid: 7c3a9a811ff32c948ab647dd75fc3add, type: 3}
+    audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: 9ade861b89ddff1499f8048c113ac80d, type: 3}
     volume: 0.8
     pitch: 1
     loop: 1
@@ -97,6 +97,14 @@ MonoBehaviour:
     audioMixerGroup: {fileID: -5842869878662195588, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
     clip: {fileID: 8300000, guid: 1b757ef9804e4ec478378fe22aa23250, type: 3}
     volume: 0.5
+    pitch: 1
+    loop: 0
+    fadeOutSpeed: 0
+    source: {fileID: 0}
+  - name: Tutorial
+    audioMixerGroup: {fileID: -7883049355424144329, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
+    clip: {fileID: 8300000, guid: 80b117ad79e7a6948b63d1be5bb40bab, type: 3}
+    volume: 0.8
     pitch: 1
     loop: 0
     fadeOutSpeed: 0

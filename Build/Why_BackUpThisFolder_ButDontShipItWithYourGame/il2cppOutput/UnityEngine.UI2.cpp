@@ -1946,8 +1946,10 @@ struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1_StaticFields
 	DisplayU5BU5D_tAD77D7EE2B839E3EDA0D1C0028B64F867F400C7F* ___displays_1;
 	// UnityEngine.Display UnityEngine.Display::_mainDisplay
 	Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1* ____mainDisplay_2;
+	// System.Int32 UnityEngine.Display::m_ActiveEditorGameViewTarget
+	int32_t ___m_ActiveEditorGameViewTarget_3;
 	// UnityEngine.Display/DisplaysUpdatedDelegate UnityEngine.Display::onDisplaysUpdated
-	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_3;
+	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_4;
 };
 
 // System.Exception
@@ -24303,7 +24305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionMethodsCache__ctor_m2BBCC7AC45
 		L_8 = Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E(L_7, NULL);
 		NullCheck(L_8);
 		Type_t* L_9;
-		L_9 = VirtualFuncInvoker0< Type_t* >::Invoke(115 /* System.Type System.Type::MakeByRefType() */, L_8);
+		L_9 = VirtualFuncInvoker0< Type_t* >::Invoke(116 /* System.Type System.Type::MakeByRefType() */, L_8);
 		NullCheck(L_6);
 		ArrayElementTypeCheck (L_6, L_9);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Type_t*)L_9);

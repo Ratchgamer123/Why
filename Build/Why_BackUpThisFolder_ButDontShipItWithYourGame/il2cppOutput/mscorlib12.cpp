@@ -23312,6 +23312,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_GetLastWin32Error_m776667F265
 	using namespace il2cpp::icalls;
 	return ((Marshal_GetLastWin32Error_m776667F265B8ABFFF13E3DD51B1BC5C2B5611F43_ftn)mscorlib::System::Runtime::InteropServices::Marshal::GetLastWin32Error) ();
 }
+// System.IntPtr System.Runtime.InteropServices.Marshal::OffsetOf(System.Type,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Marshal_OffsetOf_m18403C1BC5214CE346F6B10041CC917739F2E85B (Type_t* ___t0, String_t* ___fieldName1, const RuntimeMethod* method) 
+{
+	typedef intptr_t (*Marshal_OffsetOf_m18403C1BC5214CE346F6B10041CC917739F2E85B_ftn) (Type_t*, String_t*);
+	using namespace il2cpp::icalls;
+	return ((Marshal_OffsetOf_m18403C1BC5214CE346F6B10041CC917739F2E85B_ftn)mscorlib::System::Runtime::InteropServices::Marshal::OffsetOf) (___t0, ___fieldName1);
+}
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringUni(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Marshal_PtrToStringUni_mF41EF665A667CEC0DD58A4197C2ECED5962A0565 (intptr_t ___ptr0, int32_t ___len1, const RuntimeMethod* method) 
+{
+	typedef String_t* (*Marshal_PtrToStringUni_mF41EF665A667CEC0DD58A4197C2ECED5962A0565_ftn) (intptr_t, int32_t);
+	using namespace il2cpp::icalls;
+	return ((Marshal_PtrToStringUni_mF41EF665A667CEC0DD58A4197C2ECED5962A0565_ftn)mscorlib::System::Runtime::InteropServices::Marshal::PtrToStringUni_mscorlib_System_String_mscorlib_System_IntPtr_mscorlib_System_Int32) (___ptr0, ___len1);
+}
+// System.Object System.Runtime.InteropServices.Marshal::PtrToStructure(System.IntPtr,System.Type)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Marshal_PtrToStructure_m925D16041CB6ECE051D6D4B15CCCF5BD46561D34 (intptr_t ___ptr0, Type_t* ___structureType1, const RuntimeMethod* method) 
+{
+	typedef RuntimeObject* (*Marshal_PtrToStructure_m925D16041CB6ECE051D6D4B15CCCF5BD46561D34_ftn) (intptr_t, Type_t*);
+	using namespace il2cpp::icalls;
+	return ((Marshal_PtrToStructure_m925D16041CB6ECE051D6D4B15CCCF5BD46561D34_ftn)mscorlib::System::Runtime::InteropServices::Marshal::PtrToStructure) (___ptr0, ___structureType1);
+}
 // System.Int32 System.Runtime.InteropServices.Marshal::ReleaseInternal(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_ReleaseInternal_mCC01796391CFC584D7CF60DD44DE9151CF11A27F (intptr_t ___pUnk0, const RuntimeMethod* method) 
 {

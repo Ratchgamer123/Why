@@ -27377,176 +27377,214 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LightCookieManager_GetLightCookieShad
 {
 	{
 		int32_t L_0 = ___cookieFormat0;
-		if ((((int32_t)L_0) > ((int32_t)((int32_t)25))))
+		if ((((int32_t)L_0) > ((int32_t)((int32_t)29))))
 		{
-			goto IL_0036;
+			goto IL_0041;
 		}
 	}
 	{
 		int32_t L_1 = ___cookieFormat0;
-		if ((((int32_t)L_1) > ((int32_t)((int32_t)9))))
+		if ((((int32_t)L_1) > ((int32_t)((int32_t)13))))
 		{
-			goto IL_0019;
+			goto IL_0024;
 		}
 	}
 	{
 		int32_t L_2 = ___cookieFormat0;
-		if ((((int32_t)L_2) == ((int32_t)1)))
+		if ((((int32_t)L_2) > ((int32_t)5)))
 		{
-			goto IL_006d;
+			goto IL_0018;
 		}
 	}
 	{
 		int32_t L_3 = ___cookieFormat0;
-		if ((((int32_t)L_3) == ((int32_t)5)))
+		if ((((int32_t)L_3) == ((int32_t)1)))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
 		int32_t L_4 = ___cookieFormat0;
-		if ((((int32_t)L_4) == ((int32_t)((int32_t)9))))
+		if ((((int32_t)L_4) == ((int32_t)5)))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
-		goto IL_0069;
+		goto IL_0084;
 	}
 
-IL_0019:
+IL_0018:
 	{
 		int32_t L_5 = ___cookieFormat0;
-		if ((((int32_t)L_5) > ((int32_t)((int32_t)17))))
+		if ((((int32_t)L_5) == ((int32_t)((int32_t)9))))
 		{
-			goto IL_002a;
+			goto IL_0088;
 		}
 	}
 	{
 		int32_t L_6 = ___cookieFormat0;
 		if ((((int32_t)L_6) == ((int32_t)((int32_t)13))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
-		int32_t L_7 = ___cookieFormat0;
-		if ((((int32_t)L_7) == ((int32_t)((int32_t)17))))
-		{
-			goto IL_006d;
-		}
-	}
-	{
-		goto IL_0069;
+		goto IL_0084;
 	}
 
-IL_002a:
+IL_0024:
+	{
+		int32_t L_7 = ___cookieFormat0;
+		if ((((int32_t)L_7) > ((int32_t)((int32_t)21))))
+		{
+			goto IL_0035;
+		}
+	}
 	{
 		int32_t L_8 = ___cookieFormat0;
-		if ((((int32_t)L_8) == ((int32_t)((int32_t)21))))
+		if ((((int32_t)L_8) == ((int32_t)((int32_t)17))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
 		int32_t L_9 = ___cookieFormat0;
-		if ((((int32_t)L_9) == ((int32_t)((int32_t)25))))
+		if ((((int32_t)L_9) == ((int32_t)((int32_t)21))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
-		goto IL_0069;
+		goto IL_0084;
 	}
 
-IL_0036:
+IL_0035:
 	{
 		int32_t L_10 = ___cookieFormat0;
-		if ((((int32_t)L_10) > ((int32_t)((int32_t)37))))
+		if ((((int32_t)L_10) == ((int32_t)((int32_t)25))))
 		{
-			goto IL_004c;
+			goto IL_0088;
 		}
 	}
 	{
 		int32_t L_11 = ___cookieFormat0;
 		if ((((int32_t)L_11) == ((int32_t)((int32_t)29))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
+		goto IL_0084;
+	}
+
+IL_0041:
+	{
 		int32_t L_12 = ___cookieFormat0;
-		if ((((int32_t)L_12) == ((int32_t)((int32_t)33))))
+		if ((((int32_t)L_12) > ((int32_t)((int32_t)45))))
 		{
-			goto IL_006d;
+			goto IL_0063;
 		}
 	}
 	{
 		int32_t L_13 = ___cookieFormat0;
-		if ((((int32_t)L_13) == ((int32_t)((int32_t)37))))
+		if ((((int32_t)L_13) > ((int32_t)((int32_t)37))))
 		{
-			goto IL_006d;
+			goto IL_0057;
 		}
 	}
 	{
-		goto IL_0069;
-	}
-
-IL_004c:
-	{
 		int32_t L_14 = ___cookieFormat0;
-		if ((((int32_t)L_14) > ((int32_t)((int32_t)45))))
+		if ((((int32_t)L_14) == ((int32_t)((int32_t)33))))
 		{
-			goto IL_005d;
+			goto IL_0088;
 		}
 	}
 	{
 		int32_t L_15 = ___cookieFormat0;
-		if ((((int32_t)L_15) == ((int32_t)((int32_t)41))))
+		if ((((int32_t)L_15) == ((int32_t)((int32_t)37))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
+	{
+		goto IL_0084;
+	}
+
+IL_0057:
 	{
 		int32_t L_16 = ___cookieFormat0;
-		if ((((int32_t)L_16) == ((int32_t)((int32_t)45))))
+		if ((((int32_t)L_16) == ((int32_t)((int32_t)41))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
-	{
-		goto IL_0069;
-	}
-
-IL_005d:
 	{
 		int32_t L_17 = ___cookieFormat0;
-		if ((((int32_t)L_17) == ((int32_t)((int32_t)49))))
+		if ((((int32_t)L_17) == ((int32_t)((int32_t)45))))
 		{
-			goto IL_006d;
+			goto IL_0088;
 		}
 	}
 	{
+		goto IL_0084;
+	}
+
+IL_0063:
+	{
 		int32_t L_18 = ___cookieFormat0;
-		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_18, ((int32_t)54)))) > ((uint32_t)1))))
+		if ((((int32_t)L_18) > ((int32_t)((int32_t)55))))
 		{
-			goto IL_006b;
+			goto IL_0076;
+		}
+	}
+	{
+		int32_t L_19 = ___cookieFormat0;
+		if ((((int32_t)L_19) == ((int32_t)((int32_t)49))))
+		{
+			goto IL_0088;
+		}
+	}
+	{
+		int32_t L_20 = ___cookieFormat0;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_20, ((int32_t)54)))) > ((uint32_t)1))))
+		{
+			goto IL_0086;
+		}
+	}
+	{
+		goto IL_0084;
+	}
+
+IL_0076:
+	{
+		int32_t L_21 = ___cookieFormat0;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_21, ((int32_t)102)))) > ((uint32_t)1))))
+		{
+			goto IL_0088;
+		}
+	}
+	{
+		int32_t L_22 = ___cookieFormat0;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_22, ((int32_t)125)))) > ((uint32_t)1))))
+		{
+			goto IL_0088;
 		}
 	}
 
-IL_0069:
+IL_0084:
 	{
 		// return LightCookieShaderFormat.RGB;
 		return (int32_t)(0);
 	}
 
-IL_006b:
+IL_0086:
 	{
 		// return LightCookieShaderFormat.Alpha;
 		return (int32_t)(1);
 	}
 
-IL_006d:
+IL_0088:
 	{
 		// return LightCookieShaderFormat.Red;
 		return (int32_t)(2);

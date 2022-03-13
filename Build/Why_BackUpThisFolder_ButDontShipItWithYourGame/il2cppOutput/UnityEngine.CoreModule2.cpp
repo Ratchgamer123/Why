@@ -7672,6 +7672,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scene_get_handle_mD508BE60333C6168610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_GetGUIDInternal_m1DA39B5EF478252E8A0209D46C810224189C8B44 (int32_t ___sceneHandle0, const RuntimeMethod* method) ;
 // System.String UnityEngine.SceneManagement.Scene::get_guid()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_guid_mEE1C703309E655EC872D220476DD2BA014D8354A (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_GetNameInternal_mE63A0808247C49C804EF5D72558C78ED32802DD3 (int32_t ___sceneHandle0, const RuntimeMethod* method) ;
+// System.String UnityEngine.SceneManagement.Scene::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scene_GetBuildIndexInternal_mE6E8F796728DEF0CCC34B5E45068F0C834089E28 (int32_t ___sceneHandle0, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.SceneManagement.Scene::get_buildIndex()
@@ -8013,6 +8017,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsFence_IsFencePending_mA9B88D1202
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162 (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* __this, String_t* ___message0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rendering.GraphicsFence::Validate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsFence_Validate_mE09A4DB729307FA7D8ADD9BD2BA1248EF503096E (GraphicsFence_t199180163AEDE0C1BE868F8E1314A47610B1FABB* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.GraphicsTier UnityEngine.Graphics::get_activeTier()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Graphics_get_activeTier_mA8C81CAAB252CBE28EE2564433CD9CAEEF6BF286 (const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Rendering.GraphicsSettings::HasShaderDefine(UnityEngine.Rendering.GraphicsTier,UnityEngine.Rendering.BuiltinShaderDefine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsSettings_HasShaderDefine_m125C48BBDFECED0B7797F733B09E9F6B63425236 (int32_t ___tier0, int32_t ___defineHash1, const RuntimeMethod* method) ;
 // UnityEngine.ScriptableObject UnityEngine.Rendering.GraphicsSettings::get_INTERNAL_currentRenderPipeline()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* GraphicsSettings_get_INTERNAL_currentRenderPipeline_mF43747DB6BEF3FA857B83CD21A543F94F33BDF82 (const RuntimeMethod* method) ;
 // UnityEngine.Rendering.RenderPipelineAsset UnityEngine.Rendering.GraphicsSettings::get_defaultRenderPipeline()
@@ -16323,7 +16331,7 @@ IL_003b:
 		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t*)L_17);
 		NullCheck(L_14);
 		Type_t* L_18;
-		L_18 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(116 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_14, L_16);
+		L_18 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(117 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_14, L_16);
 		V_2 = L_18;
 		Type_t* L_19 = V_2;
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_20 = (TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*)(TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*)SZArrayNew(TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB_il2cpp_TypeInfo_var, (uint32_t)3);
@@ -17553,7 +17561,7 @@ IL_0088:
 		Type_t* L_32 = ___objectType0;
 		NullCheck(L_32);
 		Type_t* L_33;
-		L_33 = VirtualFuncInvoker0< Type_t* >::Invoke(106 /* System.Type System.Type::get_BaseType() */, L_32);
+		L_33 = VirtualFuncInvoker0< Type_t* >::Invoke(107 /* System.Type System.Type::get_BaseType() */, L_32);
 		___objectType0 = L_33;
 	}
 
@@ -18117,6 +18125,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovedFromAttribute__ctor_mFDCCBD975A9BCC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.String UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_GetNameInternal_mE63A0808247C49C804EF5D72558C78ED32802DD3 (int32_t ___sceneHandle0, const RuntimeMethod* method) 
+{
+	typedef String_t* (*Scene_GetNameInternal_mE63A0808247C49C804EF5D72558C78ED32802DD3_ftn) (int32_t);
+	static Scene_GetNameInternal_mE63A0808247C49C804EF5D72558C78ED32802DD3_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Scene_GetNameInternal_mE63A0808247C49C804EF5D72558C78ED32802DD3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)");
+	String_t* icallRetVal = _il2cpp_icall_func(___sceneHandle0);
+	return icallRetVal;
+}
 // System.String UnityEngine.SceneManagement.Scene::GetGUIDInternal(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_GetGUIDInternal_m1DA39B5EF478252E8A0209D46C810224189C8B44 (int32_t ___sceneHandle0, const RuntimeMethod* method) 
 {
@@ -18188,6 +18206,34 @@ IL2CPP_EXTERN_C  String_t* Scene_get_guid_mEE1C703309E655EC872D220476DD2BA014D83
 	_thisAdjusted = reinterpret_cast<Scene_tA1DC762B79745EB5140F054C884855B922318356*>(__this + _offset);
 	String_t* _returnValue;
 	_returnValue = Scene_get_guid_mEE1C703309E655EC872D220476DD2BA014D8354A(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.String UnityEngine.SceneManagement.Scene::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) 
+{
+	String_t* V_0 = NULL;
+	{
+		int32_t L_0;
+		L_0 = Scene_get_handle_mD508BE60333C6168610E12CECAB12E9B11C25E53(__this, NULL);
+		String_t* L_1;
+		L_1 = Scene_GetNameInternal_mE63A0808247C49C804EF5D72558C78ED32802DD3(L_0, NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		String_t* L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C  String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	Scene_tA1DC762B79745EB5140F054C884855B922318356* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<Scene_tA1DC762B79745EB5140F054C884855B922318356*>(__this + _offset);
+	String_t* _returnValue;
+	_returnValue = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C(_thisAdjusted, method);
 	return _returnValue;
 }
 // System.Int32 UnityEngine.SceneManagement.Scene::get_buildIndex()
@@ -23459,6 +23505,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsSettings_HasShaderDefine_m125C48
 	_il2cpp_icall_func = (GraphicsSettings_HasShaderDefine_m125C48BBDFECED0B7797F733B09E9F6B63425236_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rendering.GraphicsSettings::HasShaderDefine(UnityEngine.Rendering.GraphicsTier,UnityEngine.Rendering.BuiltinShaderDefine)");
 	bool icallRetVal = _il2cpp_icall_func(___tier0, ___defineHash1);
 	return icallRetVal;
+}
+// System.Boolean UnityEngine.Rendering.GraphicsSettings::HasShaderDefine(UnityEngine.Rendering.BuiltinShaderDefine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsSettings_HasShaderDefine_m76089D569F267AAA6FDAD59193AC5987CDD8FCBF (int32_t ___defineHash0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
+		int32_t L_0;
+		L_0 = Graphics_get_activeTier_mA8C81CAAB252CBE28EE2564433CD9CAEEF6BF286(NULL);
+		int32_t L_1 = ___defineHash0;
+		bool L_2;
+		L_2 = GraphicsSettings_HasShaderDefine_m125C48BBDFECED0B7797F733B09E9F6B63425236(L_0, L_1, NULL);
+		V_0 = L_2;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
 }
 // UnityEngine.ScriptableObject UnityEngine.Rendering.GraphicsSettings::get_INTERNAL_currentRenderPipeline()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* GraphicsSettings_get_INTERNAL_currentRenderPipeline_mF43747DB6BEF3FA857B83CD21A543F94F33BDF82 (const RuntimeMethod* method) 

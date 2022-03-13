@@ -2154,8 +2154,10 @@ struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1_StaticFields
 	DisplayU5BU5D_tAD77D7EE2B839E3EDA0D1C0028B64F867F400C7F* ___displays_1;
 	// UnityEngine.Display UnityEngine.Display::_mainDisplay
 	Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1* ____mainDisplay_2;
+	// System.Int32 UnityEngine.Display::m_ActiveEditorGameViewTarget
+	int32_t ___m_ActiveEditorGameViewTarget_3;
 	// UnityEngine.Display/DisplaysUpdatedDelegate UnityEngine.Display::onDisplaysUpdated
-	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_3;
+	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_4;
 };
 
 // UnityEngine.Event

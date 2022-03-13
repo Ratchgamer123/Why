@@ -1005,6 +1005,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_sizeDelta_mC9A980EA603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C (Delegate_t* ___a0, Delegate_t* ___b1, const RuntimeMethod* method) ;
 // System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m40506877934EC1AD4ADAE57F5E97AF0BC0F96116 (Delegate_t* ___source0, Delegate_t* ___value1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Canvas::get_pixelRect_Injected(UnityEngine.Rect&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_get_pixelRect_Injected_mB3A2018CC6C5B1C25336D4277CBAC66C415EC432 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Canvas::get_renderingDisplaySize_Injected(UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_get_renderingDisplaySize_Injected_m38178534B7A5DF0A60E47EDD92583476C6FBBB84 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Canvas::SendPreWillRenderCanvases()
@@ -1082,6 +1084,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CanvasGroup_get_interactable_mE5EE5E3AFE
 	_il2cpp_icall_func = (CanvasGroup_get_interactable_mE5EE5E3AFEAD06D18E15A91C0A0E706D9FE40F76_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CanvasGroup::get_interactable()");
 	bool icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
+}
+// System.Void UnityEngine.CanvasGroup::set_interactable(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757 (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_ftn) (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094*, bool);
+	static CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CanvasGroup::set_interactable(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Boolean UnityEngine.CanvasGroup::get_blocksRaycasts()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CanvasGroup_get_blocksRaycasts_mFEC4D16E66CD2480692CC66CF79FCA06DBF0307C (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* __this, const RuntimeMethod* method) 
@@ -2521,6 +2532,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Canvas_get_isRootCanvas_m57410F800ED6E96
 	bool icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
 }
+// UnityEngine.Rect UnityEngine.Canvas::get_pixelRect()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D Canvas_get_pixelRect_m6093115759D4B39B4076AFE44F7ECC886B1F6C9F (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, const RuntimeMethod* method) 
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Canvas_get_pixelRect_Injected_mB3A2018CC6C5B1C25336D4277CBAC66C415EC432(__this, (&V_0), NULL);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_0 = V_0;
+		return L_0;
+	}
+}
 // System.Single UnityEngine.Canvas::get_scaleFactor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Canvas_get_scaleFactor_m6B8D694A68376EE5E13D9B0B0F037E2E90C99921 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, const RuntimeMethod* method) 
 {
@@ -3000,6 +3022,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas__ctor_mED11565079AACEF05FCB42C088
 		Behaviour__ctor_m00422B6EFEA829BCB116D715E74F1EAD2CB6F4F8(__this, NULL);
 		return;
 	}
+}
+// System.Void UnityEngine.Canvas::get_pixelRect_Injected(UnityEngine.Rect&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_get_pixelRect_Injected_mB3A2018CC6C5B1C25336D4277CBAC66C415EC432 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___ret0, const RuntimeMethod* method) 
+{
+	typedef void (*Canvas_get_pixelRect_Injected_mB3A2018CC6C5B1C25336D4277CBAC66C415EC432_ftn) (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26*, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D*);
+	static Canvas_get_pixelRect_Injected_mB3A2018CC6C5B1C25336D4277CBAC66C415EC432_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Canvas_get_pixelRect_Injected_mB3A2018CC6C5B1C25336D4277CBAC66C415EC432_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Canvas::get_pixelRect_Injected(UnityEngine.Rect&)");
+	_il2cpp_icall_func(__this, ___ret0);
 }
 // System.Void UnityEngine.Canvas::get_renderingDisplaySize_Injected(UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_get_renderingDisplaySize_Injected_m38178534B7A5DF0A60E47EDD92583476C6FBBB84 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___ret0, const RuntimeMethod* method) 

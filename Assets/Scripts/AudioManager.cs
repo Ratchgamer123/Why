@@ -69,6 +69,8 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning($"Sound {name} konnte nicht gefunden werden!");
         }
 
+        float buffer = s.source.volume;
+
         while (s.source.volume > 0.001f)
         {
             s.source.volume = Mathf.Lerp(s.source.volume, 0.0f, s.fadeOutSpeed * Time.deltaTime);
@@ -76,6 +78,7 @@ public class AudioManager : MonoBehaviour
         }
 
         s.source.Stop();
+        s.source.volume = buffer;
     }
 }
 

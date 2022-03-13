@@ -315,8 +315,10 @@ struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1_StaticFields
 	DisplayU5BU5D_tAD77D7EE2B839E3EDA0D1C0028B64F867F400C7F* ___displays_1;
 	// UnityEngine.Display UnityEngine.Display::_mainDisplay
 	Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1* ____mainDisplay_2;
+	// System.Int32 UnityEngine.Display::m_ActiveEditorGameViewTarget
+	int32_t ___m_ActiveEditorGameViewTarget_3;
 	// UnityEngine.Display/DisplaysUpdatedDelegate UnityEngine.Display::onDisplaysUpdated
-	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_3;
+	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_4;
 };
 
 // UnityEngine.Object
@@ -621,8 +623,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_GetTouch_Injected_m5779DCAC4D6055BF7641FE4862B7A7AE383BD44F (int32_t ___index0, Touch_t03E51455ED508492B3F278903A0114FA0E87B417* ___ret1, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKeyInt(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyInt_m0F87DE11F4454B68013997B42EDF48F62017AAE7 (int32_t ___key0, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Input::GetKeyUpInt(UnityEngine.KeyCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUpInt_m9664F1A968B8836CEFD7D4181C0A1A485F55BF87 (int32_t ___key0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKeyDownInt(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDownInt_mC1E7FE249B6CAEE7CC24EFBD783565A45251A284 (int32_t ___key0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Input::get_mousePosition_Injected(UnityEngine.Vector3&)
@@ -1193,16 +1193,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyInt_m0F87DE11F4454B68013997B
 	bool icallRetVal = _il2cpp_icall_func(___key0);
 	return icallRetVal;
 }
-// System.Boolean UnityEngine.Input::GetKeyUpInt(UnityEngine.KeyCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUpInt_m9664F1A968B8836CEFD7D4181C0A1A485F55BF87 (int32_t ___key0, const RuntimeMethod* method) 
-{
-	typedef bool (*Input_GetKeyUpInt_m9664F1A968B8836CEFD7D4181C0A1A485F55BF87_ftn) (int32_t);
-	static Input_GetKeyUpInt_m9664F1A968B8836CEFD7D4181C0A1A485F55BF87_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Input_GetKeyUpInt_m9664F1A968B8836CEFD7D4181C0A1A485F55BF87_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetKeyUpInt(UnityEngine.KeyCode)");
-	bool icallRetVal = _il2cpp_icall_func(___key0);
-	return icallRetVal;
-}
 // System.Boolean UnityEngine.Input::GetKeyDownInt(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDownInt_mC1E7FE249B6CAEE7CC24EFBD783565A45251A284 (int32_t ___key0, const RuntimeMethod* method) 
 {
@@ -1250,16 +1240,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButtonDown_m0419DAA8F0BB0FF6C04
 	static Input_GetButtonDown_m0419DAA8F0BB0FF6C040248A74BED52DB0A44677_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Input_GetButtonDown_m0419DAA8F0BB0FF6C040248A74BED52DB0A44677_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetButtonDown(System.String)");
-	bool icallRetVal = _il2cpp_icall_func(___buttonName0);
-	return icallRetVal;
-}
-// System.Boolean UnityEngine.Input::GetButtonUp(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButtonUp_m65D9F89AC7456225E812704283D5EF84C852F724 (String_t* ___buttonName0, const RuntimeMethod* method) 
-{
-	typedef bool (*Input_GetButtonUp_m65D9F89AC7456225E812704283D5EF84C852F724_ftn) (String_t*);
-	static Input_GetButtonUp_m65D9F89AC7456225E812704283D5EF84C852F724_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Input_GetButtonUp_m65D9F89AC7456225E812704283D5EF84C852F724_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetButtonUp(System.String)");
 	bool icallRetVal = _il2cpp_icall_func(___buttonName0);
 	return icallRetVal;
 }
@@ -1313,24 +1293,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_m0BF0499CADC378F02B6BEE2399
 		int32_t L_0 = ___key0;
 		bool L_1;
 		L_1 = Input_GetKeyInt_m0F87DE11F4454B68013997B42EDF48F62017AAE7(L_0, NULL);
-		V_0 = L_1;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		bool L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Boolean UnityEngine.Input::GetKeyUp(UnityEngine.KeyCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUp_m4A66DE48A7B1B25374D4FDD31208EFE43C972842 (int32_t ___key0, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	{
-		int32_t L_0 = ___key0;
-		bool L_1;
-		L_1 = Input_GetKeyUpInt_m9664F1A968B8836CEFD7D4181C0A1A485F55BF87(L_0, NULL);
 		V_0 = L_1;
 		goto IL_000a;
 	}

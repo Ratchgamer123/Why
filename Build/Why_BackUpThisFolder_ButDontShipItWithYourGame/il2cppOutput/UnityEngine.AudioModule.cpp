@@ -3172,6 +3172,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioMixer_SetFloat_m4789959013BE79E4F84
 	bool icallRetVal = _il2cpp_icall_func(__this, ___name0, ___value1);
 	return icallRetVal;
 }
+// System.Boolean UnityEngine.Audio.AudioMixer::GetFloat(System.String,System.Single&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioMixer_GetFloat_mAED8D277AD30D0346292555CBF81D8961117AEC9 (AudioMixer_tE2E8D79241711CDF9AB428C7FB96A35D80E40B04* __this, String_t* ___name0, float* ___value1, const RuntimeMethod* method) 
+{
+	typedef bool (*AudioMixer_GetFloat_mAED8D277AD30D0346292555CBF81D8961117AEC9_ftn) (AudioMixer_tE2E8D79241711CDF9AB428C7FB96A35D80E40B04*, String_t*, float*);
+	static AudioMixer_GetFloat_mAED8D277AD30D0346292555CBF81D8961117AEC9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioMixer_GetFloat_mAED8D277AD30D0346292555CBF81D8961117AEC9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Audio.AudioMixer::GetFloat(System.String,System.Single&)");
+	bool icallRetVal = _il2cpp_icall_func(__this, ___name0, ___value1);
+	return icallRetVal;
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -3839,8 +3839,10 @@ struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1_StaticFields
 	DisplayU5BU5D_tAD77D7EE2B839E3EDA0D1C0028B64F867F400C7F* ___displays_1;
 	// UnityEngine.Display UnityEngine.Display::_mainDisplay
 	Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1* ____mainDisplay_2;
+	// System.Int32 UnityEngine.Display::m_ActiveEditorGameViewTarget
+	int32_t ___m_ActiveEditorGameViewTarget_3;
 	// UnityEngine.Display/DisplaysUpdatedDelegate UnityEngine.Display::onDisplaysUpdated
-	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_3;
+	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated_4;
 };
 
 // UnityEngine.UIElements.DropdownMenuEventInfo
@@ -8788,6 +8790,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_IsContainerCapturingTheMo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_IsLocalEvent_m1AB8B062156716F034B30C60FDDC4B2EC83E9E0D (IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* __this, EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* ___evt0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.UIElements.IMGUIContainer::IsEventInsideLocalWindow(UnityEngine.UIElements.EventBase)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_IsEventInsideLocalWindow_m38CAC057F08045A52782654EDC5FA92A6F6CBF6E (IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* __this, EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* ___evt0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.UIElements.IMGUIContainer::IsDockAreaMouseUp(UnityEngine.UIElements.EventBase)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_IsDockAreaMouseUp_mF3C63B14767C73AF533A72BB23E3E639CB829145 (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* ___evt0, const RuntimeMethod* method) ;
 // UnityEngine.UIElements.PointerDispatchState UnityEngine.UIElements.EventDispatcher::get_pointerState()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PointerDispatchState_t145BB8BB02690F87487325596E690295E39A383A* EventDispatcher_get_pointerState_mC4FD7936160D687BC2370EDAF719E295BCB85B80_inline (EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* __this, const RuntimeMethod* method) ;
 // UnityEngine.UIElements.IEventHandler UnityEngine.UIElements.PointerDispatchState::GetCapturingElement(System.Int32)
@@ -21438,7 +21442,7 @@ IL_0023:
 		L_8 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_7, NULL);
 		NullCheck(L_8);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_9;
-		L_9 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(108 /* System.Type[] System.Type::GetInterfaces() */, L_8);
+		L_9 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(109 /* System.Type[] System.Type::GetInterfaces() */, L_8);
 		V_5 = L_9;
 		V_6 = 0;
 		goto IL_0077;
@@ -24282,14 +24286,20 @@ IL_0046:
 // System.Boolean UnityEngine.UIElements.IMGUIContainer::VerifyBounds(UnityEngine.UIElements.EventBase)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_VerifyBounds_mE7304B71C46FC2C54766E1D1D98BA3EAB17309B3 (IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* __this, EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* ___evt0, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
 	bool V_0 = false;
-	int32_t G_B4_0 = 0;
+	int32_t G_B5_0 = 0;
 	{
 		bool L_0;
 		L_0 = IMGUIContainer_IsContainerCapturingTheMouse_mA737CB964462D5E5D6BD911AA2AAC79A6F470A0D(__this, NULL);
 		if (L_0)
 		{
-			goto IL_001b;
+			goto IL_0023;
 		}
 	}
 	{
@@ -24298,32 +24308,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_VerifyBounds_mE7304B71C46
 		L_2 = IMGUIContainer_IsLocalEvent_m1AB8B062156716F034B30C60FDDC4B2EC83E9E0D(__this, L_1, NULL);
 		if (!L_2)
 		{
-			goto IL_001b;
+			goto IL_0023;
 		}
 	}
 	{
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_3 = ___evt0;
 		bool L_4;
 		L_4 = IMGUIContainer_IsEventInsideLocalWindow_m38CAC057F08045A52782654EDC5FA92A6F6CBF6E(__this, L_3, NULL);
-		G_B4_0 = ((int32_t)(L_4));
-		goto IL_001c;
+		if (L_4)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_5 = ___evt0;
+		il2cpp_codegen_runtime_class_init_inline(IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = IMGUIContainer_IsDockAreaMouseUp_mF3C63B14767C73AF533A72BB23E3E639CB829145(L_5, NULL);
+		G_B5_0 = ((int32_t)(L_6));
+		goto IL_0024;
 	}
 
-IL_001b:
+IL_0023:
 	{
-		G_B4_0 = 1;
+		G_B5_0 = 1;
 	}
 
-IL_001c:
+IL_0024:
 	{
-		V_0 = (bool)G_B4_0;
-		goto IL_001f;
+		V_0 = (bool)G_B5_0;
+		goto IL_0027;
 	}
 
-IL_001f:
+IL_0027:
 	{
-		bool L_5 = V_0;
-		return L_5;
+		bool L_7 = V_0;
+		return L_7;
 	}
 }
 // System.Boolean UnityEngine.UIElements.IMGUIContainer::IsContainerCapturingTheMouse()
@@ -24609,6 +24629,98 @@ IL_0047:
 	{
 		bool L_15 = V_3;
 		return L_15;
+	}
+}
+// System.Boolean UnityEngine.UIElements.IMGUIContainer::IsDockAreaMouseUp(UnityEngine.UIElements.EventBase)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUIContainer_IsDockAreaMouseUp_mF3C63B14767C73AF533A72BB23E3E639CB829145 (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* ___evt0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventBase_1_TypeId_mA696806F4EF6643EFFA933ECA851AACECEA58585_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventBase_1_t9ED9D70674CFE9504A67746757FB582440278391_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* G_B3_0 = NULL;
+	RuntimeObject* G_B3_1 = NULL;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* G_B2_0 = NULL;
+	RuntimeObject* G_B2_1 = NULL;
+	IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* G_B4_0 = NULL;
+	RuntimeObject* G_B4_1 = NULL;
+	int32_t G_B6_0 = 0;
+	{
+		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
+		NullCheck(L_0);
+		int64_t L_1;
+		L_1 = VirtualFuncInvoker0< int64_t >::Invoke(5 /* System.Int64 UnityEngine.UIElements.EventBase::get_eventTypeId() */, L_0);
+		il2cpp_codegen_runtime_class_init_inline(EventBase_1_t9ED9D70674CFE9504A67746757FB582440278391_il2cpp_TypeInfo_var);
+		int64_t L_2;
+		L_2 = EventBase_1_TypeId_mA696806F4EF6643EFFA933ECA851AACECEA58585(EventBase_1_TypeId_mA696806F4EF6643EFFA933ECA851AACECEA58585_RuntimeMethod_var);
+		if ((!(((uint64_t)L_1) == ((uint64_t)L_2))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_3 = ___evt0;
+		NullCheck(L_3);
+		RuntimeObject* L_4;
+		L_4 = EventBase_get_target_m9E5CB6AC9A51E9F61D9540D279BFA53C04AD010E(L_3, NULL);
+		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_5 = ___evt0;
+		NullCheck(L_5);
+		RuntimeObject* L_6;
+		L_6 = EventBase_get_target_m9E5CB6AC9A51E9F61D9540D279BFA53C04AD010E(L_5, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = ((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)IsInstClass((RuntimeObject*)L_6, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_il2cpp_TypeInfo_var));
+		G_B2_0 = L_7;
+		G_B2_1 = L_4;
+		if (L_7)
+		{
+			G_B3_0 = L_7;
+			G_B3_1 = L_4;
+			goto IL_0026;
+		}
+	}
+	{
+		G_B4_0 = ((IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26*)(NULL));
+		G_B4_1 = G_B2_1;
+		goto IL_0030;
+	}
+
+IL_0026:
+	{
+		NullCheck(G_B3_0);
+		BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303* L_8;
+		L_8 = VisualElement_get_elementPanel_m4B4A37001D55527E4D015E6C6132607071F32B01_inline(G_B3_0, NULL);
+		NullCheck(L_8);
+		IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* L_9;
+		L_9 = VirtualFuncInvoker0< IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* >::Invoke(19 /* UnityEngine.UIElements.IMGUIContainer UnityEngine.UIElements.BaseVisualElementPanel::get_rootIMGUIContainer() */, L_8);
+		G_B4_0 = L_9;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_0030:
+	{
+		G_B6_0 = ((((RuntimeObject*)(RuntimeObject*)G_B4_1) == ((RuntimeObject*)(IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26*)G_B4_0))? 1 : 0);
+		goto IL_0035;
+	}
+
+IL_0034:
+	{
+		G_B6_0 = 0;
+	}
+
+IL_0035:
+	{
+		V_0 = (bool)G_B6_0;
+		goto IL_0038;
+	}
+
+IL_0038:
+	{
+		bool L_10 = V_0;
+		return L_10;
 	}
 }
 // System.Boolean UnityEngine.UIElements.IMGUIContainer::HandleIMGUIEvent(UnityEngine.Event,System.Boolean)

@@ -11,6 +11,8 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] private Material offStateMat;
     [SerializeField] private Material onStateMat;
 
+    [SerializeField] private Slider slider;
+
     [SerializeField] private bool isVSyncDisabled = true;
     [SerializeField] private bool isFullscreen = true;
 
@@ -103,5 +105,12 @@ public class SettingsMenu : MonoBehaviour
                 break;
         }
         print(QualitySettings.antiAliasing);
+    }
+
+    public void SaveState()
+    {
+        audioMixer.GetFloat("masterVolume", out float buffer);
+        PlayerPrefs.SetFloat("masterVolume", buffer);
+        print("SaveState");
     }
 }

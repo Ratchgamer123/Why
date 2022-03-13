@@ -200,509 +200,531 @@ extern void ShaderProperties__cctor_mB8FD640FD89E031EEC0FE22C16EDFD1C00293789 (v
 extern void Kernels__ctor_mAA8D1C254238AF617EC6C9D4EC508962EEFF3C56 (void);
 // 0x0000005E System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::SetEventAttribute(System.Object[])
 extern void VFXMouseEventBinder_SetEventAttribute_m1B3CB78F8479F2CC6B557BA3F9D11491FB2E9A5A (void);
-// 0x0000005F UnityEngine.Vector2 UnityEngine.VFX.Utility.VFXMouseEventBinder::GetMousePosition()
+// 0x0000005F System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::Awake()
+extern void VFXMouseEventBinder_Awake_m4874D86408A47F0260FA827FD2AF8C2554916DEB (void);
+// 0x00000060 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::RaycastMainCamera()
+extern void VFXMouseEventBinder_RaycastMainCamera_m3B068FB3A911122EE5B531B03B64BF1885A2F5DF (void);
+// 0x00000061 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::RayCastDrag()
+extern void VFXMouseEventBinder_RayCastDrag_mA48A78CD33F70568B5C5B7D2CDEB2B3D474CE76A (void);
+// 0x00000062 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::RayCastAndTriggerEvent(System.Action)
+extern void VFXMouseEventBinder_RayCastAndTriggerEvent_mE5CC4749C8EC6914625220934276B2AC29D1C520 (void);
+// 0x00000063 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnEnable()
+extern void VFXMouseEventBinder_OnEnable_mC4E0DC107FD9FAD395002CBF5F36A58F766A398E (void);
+// 0x00000064 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnDisable()
+extern void VFXMouseEventBinder_OnDisable_mE638C97759BC680F7BAF72D74F4E6258E6C0E26A (void);
+// 0x00000065 UnityEngine.Vector2 UnityEngine.VFX.Utility.VFXMouseEventBinder::GetMousePosition()
 extern void VFXMouseEventBinder_GetMousePosition_m8A04E522E9E3290D0CCC48ED2A90E44AD42D2120 (void);
-// 0x00000060 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseDown()
+// 0x00000066 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseDown()
 extern void VFXMouseEventBinder_DoOnMouseDown_mB5F4554ED7949B6D6BFCA0E5B501F87F80B52694 (void);
-// 0x00000061 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseUp()
+// 0x00000067 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseUp()
 extern void VFXMouseEventBinder_DoOnMouseUp_m3F48CD8795EB94D37B86275815D44A3284BC33BA (void);
-// 0x00000062 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseDrag()
+// 0x00000068 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseDrag()
 extern void VFXMouseEventBinder_DoOnMouseDrag_m0310246449E70E1DE580B869E4B90124D00C3837 (void);
-// 0x00000063 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseOver()
+// 0x00000069 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseOver()
 extern void VFXMouseEventBinder_DoOnMouseOver_m4BE7BFA06C6B0FD42688F747ACF0BDA7D82765F5 (void);
-// 0x00000064 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseEnter()
+// 0x0000006A System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseEnter()
 extern void VFXMouseEventBinder_DoOnMouseEnter_mEDCA5B540678906577F24882A09AD8E08E03D55E (void);
-// 0x00000065 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseExit()
+// 0x0000006B System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::DoOnMouseExit()
 extern void VFXMouseEventBinder_DoOnMouseExit_m3460D1E2C017D2F39FF8280A830125F1692814DB (void);
-// 0x00000066 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseDown()
+// 0x0000006C System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseDown()
 extern void VFXMouseEventBinder_OnMouseDown_m3C739E82027CED7444A5B05A8D90C63BBEF2ED30 (void);
-// 0x00000067 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseUp()
+// 0x0000006D System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseUp()
 extern void VFXMouseEventBinder_OnMouseUp_m59B9DEB3A4FFC95B773A61896101FD0C7AAC30CB (void);
-// 0x00000068 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseDrag()
+// 0x0000006E System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseDrag()
 extern void VFXMouseEventBinder_OnMouseDrag_mECAB47861863E20C85E92FB686AD1D9CDB6EC498 (void);
-// 0x00000069 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseOver()
+// 0x0000006F System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseOver()
 extern void VFXMouseEventBinder_OnMouseOver_m20DCD1A0AFA095828DCB0FFA3BBD94A4BEDAA7C6 (void);
-// 0x0000006A System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseEnter()
+// 0x00000070 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseEnter()
 extern void VFXMouseEventBinder_OnMouseEnter_m272A0B2F3AEE5879A24F128112C53D5DFF391494 (void);
-// 0x0000006B System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseExit()
+// 0x00000071 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::OnMouseExit()
 extern void VFXMouseEventBinder_OnMouseExit_m8BA4CEE9A4D40589E6437FD8C97FD8226AED8657 (void);
-// 0x0000006C System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::.ctor()
+// 0x00000072 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::.ctor()
 extern void VFXMouseEventBinder__ctor_m269FBD4E25512D754602BA4322D36979B9B4C991 (void);
-// 0x0000006D System.Void UnityEngine.VFX.Utility.VFXRigidBodyCollisionEventBinder::SetEventAttribute(System.Object[])
+// 0x00000073 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::<Awake>b__12_0(UnityEngine.InputSystem.InputAction/CallbackContext)
+extern void VFXMouseEventBinder_U3CAwakeU3Eb__12_0_m32B96CDA0C466364249D8AD0597A12B067E00513 (void);
+// 0x00000074 System.Void UnityEngine.VFX.Utility.VFXMouseEventBinder::<Awake>b__12_1(UnityEngine.InputSystem.InputAction/CallbackContext)
+extern void VFXMouseEventBinder_U3CAwakeU3Eb__12_1_m969BEE4465D53C7F39A4510668D1A418687CA062 (void);
+// 0x00000075 System.Void UnityEngine.VFX.Utility.VFXRigidBodyCollisionEventBinder::SetEventAttribute(System.Object[])
 extern void VFXRigidBodyCollisionEventBinder_SetEventAttribute_m418F73D31B12BEEA39C810335B4D1FBADAA2F499 (void);
-// 0x0000006E System.Void UnityEngine.VFX.Utility.VFXRigidBodyCollisionEventBinder::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000076 System.Void UnityEngine.VFX.Utility.VFXRigidBodyCollisionEventBinder::OnCollisionEnter(UnityEngine.Collision)
 extern void VFXRigidBodyCollisionEventBinder_OnCollisionEnter_mBC06344BAB974CC3104ADFFFDDBC13805AD7CD29 (void);
-// 0x0000006F System.Void UnityEngine.VFX.Utility.VFXRigidBodyCollisionEventBinder::.ctor()
+// 0x00000077 System.Void UnityEngine.VFX.Utility.VFXRigidBodyCollisionEventBinder::.ctor()
 extern void VFXRigidBodyCollisionEventBinder__ctor_m0A4CEA80864876A7B38C26DDFB83715944486D6F (void);
-// 0x00000070 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::SetEventAttribute(System.Object[])
+// 0x00000078 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::SetEventAttribute(System.Object[])
 extern void VFXTriggerEventBinder_SetEventAttribute_m30552173CF7D7CA17B5BB76B6088756002056DF3 (void);
-// 0x00000071 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000079 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::OnTriggerEnter(UnityEngine.Collider)
 extern void VFXTriggerEventBinder_OnTriggerEnter_m7B530756703BE1C37DA3206D81D4D6FA2C378327 (void);
-// 0x00000072 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::OnTriggerExit(UnityEngine.Collider)
+// 0x0000007A System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::OnTriggerExit(UnityEngine.Collider)
 extern void VFXTriggerEventBinder_OnTriggerExit_m098634E694226818276DF5430088B893B548EE1E (void);
-// 0x00000073 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::OnTriggerStay(UnityEngine.Collider)
+// 0x0000007B System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::OnTriggerStay(UnityEngine.Collider)
 extern void VFXTriggerEventBinder_OnTriggerStay_mF2D6604ABF9323C20333F482F8B8CCF6523683E1 (void);
-// 0x00000074 System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::.ctor()
+// 0x0000007C System.Void UnityEngine.VFX.Utility.VFXTriggerEventBinder::.ctor()
 extern void VFXTriggerEventBinder__ctor_mB7AEE8C9686AD0E31068AD18CAE614982215500C (void);
-// 0x00000075 System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::SetEventAttribute(System.Object[])
+// 0x0000007D System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::SetEventAttribute(System.Object[])
 extern void VFXVisibilityEventBinder_SetEventAttribute_mBDE795116F6A7E9BF54C8AE080D83FD614D42724 (void);
-// 0x00000076 System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::OnBecameVisible()
+// 0x0000007E System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::OnBecameVisible()
 extern void VFXVisibilityEventBinder_OnBecameVisible_m46F052C58FDE520ECDA612E3B5D5B3BD56401641 (void);
-// 0x00000077 System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::OnBecameInvisible()
+// 0x0000007F System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::OnBecameInvisible()
 extern void VFXVisibilityEventBinder_OnBecameInvisible_m4D980D9A9E75AEF34A9B3492FDC8D67BC0005527 (void);
-// 0x00000078 System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::.ctor()
+// 0x00000080 System.Void UnityEngine.VFX.Utility.VFXVisibilityEventBinder::.ctor()
 extern void VFXVisibilityEventBinder__ctor_m84E91F879D507B7E47B3D239D7158D9E4E019B5F (void);
-// 0x00000079 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::OnEnable()
+// 0x00000081 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::OnEnable()
 extern void VFXEventBinderBase_OnEnable_mF6262A11BD09CA75E1AE89A5D362C15861A9B68D (void);
-// 0x0000007A System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::OnValidate()
+// 0x00000082 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::OnValidate()
 extern void VFXEventBinderBase_OnValidate_m137196E91DD0412C813823130B79D0F04DFEB0FC (void);
-// 0x0000007B System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::UpdateCacheEventAttribute()
+// 0x00000083 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::UpdateCacheEventAttribute()
 extern void VFXEventBinderBase_UpdateCacheEventAttribute_m3FD1CFD6B8BE81E246534D127FB175554C2D1CD2 (void);
-// 0x0000007C System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::SetEventAttribute(System.Object[])
-// 0x0000007D System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::SendEventToVisualEffect(System.Object[])
+// 0x00000084 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::SetEventAttribute(System.Object[])
+// 0x00000085 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::SendEventToVisualEffect(System.Object[])
 extern void VFXEventBinderBase_SendEventToVisualEffect_mC7CAA713AF7BD533AFD1A6663753141221493690 (void);
-// 0x0000007E System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::.ctor()
+// 0x00000086 System.Void UnityEngine.VFX.Utility.VFXEventBinderBase::.ctor()
 extern void VFXEventBinderBase__ctor_m9CD7C6460EC05578FF0E20CA29B4459D00DB6E53 (void);
-// 0x0000007F System.Boolean UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::get_canExecuteInEditor()
-// 0x00000080 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::set_m_VisualEffect(UnityEngine.VFX.VisualEffect)
+// 0x00000087 System.Boolean UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::get_canExecuteInEditor()
+// 0x00000088 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::set_m_VisualEffect(UnityEngine.VFX.VisualEffect)
 extern void VFXOutputEventAbstractHandler_set_m_VisualEffect_mB7CEA6FD627A192FCC5B1BB72A3FD034FB40D209 (void);
-// 0x00000081 UnityEngine.VFX.VisualEffect UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::get_m_VisualEffect()
+// 0x00000089 UnityEngine.VFX.VisualEffect UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::get_m_VisualEffect()
 extern void VFXOutputEventAbstractHandler_get_m_VisualEffect_m5DE6F44EA40481C9A196614B97B68E4B1DEC59B3 (void);
-// 0x00000082 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnEnable()
+// 0x0000008A System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnEnable()
 extern void VFXOutputEventAbstractHandler_OnEnable_m9DA1E28C8FD0B621DEE7E0D055B467436E2AC29E (void);
-// 0x00000083 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnDisable()
+// 0x0000008B System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnDisable()
 extern void VFXOutputEventAbstractHandler_OnDisable_mA95FD62310C790E2FC47EBEED06C73315F3EFCC5 (void);
-// 0x00000084 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnOutputEventRecieved(UnityEngine.VFX.VFXOutputEventArgs)
+// 0x0000008C System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnOutputEventRecieved(UnityEngine.VFX.VFXOutputEventArgs)
 extern void VFXOutputEventAbstractHandler_OnOutputEventRecieved_m744F5D9DE68857E8B83ABE29DA28A63DD4746BD3 (void);
-// 0x00000085 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnVFXOutputEvent(UnityEngine.VFX.VFXEventAttribute)
-// 0x00000086 System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::.ctor()
+// 0x0000008D System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::OnVFXOutputEvent(UnityEngine.VFX.VFXEventAttribute)
+// 0x0000008E System.Void UnityEngine.VFX.Utility.VFXOutputEventAbstractHandler::.ctor()
 extern void VFXOutputEventAbstractHandler__ctor_m4E2D7BE313EA0EC6CD4BE214184BDAC7899F18E9 (void);
-// 0x00000087 UnityEngine.VFX.Utility.ExposedProperty UnityEngine.VFX.Utility.ExposedProperty::op_Implicit(System.String)
+// 0x0000008F UnityEngine.VFX.Utility.ExposedProperty UnityEngine.VFX.Utility.ExposedProperty::op_Implicit(System.String)
 extern void ExposedProperty_op_Implicit_m766D00304B81E3CD729B5B52E8B52937DB00440E (void);
-// 0x00000088 System.String UnityEngine.VFX.Utility.ExposedProperty::op_Explicit(UnityEngine.VFX.Utility.ExposedProperty)
+// 0x00000090 System.String UnityEngine.VFX.Utility.ExposedProperty::op_Explicit(UnityEngine.VFX.Utility.ExposedProperty)
 extern void ExposedProperty_op_Explicit_mD02F646FE3346BFD6E75EC7435160A2F1DA8B58D (void);
-// 0x00000089 System.Int32 UnityEngine.VFX.Utility.ExposedProperty::op_Implicit(UnityEngine.VFX.Utility.ExposedProperty)
+// 0x00000091 System.Int32 UnityEngine.VFX.Utility.ExposedProperty::op_Implicit(UnityEngine.VFX.Utility.ExposedProperty)
 extern void ExposedProperty_op_Implicit_m21E34626EC97044019E91875AF28F635E9F645F7 (void);
-// 0x0000008A UnityEngine.VFX.Utility.ExposedProperty UnityEngine.VFX.Utility.ExposedProperty::op_Addition(UnityEngine.VFX.Utility.ExposedProperty,UnityEngine.VFX.Utility.ExposedProperty)
+// 0x00000092 UnityEngine.VFX.Utility.ExposedProperty UnityEngine.VFX.Utility.ExposedProperty::op_Addition(UnityEngine.VFX.Utility.ExposedProperty,UnityEngine.VFX.Utility.ExposedProperty)
 extern void ExposedProperty_op_Addition_m8CA5F38C870F0C4C886FAED242D01343CF15D806 (void);
-// 0x0000008B System.Void UnityEngine.VFX.Utility.ExposedProperty::.ctor()
+// 0x00000093 System.Void UnityEngine.VFX.Utility.ExposedProperty::.ctor()
 extern void ExposedProperty__ctor_m92A33E6D7AD2239105318F03D95351BCC16D739A (void);
-// 0x0000008C System.Void UnityEngine.VFX.Utility.ExposedProperty::.ctor(System.String)
+// 0x00000094 System.Void UnityEngine.VFX.Utility.ExposedProperty::.ctor(System.String)
 extern void ExposedProperty__ctor_m20517E8CD365AFE0803F9F8A632BFE09B34C3E65 (void);
-// 0x0000008D System.String UnityEngine.VFX.Utility.ExposedProperty::ToString()
+// 0x00000095 System.String UnityEngine.VFX.Utility.ExposedProperty::ToString()
 extern void ExposedProperty_ToString_m56C2D2ACA650A07737B9D8815A3ED1DEAC6EF6A9 (void);
-// 0x0000008E System.String UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::get_CountProperty()
+// 0x00000096 System.String UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::get_CountProperty()
 extern void VFXAudioSpectrumBinder_get_CountProperty_m5DF677930AD099959C3A5532E54C4F874126DCD8 (void);
-// 0x0000008F System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::set_CountProperty(System.String)
+// 0x00000097 System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::set_CountProperty(System.String)
 extern void VFXAudioSpectrumBinder_set_CountProperty_m268EEE2B83A4C3AFD7B21B2D1BF46BF44DAD15E9 (void);
-// 0x00000090 System.String UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::get_TextureProperty()
+// 0x00000098 System.String UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::get_TextureProperty()
 extern void VFXAudioSpectrumBinder_get_TextureProperty_mE5D3C308903A7A372D524FA235F828D03451BE54 (void);
-// 0x00000091 System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::set_TextureProperty(System.String)
+// 0x00000099 System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::set_TextureProperty(System.String)
 extern void VFXAudioSpectrumBinder_set_TextureProperty_m839466D803689AC9DA97636117987E3C734D5F67 (void);
-// 0x00000092 System.Boolean UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x0000009A System.Boolean UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXAudioSpectrumBinder_IsValid_m30BE575435B6E5E745DD0784DC9F3C7A83C1F053 (void);
-// 0x00000093 System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::UpdateTexture()
+// 0x0000009B System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::UpdateTexture()
 extern void VFXAudioSpectrumBinder_UpdateTexture_mE59FAFFCA67F721F8C4F61F5382C4512AC1F2D3F (void);
-// 0x00000094 System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x0000009C System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXAudioSpectrumBinder_UpdateBinding_mA14547ECB53ED7582BEA59BF8322D45A8F03B1F7 (void);
-// 0x00000095 System.String UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::ToString()
+// 0x0000009D System.String UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::ToString()
 extern void VFXAudioSpectrumBinder_ToString_mAC1E82DB90BFF1E5082D8568D243146DDAB5133F (void);
-// 0x00000096 System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::.ctor()
+// 0x0000009E System.Void UnityEngine.VFX.Utility.VFXAudioSpectrumBinder::.ctor()
 extern void VFXAudioSpectrumBinder__ctor_m6AE18A43116D28E1E3C0442125DD2EAC81D2481D (void);
-// 0x00000097 System.String UnityEngine.VFX.Utility.VFXEnabledBinder::get_Property()
+// 0x0000009F System.String UnityEngine.VFX.Utility.VFXEnabledBinder::get_Property()
 extern void VFXEnabledBinder_get_Property_m9E546CBA700214100BF8950EBCE931F7636447D4 (void);
-// 0x00000098 System.Void UnityEngine.VFX.Utility.VFXEnabledBinder::set_Property(System.String)
+// 0x000000A0 System.Void UnityEngine.VFX.Utility.VFXEnabledBinder::set_Property(System.String)
 extern void VFXEnabledBinder_set_Property_m3FEC0F9E00145E12EF6BEC5F4B7CB0B6B42F6930 (void);
-// 0x00000099 System.Boolean UnityEngine.VFX.Utility.VFXEnabledBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000A1 System.Boolean UnityEngine.VFX.Utility.VFXEnabledBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXEnabledBinder_IsValid_m18B425AA9785071B34E9DD6B7EE9D96049609CEE (void);
-// 0x0000009A System.Void UnityEngine.VFX.Utility.VFXEnabledBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000A2 System.Void UnityEngine.VFX.Utility.VFXEnabledBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXEnabledBinder_UpdateBinding_m7317EA9F03EBCA97B04C4A09A6D4F9EA9810DE91 (void);
-// 0x0000009B System.String UnityEngine.VFX.Utility.VFXEnabledBinder::ToString()
+// 0x000000A3 System.String UnityEngine.VFX.Utility.VFXEnabledBinder::ToString()
 extern void VFXEnabledBinder_ToString_m0494C5F154394FE7DD3B111500E732C12116D2BD (void);
-// 0x0000009C System.Void UnityEngine.VFX.Utility.VFXEnabledBinder::.ctor()
+// 0x000000A4 System.Void UnityEngine.VFX.Utility.VFXEnabledBinder::.ctor()
 extern void VFXEnabledBinder__ctor_mDE6F21D9110687AE183840A8518F2E98F5C4B658 (void);
-// 0x0000009D System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::OnEnable()
+// 0x000000A5 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::OnEnable()
 extern void VFXHierarchyAttributeMapBinder_OnEnable_m38918F3AE086A49B9128184E3E96E8CE96D974FC (void);
-// 0x0000009E System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::OnValidate()
+// 0x000000A6 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::OnValidate()
 extern void VFXHierarchyAttributeMapBinder_OnValidate_mA060E7B9E068BC61735610221CB6E0840AA557F4 (void);
-// 0x0000009F System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::UpdateHierarchy()
+// 0x000000A7 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::UpdateHierarchy()
 extern void VFXHierarchyAttributeMapBinder_UpdateHierarchy_m47224F693D4241AA2756D12E51501FF19879F326 (void);
-// 0x000000A0 System.Collections.Generic.List`1<UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder/Bone> UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::ChildrenOf(UnityEngine.Transform,System.UInt32)
+// 0x000000A8 System.Collections.Generic.List`1<UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder/Bone> UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::ChildrenOf(UnityEngine.Transform,System.UInt32)
 extern void VFXHierarchyAttributeMapBinder_ChildrenOf_m7CE1D7B085ECC08E6FDD5ECD616B8830475E0292 (void);
-// 0x000000A1 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::UpdateData()
+// 0x000000A9 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::UpdateData()
 extern void VFXHierarchyAttributeMapBinder_UpdateData_mACEC1F8DE36468C5AEB4991740DB49D038C92DF5 (void);
-// 0x000000A2 System.Boolean UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000AA System.Boolean UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXHierarchyAttributeMapBinder_IsValid_m6D606850EC453BA8D59586905C7D24AB936AFA46 (void);
-// 0x000000A3 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000AB System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXHierarchyAttributeMapBinder_UpdateBinding_m6F39ADB3F03839FCA851407C321E801940D108F5 (void);
-// 0x000000A4 System.String UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::ToString()
+// 0x000000AC System.String UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::ToString()
 extern void VFXHierarchyAttributeMapBinder_ToString_m2F6AABC4EF6170107A24A0811C0EEDE7BF3EB18E (void);
-// 0x000000A5 System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::.ctor()
+// 0x000000AD System.Void UnityEngine.VFX.Utility.VFXHierarchyAttributeMapBinder::.ctor()
 extern void VFXHierarchyAttributeMapBinder__ctor_mE25F5BE296E8CBB0351ED58614EE060EFBA8FE24 (void);
-// 0x000000A6 System.String UnityEngine.VFX.Utility.VFXInputAxisBinder::get_AxisProperty()
+// 0x000000AE System.String UnityEngine.VFX.Utility.VFXInputAxisBinder::get_AxisProperty()
 extern void VFXInputAxisBinder_get_AxisProperty_m41BA17CCFBC250949E08A54FE410D77B80499C44 (void);
-// 0x000000A7 System.Void UnityEngine.VFX.Utility.VFXInputAxisBinder::set_AxisProperty(System.String)
+// 0x000000AF System.Void UnityEngine.VFX.Utility.VFXInputAxisBinder::set_AxisProperty(System.String)
 extern void VFXInputAxisBinder_set_AxisProperty_m49DA6F0B7AB5C8CD1142DB51012E77DABBAE826A (void);
-// 0x000000A8 System.Boolean UnityEngine.VFX.Utility.VFXInputAxisBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000B0 System.Boolean UnityEngine.VFX.Utility.VFXInputAxisBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXInputAxisBinder_IsValid_m8D2B723CE3DB06D4C828C99B4605DC6A3A47D77D (void);
-// 0x000000A9 System.Void UnityEngine.VFX.Utility.VFXInputAxisBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000B1 System.Void UnityEngine.VFX.Utility.VFXInputAxisBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXInputAxisBinder_UpdateBinding_m6548BAD730D4F2702993C26567E17F5F8B09BA67 (void);
-// 0x000000AA System.String UnityEngine.VFX.Utility.VFXInputAxisBinder::ToString()
+// 0x000000B2 System.String UnityEngine.VFX.Utility.VFXInputAxisBinder::ToString()
 extern void VFXInputAxisBinder_ToString_m8E72E56666E8793464814B58E66074A5FD982607 (void);
-// 0x000000AB System.Void UnityEngine.VFX.Utility.VFXInputAxisBinder::.ctor()
+// 0x000000B3 System.Void UnityEngine.VFX.Utility.VFXInputAxisBinder::.ctor()
 extern void VFXInputAxisBinder__ctor_m3A8598E21956D3A4513C0D49ACF0C0DAD1634916 (void);
-// 0x000000AC System.String UnityEngine.VFX.Utility.VFXInputButtonBinder::get_ButtonProperty()
+// 0x000000B4 System.String UnityEngine.VFX.Utility.VFXInputButtonBinder::get_ButtonProperty()
 extern void VFXInputButtonBinder_get_ButtonProperty_mA522DC8AF508A7BBCABC5D2429B034CD42092294 (void);
-// 0x000000AD System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::set_ButtonProperty(System.String)
+// 0x000000B5 System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::set_ButtonProperty(System.String)
 extern void VFXInputButtonBinder_set_ButtonProperty_m10BC47EB9D8FE15F09DA10B59ABF0638F3803C7D (void);
-// 0x000000AE System.String UnityEngine.VFX.Utility.VFXInputButtonBinder::get_ButtonSmoothProperty()
+// 0x000000B6 System.String UnityEngine.VFX.Utility.VFXInputButtonBinder::get_ButtonSmoothProperty()
 extern void VFXInputButtonBinder_get_ButtonSmoothProperty_mE317FFB3A849B1C1FB39F25107CA9D7750D94B2A (void);
-// 0x000000AF System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::set_ButtonSmoothProperty(System.String)
+// 0x000000B7 System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::set_ButtonSmoothProperty(System.String)
 extern void VFXInputButtonBinder_set_ButtonSmoothProperty_mF65F9ED724538801BA94C8F54044740DC385EB4D (void);
-// 0x000000B0 System.Boolean UnityEngine.VFX.Utility.VFXInputButtonBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000B8 System.Boolean UnityEngine.VFX.Utility.VFXInputButtonBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXInputButtonBinder_IsValid_m9CA18F74ED3A211B72C827BD7778542B1C951754 (void);
-// 0x000000B1 System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::Start()
+// 0x000000B9 System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::Start()
 extern void VFXInputButtonBinder_Start_m6118535A6B5A2941B70D64172D08DC341CA33E59 (void);
-// 0x000000B2 System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000BA System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXInputButtonBinder_UpdateBinding_mBC295D5045F481605C5EC7C0EC5448D76F8D1356 (void);
-// 0x000000B3 System.String UnityEngine.VFX.Utility.VFXInputButtonBinder::ToString()
+// 0x000000BB System.String UnityEngine.VFX.Utility.VFXInputButtonBinder::ToString()
 extern void VFXInputButtonBinder_ToString_m3369304609737827924CE154EE18EB7D29E59C06 (void);
-// 0x000000B4 System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::.ctor()
+// 0x000000BC System.Void UnityEngine.VFX.Utility.VFXInputButtonBinder::.ctor()
 extern void VFXInputButtonBinder__ctor_m1964F20A0E02493DAE4425BE15CC94D1DDB013DB (void);
-// 0x000000B5 System.String UnityEngine.VFX.Utility.VFXInputKeyBinder::get_KeyProperty()
+// 0x000000BD System.String UnityEngine.VFX.Utility.VFXInputKeyBinder::get_KeyProperty()
 extern void VFXInputKeyBinder_get_KeyProperty_mED5F959B3D088D9FCB7994D328328D30A234AD9A (void);
-// 0x000000B6 System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::set_KeyProperty(System.String)
+// 0x000000BE System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::set_KeyProperty(System.String)
 extern void VFXInputKeyBinder_set_KeyProperty_m74531680A817E42585D994459F13E7C05627C252 (void);
-// 0x000000B7 System.String UnityEngine.VFX.Utility.VFXInputKeyBinder::get_KeySmoothProperty()
+// 0x000000BF System.String UnityEngine.VFX.Utility.VFXInputKeyBinder::get_KeySmoothProperty()
 extern void VFXInputKeyBinder_get_KeySmoothProperty_m76F68335C1429F2C0E47D320BBFE0CDDEFA4D233 (void);
-// 0x000000B8 System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::set_KeySmoothProperty(System.String)
+// 0x000000C0 System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::set_KeySmoothProperty(System.String)
 extern void VFXInputKeyBinder_set_KeySmoothProperty_mB75547AE164AF5C49EF91E1657E0E4FD81FF7560 (void);
-// 0x000000B9 System.Boolean UnityEngine.VFX.Utility.VFXInputKeyBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000C1 System.Boolean UnityEngine.VFX.Utility.VFXInputKeyBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXInputKeyBinder_IsValid_mFCFF34FAFC061CF5BFCBA17F1F06A4B3AD3E1ED2 (void);
-// 0x000000BA System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::Start()
+// 0x000000C2 System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::Start()
 extern void VFXInputKeyBinder_Start_m4104697A270AD61FD19A0BB650908EC03CAA4BA1 (void);
-// 0x000000BB System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000C3 System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXInputKeyBinder_UpdateBinding_m0A405ECC914FAEC6DBA071C51DBFB7245FF5E872 (void);
-// 0x000000BC System.String UnityEngine.VFX.Utility.VFXInputKeyBinder::ToString()
+// 0x000000C4 System.String UnityEngine.VFX.Utility.VFXInputKeyBinder::ToString()
 extern void VFXInputKeyBinder_ToString_mAB3ED436EBA2E2FBEED6AC4C2B4D833B30ABABF0 (void);
-// 0x000000BD System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::.ctor()
+// 0x000000C5 System.Void UnityEngine.VFX.Utility.VFXInputKeyBinder::.ctor()
 extern void VFXInputKeyBinder__ctor_m0ACB3319F4FF129AC6DBD52BFA33B84E1ABCDFF4 (void);
-// 0x000000BE System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_MouseLeftClickProperty()
+// 0x000000C6 System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_MouseLeftClickProperty()
 extern void VFXInputMouseBinder_get_MouseLeftClickProperty_mC69F12902664403234F3F6833857B145AA280E01 (void);
-// 0x000000BF System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_MouseLeftClickProperty(System.String)
+// 0x000000C7 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_MouseLeftClickProperty(System.String)
 extern void VFXInputMouseBinder_set_MouseLeftClickProperty_mD7F27520CF9D3374FD010F64BC7A067BF587487A (void);
-// 0x000000C0 System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_MouseRightClickProperty()
+// 0x000000C8 System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_MouseRightClickProperty()
 extern void VFXInputMouseBinder_get_MouseRightClickProperty_m607B8729BD1AD905996BBD1D81BA6364CB50D950 (void);
-// 0x000000C1 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_MouseRightClickProperty(System.String)
+// 0x000000C9 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_MouseRightClickProperty(System.String)
 extern void VFXInputMouseBinder_set_MouseRightClickProperty_mA594A77F11DF628FD69423C32AC1C71EB1761C00 (void);
-// 0x000000C2 System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_PositionProperty()
+// 0x000000CA System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_PositionProperty()
 extern void VFXInputMouseBinder_get_PositionProperty_m4510B50390BF4D86C0F754CF433B5496F11E9FB0 (void);
-// 0x000000C3 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_PositionProperty(System.String)
+// 0x000000CB System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_PositionProperty(System.String)
 extern void VFXInputMouseBinder_set_PositionProperty_m65C3FEFE063F15943C15A923F19B1E727C4AB836 (void);
-// 0x000000C4 System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_VelocityProperty()
+// 0x000000CC System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::get_VelocityProperty()
 extern void VFXInputMouseBinder_get_VelocityProperty_m2E5913FF1F6A8D9780191BC8BC92F10DE7F0CC25 (void);
-// 0x000000C5 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_VelocityProperty(System.String)
+// 0x000000CD System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::set_VelocityProperty(System.String)
 extern void VFXInputMouseBinder_set_VelocityProperty_mEFD15CA2774BD57920668603BA3C3C86B9E21B35 (void);
-// 0x000000C6 System.Boolean UnityEngine.VFX.Utility.VFXInputMouseBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000CE System.Boolean UnityEngine.VFX.Utility.VFXInputMouseBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXInputMouseBinder_IsValid_mBB3B7F2ACE4F7DCECF48DBF403D534722B3474F9 (void);
-// 0x000000C7 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000CF System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXInputMouseBinder_UpdateBinding_m69E9420D08180E52EBB3605BE0580C37C8D545F0 (void);
-// 0x000000C8 System.Boolean UnityEngine.VFX.Utility.VFXInputMouseBinder::IsRightClickPressed()
+// 0x000000D0 System.Boolean UnityEngine.VFX.Utility.VFXInputMouseBinder::IsRightClickPressed()
 extern void VFXInputMouseBinder_IsRightClickPressed_m0C582DEB1E7B7A5701F38E309A7B4EBA05FCF6EC (void);
-// 0x000000C9 System.Boolean UnityEngine.VFX.Utility.VFXInputMouseBinder::IsLeftClickPressed()
+// 0x000000D1 System.Boolean UnityEngine.VFX.Utility.VFXInputMouseBinder::IsLeftClickPressed()
 extern void VFXInputMouseBinder_IsLeftClickPressed_m17F8F9BA1B555FC41046F2A311DDA6CEF6C7DADE (void);
-// 0x000000CA UnityEngine.Vector2 UnityEngine.VFX.Utility.VFXInputMouseBinder::GetMousePosition()
+// 0x000000D2 UnityEngine.Vector2 UnityEngine.VFX.Utility.VFXInputMouseBinder::GetMousePosition()
 extern void VFXInputMouseBinder_GetMousePosition_m5630931394578D6D2BA9E817C69FADF7D53B229C (void);
-// 0x000000CB System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::ToString()
+// 0x000000D3 System.String UnityEngine.VFX.Utility.VFXInputMouseBinder::ToString()
 extern void VFXInputMouseBinder_ToString_mCD428D57FA2CBA8B62143A421A39E3AF79DB71B1 (void);
-// 0x000000CC System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::.ctor()
+// 0x000000D4 System.Void UnityEngine.VFX.Utility.VFXInputMouseBinder::.ctor()
 extern void VFXInputMouseBinder__ctor_m827C8ED1DDFB31459335FA71CA19DC484DBC7A62 (void);
-// 0x000000CD System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::get_TouchEnabledProperty()
+// 0x000000D5 System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::get_TouchEnabledProperty()
 extern void VFXInputTouchBinder_get_TouchEnabledProperty_m105A858EE0EECFD8737C36D72BCF579C6A2BAC8D (void);
-// 0x000000CE System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::set_TouchEnabledProperty(System.String)
+// 0x000000D6 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::set_TouchEnabledProperty(System.String)
 extern void VFXInputTouchBinder_set_TouchEnabledProperty_m78A63DFA1A097040AADB6B4084ABE45A7C7F3053 (void);
-// 0x000000CF System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::get_Parameter()
+// 0x000000D7 System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::get_Parameter()
 extern void VFXInputTouchBinder_get_Parameter_mE98BC45B23C7C6FA1FA268D506EB4F7BF9AA06F5 (void);
-// 0x000000D0 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::set_Parameter(System.String)
+// 0x000000D8 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::set_Parameter(System.String)
 extern void VFXInputTouchBinder_set_Parameter_m1F3487772C022265BDB7A931F49C9DD9318D4EBE (void);
-// 0x000000D1 System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::get_VelocityParameter()
+// 0x000000D9 System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::get_VelocityParameter()
 extern void VFXInputTouchBinder_get_VelocityParameter_m00EC882744202BC3C09D5FE1E75416F3F455FCED (void);
-// 0x000000D2 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::set_VelocityParameter(System.String)
+// 0x000000DA System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::set_VelocityParameter(System.String)
 extern void VFXInputTouchBinder_set_VelocityParameter_m1BBAE312F27FFE87B9F9396F4A3F8DF06722430A (void);
-// 0x000000D3 System.Boolean UnityEngine.VFX.Utility.VFXInputTouchBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000DB System.Boolean UnityEngine.VFX.Utility.VFXInputTouchBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXInputTouchBinder_IsValid_m6B86A4123CA4D2810F22DCDB8A0BAF9BE1291DA5 (void);
-// 0x000000D4 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000DC System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXInputTouchBinder_UpdateBinding_mF21A05757A5200052BF16E2B1985D2A1A4EC84F8 (void);
-// 0x000000D5 System.Int32 UnityEngine.VFX.Utility.VFXInputTouchBinder::GetTouchCount()
+// 0x000000DD System.Int32 UnityEngine.VFX.Utility.VFXInputTouchBinder::GetTouchCount()
 extern void VFXInputTouchBinder_GetTouchCount_m6F85B121C3D99D4FC9B515CBC3C8CE84EC2A30B2 (void);
-// 0x000000D6 UnityEngine.Vector2 UnityEngine.VFX.Utility.VFXInputTouchBinder::GetTouchPosition(System.Int32)
+// 0x000000DE UnityEngine.Vector2 UnityEngine.VFX.Utility.VFXInputTouchBinder::GetTouchPosition(System.Int32)
 extern void VFXInputTouchBinder_GetTouchPosition_mA0555635D0689F84EF0929162BFE644E996C36C5 (void);
-// 0x000000D7 System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::ToString()
+// 0x000000DF System.String UnityEngine.VFX.Utility.VFXInputTouchBinder::ToString()
 extern void VFXInputTouchBinder_ToString_m5AF94A7C372FADD51886F7462851C236B09288FF (void);
-// 0x000000D8 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::.ctor()
+// 0x000000E0 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder::.ctor()
 extern void VFXInputTouchBinder__ctor_mFE6C77657C9A6F1F34DEA017A22A8653C02437E6 (void);
-// 0x000000D9 System.String UnityEngine.VFX.Utility.VFXLightBinder::get_ColorProperty()
+// 0x000000E1 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder/<>c::.cctor()
+extern void U3CU3Ec__cctor_m7A41CFB54598238F522460F60D0C1DBF140F5C12 (void);
+// 0x000000E2 System.Void UnityEngine.VFX.Utility.VFXInputTouchBinder/<>c::.ctor()
+extern void U3CU3Ec__ctor_m9AB57595F56A5AD38DD8DDFF11254F497A21AF07 (void);
+// 0x000000E3 System.Boolean UnityEngine.VFX.Utility.VFXInputTouchBinder/<>c::<GetTouchCount>b__20_0(UnityEngine.InputSystem.Controls.TouchControl)
+extern void U3CU3Ec_U3CGetTouchCountU3Eb__20_0_m1C7DAEF04F30D57567824E2E97A7DE426E36462F (void);
+// 0x000000E4 System.String UnityEngine.VFX.Utility.VFXLightBinder::get_ColorProperty()
 extern void VFXLightBinder_get_ColorProperty_m985EDD04353195BBD32B94DF66317A170C93CAFD (void);
-// 0x000000DA System.Void UnityEngine.VFX.Utility.VFXLightBinder::set_ColorProperty(System.String)
+// 0x000000E5 System.Void UnityEngine.VFX.Utility.VFXLightBinder::set_ColorProperty(System.String)
 extern void VFXLightBinder_set_ColorProperty_m202E67AB1B8A2265BBB8D4C1DB75646977469158 (void);
-// 0x000000DB System.String UnityEngine.VFX.Utility.VFXLightBinder::get_BrightnessProperty()
+// 0x000000E6 System.String UnityEngine.VFX.Utility.VFXLightBinder::get_BrightnessProperty()
 extern void VFXLightBinder_get_BrightnessProperty_mF1E9B4E4B53714CAF652F56B563BFD1E2C794AD1 (void);
-// 0x000000DC System.Void UnityEngine.VFX.Utility.VFXLightBinder::set_BrightnessProperty(System.String)
+// 0x000000E7 System.Void UnityEngine.VFX.Utility.VFXLightBinder::set_BrightnessProperty(System.String)
 extern void VFXLightBinder_set_BrightnessProperty_mBBC16547EA68167DA5D72CBE1D92A85D3F19C0D5 (void);
-// 0x000000DD System.String UnityEngine.VFX.Utility.VFXLightBinder::get_RadiusProperty()
+// 0x000000E8 System.String UnityEngine.VFX.Utility.VFXLightBinder::get_RadiusProperty()
 extern void VFXLightBinder_get_RadiusProperty_m0373D3B6410CA134EB6A4C3F5B9B7538583D5A20 (void);
-// 0x000000DE System.Void UnityEngine.VFX.Utility.VFXLightBinder::set_RadiusProperty(System.String)
+// 0x000000E9 System.Void UnityEngine.VFX.Utility.VFXLightBinder::set_RadiusProperty(System.String)
 extern void VFXLightBinder_set_RadiusProperty_m399CFB05F9BFE7B45B9B07E94F837B2DF77500E6 (void);
-// 0x000000DF System.Boolean UnityEngine.VFX.Utility.VFXLightBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000EA System.Boolean UnityEngine.VFX.Utility.VFXLightBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXLightBinder_IsValid_m18DC2B463BD5382C3E278CDC87F54BAD0DB2D602 (void);
-// 0x000000E0 System.Void UnityEngine.VFX.Utility.VFXLightBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000EB System.Void UnityEngine.VFX.Utility.VFXLightBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXLightBinder_UpdateBinding_m745CD70F467410D2FEEA727CF58580F4692B304F (void);
-// 0x000000E1 System.String UnityEngine.VFX.Utility.VFXLightBinder::ToString()
+// 0x000000EC System.String UnityEngine.VFX.Utility.VFXLightBinder::ToString()
 extern void VFXLightBinder_ToString_mD8BC48524A247DF67DA7670B8D3E6857A70DEACB (void);
-// 0x000000E2 System.Void UnityEngine.VFX.Utility.VFXLightBinder::.ctor()
+// 0x000000ED System.Void UnityEngine.VFX.Utility.VFXLightBinder::.ctor()
 extern void VFXLightBinder__ctor_m526A3FA1F645F0A8EFC83A2B07184CD3D57661E2 (void);
-// 0x000000E3 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::OnEnable()
+// 0x000000EE System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::OnEnable()
 extern void VFXMultiplePositionBinder_OnEnable_m81DA3CE28B764E868656402A55399AA93A84E289 (void);
-// 0x000000E4 System.Boolean UnityEngine.VFX.Utility.VFXMultiplePositionBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000EF System.Boolean UnityEngine.VFX.Utility.VFXMultiplePositionBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXMultiplePositionBinder_IsValid_m6B2D25A10A35F604BB649B554D00FEAB93ECED44 (void);
-// 0x000000E5 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000F0 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXMultiplePositionBinder_UpdateBinding_m4D1544BAB488ECC4ADDA4B5914AC1793C683147D (void);
-// 0x000000E6 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::UpdateTexture()
+// 0x000000F1 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::UpdateTexture()
 extern void VFXMultiplePositionBinder_UpdateTexture_m08801CB93727EA213155BAC676BE9437E489B5E3 (void);
-// 0x000000E7 System.String UnityEngine.VFX.Utility.VFXMultiplePositionBinder::ToString()
+// 0x000000F2 System.String UnityEngine.VFX.Utility.VFXMultiplePositionBinder::ToString()
 extern void VFXMultiplePositionBinder_ToString_mEDB13894DBEAF2F31994A72310A23231A6A7BDCA (void);
-// 0x000000E8 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::.ctor()
+// 0x000000F3 System.Void UnityEngine.VFX.Utility.VFXMultiplePositionBinder::.ctor()
 extern void VFXMultiplePositionBinder__ctor_mE710FDA9E568A663416CB22750A80995D7169FEF (void);
-// 0x000000E9 System.String UnityEngine.VFX.Utility.VFXPlaneBinder::get_Property()
+// 0x000000F4 System.String UnityEngine.VFX.Utility.VFXPlaneBinder::get_Property()
 extern void VFXPlaneBinder_get_Property_m54C30C4D74B21178FCB92E920F2B0B004E611CB7 (void);
-// 0x000000EA System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::set_Property(System.String)
+// 0x000000F5 System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::set_Property(System.String)
 extern void VFXPlaneBinder_set_Property_m91934DD97598848E257D6841DF8E6583AA71E57C (void);
-// 0x000000EB System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::OnEnable()
+// 0x000000F6 System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::OnEnable()
 extern void VFXPlaneBinder_OnEnable_m7367BBAC66F8ACCA856E6FE63D3F320C79C0C2BC (void);
-// 0x000000EC System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::OnValidate()
+// 0x000000F7 System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::OnValidate()
 extern void VFXPlaneBinder_OnValidate_m7950C4FB69814A74319778D4DECBB657C686E2FD (void);
-// 0x000000ED System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::UpdateSubProperties()
+// 0x000000F8 System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::UpdateSubProperties()
 extern void VFXPlaneBinder_UpdateSubProperties_m9AEB13B4B517C1DBFD1DDA34390F682959FD909A (void);
-// 0x000000EE System.Boolean UnityEngine.VFX.Utility.VFXPlaneBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000F9 System.Boolean UnityEngine.VFX.Utility.VFXPlaneBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXPlaneBinder_IsValid_m4F681A04FB92422F01268AE5E4D943A5BFB0B505 (void);
-// 0x000000EF System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x000000FA System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXPlaneBinder_UpdateBinding_mE2DD9576ADF5DC76AEE00656785F77B05B2E6B1C (void);
-// 0x000000F0 System.String UnityEngine.VFX.Utility.VFXPlaneBinder::ToString()
+// 0x000000FB System.String UnityEngine.VFX.Utility.VFXPlaneBinder::ToString()
 extern void VFXPlaneBinder_ToString_mE44F0899E57BE384413B7B7955F5E6BC6E683F52 (void);
-// 0x000000F1 System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::.ctor()
+// 0x000000FC System.Void UnityEngine.VFX.Utility.VFXPlaneBinder::.ctor()
 extern void VFXPlaneBinder__ctor_mED11CF344484C1B27051B2E34270AE1FB45765C3 (void);
-// 0x000000F2 System.String UnityEngine.VFX.Utility.VFXPositionBinder::get_Property()
+// 0x000000FD System.String UnityEngine.VFX.Utility.VFXPositionBinder::get_Property()
 extern void VFXPositionBinder_get_Property_m2D7DD39EC9D12CFD373412BB123D8072B96DA611 (void);
-// 0x000000F3 System.Void UnityEngine.VFX.Utility.VFXPositionBinder::set_Property(System.String)
+// 0x000000FE System.Void UnityEngine.VFX.Utility.VFXPositionBinder::set_Property(System.String)
 extern void VFXPositionBinder_set_Property_m3E5DF8C12D71D8DF8585AC6B60D72CFE6144FA2C (void);
-// 0x000000F4 System.Boolean UnityEngine.VFX.Utility.VFXPositionBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x000000FF System.Boolean UnityEngine.VFX.Utility.VFXPositionBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXPositionBinder_IsValid_m35061E5E219677356561587A4D135AE338694DEA (void);
-// 0x000000F5 System.Void UnityEngine.VFX.Utility.VFXPositionBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000100 System.Void UnityEngine.VFX.Utility.VFXPositionBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXPositionBinder_UpdateBinding_mD01D10DACA584A345656478A1573D7B1359C6BC5 (void);
-// 0x000000F6 System.String UnityEngine.VFX.Utility.VFXPositionBinder::ToString()
+// 0x00000101 System.String UnityEngine.VFX.Utility.VFXPositionBinder::ToString()
 extern void VFXPositionBinder_ToString_m78DB45D14627C4B494AE4AE39C19A516F554B92F (void);
-// 0x000000F7 System.Void UnityEngine.VFX.Utility.VFXPositionBinder::.ctor()
+// 0x00000102 System.Void UnityEngine.VFX.Utility.VFXPositionBinder::.ctor()
 extern void VFXPositionBinder__ctor_m5CF6F416503FA2FFEFEF87579C815966DA13206A (void);
-// 0x000000F8 System.Void UnityEngine.VFX.Utility.VFXPreviousPositionBinder::OnEnable()
+// 0x00000103 System.Void UnityEngine.VFX.Utility.VFXPreviousPositionBinder::OnEnable()
 extern void VFXPreviousPositionBinder_OnEnable_mE04D045DBCEF3C2A8939400C8238B1824104411D (void);
-// 0x000000F9 System.Boolean UnityEngine.VFX.Utility.VFXPreviousPositionBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x00000104 System.Boolean UnityEngine.VFX.Utility.VFXPreviousPositionBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXPreviousPositionBinder_IsValid_mB7EB49FEBF47D5DD3137CC3FB077CCAE1DA62C76 (void);
-// 0x000000FA System.Void UnityEngine.VFX.Utility.VFXPreviousPositionBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000105 System.Void UnityEngine.VFX.Utility.VFXPreviousPositionBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXPreviousPositionBinder_UpdateBinding_mC5F3579B2C52ECBC389AB59BD446B6FE2119B7A6 (void);
-// 0x000000FB System.String UnityEngine.VFX.Utility.VFXPreviousPositionBinder::ToString()
+// 0x00000106 System.String UnityEngine.VFX.Utility.VFXPreviousPositionBinder::ToString()
 extern void VFXPreviousPositionBinder_ToString_m9CE4B7425D39CC7001D4345EB23DAF871DB4E81C (void);
-// 0x000000FC System.Void UnityEngine.VFX.Utility.VFXPreviousPositionBinder::.ctor()
+// 0x00000107 System.Void UnityEngine.VFX.Utility.VFXPreviousPositionBinder::.ctor()
 extern void VFXPreviousPositionBinder__ctor_m08FD8E72C2B94BACB7B3C6765A4EB267889DA429 (void);
-// 0x000000FD System.String UnityEngine.VFX.Utility.VFXRaycastBinder::get_TargetPosition()
+// 0x00000108 System.String UnityEngine.VFX.Utility.VFXRaycastBinder::get_TargetPosition()
 extern void VFXRaycastBinder_get_TargetPosition_mB1DA401AC6AE1AAE043647B165928BA37624F56D (void);
-// 0x000000FE System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::set_TargetPosition(System.String)
+// 0x00000109 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::set_TargetPosition(System.String)
 extern void VFXRaycastBinder_set_TargetPosition_mA7F2AB642781472A6E17C0C9EF1A0B9CE5623C55 (void);
-// 0x000000FF System.String UnityEngine.VFX.Utility.VFXRaycastBinder::get_TargetNormal()
+// 0x0000010A System.String UnityEngine.VFX.Utility.VFXRaycastBinder::get_TargetNormal()
 extern void VFXRaycastBinder_get_TargetNormal_mF80F5F53B038FE6044A3B3BC2B05A3C7A0D26A09 (void);
-// 0x00000100 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::set_TargetNormal(System.String)
+// 0x0000010B System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::set_TargetNormal(System.String)
 extern void VFXRaycastBinder_set_TargetNormal_mC914237651B9C4FACDBAC0013BE1F06DE7AD3A58 (void);
-// 0x00000101 System.String UnityEngine.VFX.Utility.VFXRaycastBinder::get_TargetHit()
+// 0x0000010C System.String UnityEngine.VFX.Utility.VFXRaycastBinder::get_TargetHit()
 extern void VFXRaycastBinder_get_TargetHit_mCCE5712B9F489C7E060B1E7753D3F441852E8F1F (void);
-// 0x00000102 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::set_TargetHit(System.String)
+// 0x0000010D System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::set_TargetHit(System.String)
 extern void VFXRaycastBinder_set_TargetHit_m14E7AE924CD526CF36C41DB84BF94E07706CE5CE (void);
-// 0x00000103 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::OnEnable()
+// 0x0000010E System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::OnEnable()
 extern void VFXRaycastBinder_OnEnable_m3970D4A7E5262CE38A895CAE3CBB22E9FE801678 (void);
-// 0x00000104 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::OnValidate()
+// 0x0000010F System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::OnValidate()
 extern void VFXRaycastBinder_OnValidate_m946F4F1F8F9ED30E1657D07CD472330C83C8D0D2 (void);
-// 0x00000105 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::UpdateSubProperties()
+// 0x00000110 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::UpdateSubProperties()
 extern void VFXRaycastBinder_UpdateSubProperties_m984FC69B108C955BA03E05B08DEC583AAFFDE01D (void);
-// 0x00000106 System.Boolean UnityEngine.VFX.Utility.VFXRaycastBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x00000111 System.Boolean UnityEngine.VFX.Utility.VFXRaycastBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXRaycastBinder_IsValid_m90C04243E0957E1BC9EF550A17844A6DA60E6960 (void);
-// 0x00000107 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000112 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXRaycastBinder_UpdateBinding_m16F89A49C9B46B21A4891CF80A6A61268C5E0188 (void);
-// 0x00000108 System.String UnityEngine.VFX.Utility.VFXRaycastBinder::ToString()
+// 0x00000113 System.String UnityEngine.VFX.Utility.VFXRaycastBinder::ToString()
 extern void VFXRaycastBinder_ToString_mA78937DE31C9774C3FC1ED4EA455DAC05F90937A (void);
-// 0x00000109 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::.ctor()
+// 0x00000114 System.Void UnityEngine.VFX.Utility.VFXRaycastBinder::.ctor()
 extern void VFXRaycastBinder__ctor_mDD2986E1D00C5C668849ED855384DA39638DDFB0 (void);
-// 0x0000010A System.String UnityEngine.VFX.Utility.VFXSphereBinder::get_Property()
+// 0x00000115 System.String UnityEngine.VFX.Utility.VFXSphereBinder::get_Property()
 extern void VFXSphereBinder_get_Property_m4BD037B82D29852C959D5A1FEF723D9A23A00C1F (void);
-// 0x0000010B System.Void UnityEngine.VFX.Utility.VFXSphereBinder::set_Property(System.String)
+// 0x00000116 System.Void UnityEngine.VFX.Utility.VFXSphereBinder::set_Property(System.String)
 extern void VFXSphereBinder_set_Property_m2463716FB48677C077197E308EA17763202BAC56 (void);
-// 0x0000010C System.Void UnityEngine.VFX.Utility.VFXSphereBinder::OnEnable()
+// 0x00000117 System.Void UnityEngine.VFX.Utility.VFXSphereBinder::OnEnable()
 extern void VFXSphereBinder_OnEnable_m6B394405C5822497D82D45FD2C688F4D1498C157 (void);
-// 0x0000010D System.Void UnityEngine.VFX.Utility.VFXSphereBinder::OnValidate()
+// 0x00000118 System.Void UnityEngine.VFX.Utility.VFXSphereBinder::OnValidate()
 extern void VFXSphereBinder_OnValidate_mC678A407430AE4D4EF88B406FDAF3CA847249E33 (void);
-// 0x0000010E System.Void UnityEngine.VFX.Utility.VFXSphereBinder::UpdateSubProperties()
+// 0x00000119 System.Void UnityEngine.VFX.Utility.VFXSphereBinder::UpdateSubProperties()
 extern void VFXSphereBinder_UpdateSubProperties_mEDEF8CCE8D1B0CDE488F0A113CCF9D3699B4C4A6 (void);
-// 0x0000010F System.Boolean UnityEngine.VFX.Utility.VFXSphereBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x0000011A System.Boolean UnityEngine.VFX.Utility.VFXSphereBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXSphereBinder_IsValid_mDDE887FEA870AF1ED13EDED131F97C76FDCA8332 (void);
-// 0x00000110 System.Void UnityEngine.VFX.Utility.VFXSphereBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x0000011B System.Void UnityEngine.VFX.Utility.VFXSphereBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXSphereBinder_UpdateBinding_mC6A1B76D0164FB80EA507DC77B0CBF57729333A0 (void);
-// 0x00000111 System.Single UnityEngine.VFX.Utility.VFXSphereBinder::GetSphereColliderScale(UnityEngine.Vector3)
+// 0x0000011C System.Single UnityEngine.VFX.Utility.VFXSphereBinder::GetSphereColliderScale(UnityEngine.Vector3)
 extern void VFXSphereBinder_GetSphereColliderScale_mFF7014EA91C2D8244BD6F925F0FC267C908696D1 (void);
-// 0x00000112 System.String UnityEngine.VFX.Utility.VFXSphereBinder::ToString()
+// 0x0000011D System.String UnityEngine.VFX.Utility.VFXSphereBinder::ToString()
 extern void VFXSphereBinder_ToString_m6E5BAF459D5303CA7A1E0077F558F260605C3BCA (void);
-// 0x00000113 System.Void UnityEngine.VFX.Utility.VFXSphereBinder::.ctor()
+// 0x0000011E System.Void UnityEngine.VFX.Utility.VFXSphereBinder::.ctor()
 extern void VFXSphereBinder__ctor_m69CA4A3B5BF7AAA4F1EAFB16982232AC84FBE3EB (void);
-// 0x00000114 System.String UnityEngine.VFX.Utility.VFXTerrainBinder::get_Property()
+// 0x0000011F System.String UnityEngine.VFX.Utility.VFXTerrainBinder::get_Property()
 extern void VFXTerrainBinder_get_Property_m11076487A8F242D0C7569747D702BDEA81F122B8 (void);
-// 0x00000115 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::set_Property(System.String)
+// 0x00000120 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::set_Property(System.String)
 extern void VFXTerrainBinder_set_Property_mFA12D45C44255006830071146EF6E2B71DE5CC10 (void);
-// 0x00000116 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::OnEnable()
+// 0x00000121 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::OnEnable()
 extern void VFXTerrainBinder_OnEnable_mDFBE56E0010C7316828223EA34F3E72F111F0660 (void);
-// 0x00000117 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::OnValidate()
+// 0x00000122 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::OnValidate()
 extern void VFXTerrainBinder_OnValidate_m2792C13EB0EC52B41CA022DE47A2ED676D8F5109 (void);
-// 0x00000118 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::UpdateSubProperties()
+// 0x00000123 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::UpdateSubProperties()
 extern void VFXTerrainBinder_UpdateSubProperties_m4BC6A8E8C029DD3BD310534ABC857E2EF6FEE282 (void);
-// 0x00000119 System.Boolean UnityEngine.VFX.Utility.VFXTerrainBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x00000124 System.Boolean UnityEngine.VFX.Utility.VFXTerrainBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXTerrainBinder_IsValid_m9ADEB583B6516C697F5AE5B37BD77BE0FD64897E (void);
-// 0x0000011A System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000125 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXTerrainBinder_UpdateBinding_m51D293C9821AA974ECCC7D56960952E16146C005 (void);
-// 0x0000011B System.String UnityEngine.VFX.Utility.VFXTerrainBinder::ToString()
+// 0x00000126 System.String UnityEngine.VFX.Utility.VFXTerrainBinder::ToString()
 extern void VFXTerrainBinder_ToString_m6BC233FED85CE059387C328F979B8C731467F4EF (void);
-// 0x0000011C System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::.ctor()
+// 0x00000127 System.Void UnityEngine.VFX.Utility.VFXTerrainBinder::.ctor()
 extern void VFXTerrainBinder__ctor_m1D29723C84DE383CA3430EC4F17495705D5F1A0B (void);
-// 0x0000011D System.String UnityEngine.VFX.Utility.VFXTransformBinder::get_Property()
+// 0x00000128 System.String UnityEngine.VFX.Utility.VFXTransformBinder::get_Property()
 extern void VFXTransformBinder_get_Property_mDDA731FAD1367EF045268409CDED96BFEB180184 (void);
-// 0x0000011E System.Void UnityEngine.VFX.Utility.VFXTransformBinder::set_Property(System.String)
+// 0x00000129 System.Void UnityEngine.VFX.Utility.VFXTransformBinder::set_Property(System.String)
 extern void VFXTransformBinder_set_Property_m7D20FC04182B2015BFB94C2EFBD33AE32D54F3A7 (void);
-// 0x0000011F System.Void UnityEngine.VFX.Utility.VFXTransformBinder::OnEnable()
+// 0x0000012A System.Void UnityEngine.VFX.Utility.VFXTransformBinder::OnEnable()
 extern void VFXTransformBinder_OnEnable_m99FD4C7A36F4D6828151CDA42D7228199F395952 (void);
-// 0x00000120 System.Void UnityEngine.VFX.Utility.VFXTransformBinder::OnValidate()
+// 0x0000012B System.Void UnityEngine.VFX.Utility.VFXTransformBinder::OnValidate()
 extern void VFXTransformBinder_OnValidate_mE7FF581C03E4BAC5D4802770FE8EE7F37B40DFD1 (void);
-// 0x00000121 System.Void UnityEngine.VFX.Utility.VFXTransformBinder::UpdateSubProperties()
+// 0x0000012C System.Void UnityEngine.VFX.Utility.VFXTransformBinder::UpdateSubProperties()
 extern void VFXTransformBinder_UpdateSubProperties_mBF83D3F5E36B080C6CA43DF75A6C51B7A8AE6530 (void);
-// 0x00000122 System.Boolean UnityEngine.VFX.Utility.VFXTransformBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x0000012D System.Boolean UnityEngine.VFX.Utility.VFXTransformBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXTransformBinder_IsValid_m7C1ADF405797D11C4B58B07CDB9E9C42A011319A (void);
-// 0x00000123 System.Void UnityEngine.VFX.Utility.VFXTransformBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x0000012E System.Void UnityEngine.VFX.Utility.VFXTransformBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXTransformBinder_UpdateBinding_mC78FFF864A6EBCDC4F4BE86912D06B0276DC22A0 (void);
-// 0x00000124 System.String UnityEngine.VFX.Utility.VFXTransformBinder::ToString()
+// 0x0000012F System.String UnityEngine.VFX.Utility.VFXTransformBinder::ToString()
 extern void VFXTransformBinder_ToString_m6446F68FCBEE2476A0B3896C743D125DA37FAC1C (void);
-// 0x00000125 System.Void UnityEngine.VFX.Utility.VFXTransformBinder::.ctor()
+// 0x00000130 System.Void UnityEngine.VFX.Utility.VFXTransformBinder::.ctor()
 extern void VFXTransformBinder__ctor_mAFB4C41C58EAA855D89425DE74CA282313D31A90 (void);
-// 0x00000126 System.String UnityEngine.VFX.Utility.VFXUIDropdownBinder::get_Property()
+// 0x00000131 System.String UnityEngine.VFX.Utility.VFXUIDropdownBinder::get_Property()
 extern void VFXUIDropdownBinder_get_Property_mA312792ECADF9C6FC60D90F817069A49ACCB38C2 (void);
-// 0x00000127 System.Void UnityEngine.VFX.Utility.VFXUIDropdownBinder::set_Property(System.String)
+// 0x00000132 System.Void UnityEngine.VFX.Utility.VFXUIDropdownBinder::set_Property(System.String)
 extern void VFXUIDropdownBinder_set_Property_m3ED3BB346E2D25DBE202427337FAC7295D029CF8 (void);
-// 0x00000128 System.Boolean UnityEngine.VFX.Utility.VFXUIDropdownBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x00000133 System.Boolean UnityEngine.VFX.Utility.VFXUIDropdownBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXUIDropdownBinder_IsValid_m2242EB079F7B03379C451F7E0EE893A05B22CE72 (void);
-// 0x00000129 System.Void UnityEngine.VFX.Utility.VFXUIDropdownBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000134 System.Void UnityEngine.VFX.Utility.VFXUIDropdownBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXUIDropdownBinder_UpdateBinding_mA2D693A069DB8B8E46B94998168B5BA55AE3AAEB (void);
-// 0x0000012A System.String UnityEngine.VFX.Utility.VFXUIDropdownBinder::ToString()
+// 0x00000135 System.String UnityEngine.VFX.Utility.VFXUIDropdownBinder::ToString()
 extern void VFXUIDropdownBinder_ToString_mD9EB109542CCBE72A2A1B2C0D1ABAF1E888C9525 (void);
-// 0x0000012B System.Void UnityEngine.VFX.Utility.VFXUIDropdownBinder::.ctor()
+// 0x00000136 System.Void UnityEngine.VFX.Utility.VFXUIDropdownBinder::.ctor()
 extern void VFXUIDropdownBinder__ctor_mFE6887A7B2147AB264BD55C93D3276BB962ACF2B (void);
-// 0x0000012C System.String UnityEngine.VFX.Utility.VFXUISliderBinder::get_Property()
+// 0x00000137 System.String UnityEngine.VFX.Utility.VFXUISliderBinder::get_Property()
 extern void VFXUISliderBinder_get_Property_m1337B1C947ADE3A5165034AC0CEBEC6BF5E7D6F5 (void);
-// 0x0000012D System.Void UnityEngine.VFX.Utility.VFXUISliderBinder::set_Property(System.String)
+// 0x00000138 System.Void UnityEngine.VFX.Utility.VFXUISliderBinder::set_Property(System.String)
 extern void VFXUISliderBinder_set_Property_m64411E8C290FC676ED685978BE0EFA7222703AFC (void);
-// 0x0000012E System.Boolean UnityEngine.VFX.Utility.VFXUISliderBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x00000139 System.Boolean UnityEngine.VFX.Utility.VFXUISliderBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXUISliderBinder_IsValid_mC9747D1AA84FC9C01A2013D817845BD56FF3AA7A (void);
-// 0x0000012F System.Void UnityEngine.VFX.Utility.VFXUISliderBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x0000013A System.Void UnityEngine.VFX.Utility.VFXUISliderBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXUISliderBinder_UpdateBinding_mB5228548515D6D956FAF8FF7065DB79450711AF5 (void);
-// 0x00000130 System.String UnityEngine.VFX.Utility.VFXUISliderBinder::ToString()
+// 0x0000013B System.String UnityEngine.VFX.Utility.VFXUISliderBinder::ToString()
 extern void VFXUISliderBinder_ToString_m783D8F7A1C66611D2921F3CADD972A28C6554C92 (void);
-// 0x00000131 System.Void UnityEngine.VFX.Utility.VFXUISliderBinder::.ctor()
+// 0x0000013C System.Void UnityEngine.VFX.Utility.VFXUISliderBinder::.ctor()
 extern void VFXUISliderBinder__ctor_mE12081296E2ADF34102FC1059A762C714EEF2B46 (void);
-// 0x00000132 System.String UnityEngine.VFX.Utility.VFXUIToggleBinder::get_Property()
+// 0x0000013D System.String UnityEngine.VFX.Utility.VFXUIToggleBinder::get_Property()
 extern void VFXUIToggleBinder_get_Property_mD8909CE48307CA7F8218CFFFABE4478B4B76FAED (void);
-// 0x00000133 System.Void UnityEngine.VFX.Utility.VFXUIToggleBinder::set_Property(System.String)
+// 0x0000013E System.Void UnityEngine.VFX.Utility.VFXUIToggleBinder::set_Property(System.String)
 extern void VFXUIToggleBinder_set_Property_m0D1AD5FC6784FDD9B02A50E4ECF627A46082BC7E (void);
-// 0x00000134 System.Boolean UnityEngine.VFX.Utility.VFXUIToggleBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x0000013F System.Boolean UnityEngine.VFX.Utility.VFXUIToggleBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXUIToggleBinder_IsValid_m8CE38454205A6E0CAE24F652D990B61115A4AA59 (void);
-// 0x00000135 System.Void UnityEngine.VFX.Utility.VFXUIToggleBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000140 System.Void UnityEngine.VFX.Utility.VFXUIToggleBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXUIToggleBinder_UpdateBinding_m540D27870616173E0F74275B324162E132EDDE44 (void);
-// 0x00000136 System.String UnityEngine.VFX.Utility.VFXUIToggleBinder::ToString()
+// 0x00000141 System.String UnityEngine.VFX.Utility.VFXUIToggleBinder::ToString()
 extern void VFXUIToggleBinder_ToString_m5F9673F0E3DB2AD4BB1EF915F3FE1545E5D08F23 (void);
-// 0x00000137 System.Void UnityEngine.VFX.Utility.VFXUIToggleBinder::.ctor()
+// 0x00000142 System.Void UnityEngine.VFX.Utility.VFXUIToggleBinder::.ctor()
 extern void VFXUIToggleBinder__ctor_mF32CC67443A5FCD342046325703CB346AAA66811 (void);
-// 0x00000138 System.String UnityEngine.VFX.Utility.VFXVelocityBinder::get_Property()
+// 0x00000143 System.String UnityEngine.VFX.Utility.VFXVelocityBinder::get_Property()
 extern void VFXVelocityBinder_get_Property_m1A1D476AFF3A3D71861361F157C3648BE4E13376 (void);
-// 0x00000139 System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::set_Property(System.String)
+// 0x00000144 System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::set_Property(System.String)
 extern void VFXVelocityBinder_set_Property_m962BAC85948E45D56FD6AC427AF4644617906847 (void);
-// 0x0000013A System.Boolean UnityEngine.VFX.Utility.VFXVelocityBinder::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x00000145 System.Boolean UnityEngine.VFX.Utility.VFXVelocityBinder::IsValid(UnityEngine.VFX.VisualEffect)
 extern void VFXVelocityBinder_IsValid_m733A7FFC62AE73C5EC2718C579318EEE889A6BB2 (void);
-// 0x0000013B System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::Reset()
+// 0x00000146 System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::Reset()
 extern void VFXVelocityBinder_Reset_mDACCE514C2B72E4B47F809BCDD65B976A7F232CD (void);
-// 0x0000013C System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000147 System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::UpdateBinding(UnityEngine.VFX.VisualEffect)
 extern void VFXVelocityBinder_UpdateBinding_m09ED97F0F480345359CA957026989E7E020D3FDD (void);
-// 0x0000013D System.String UnityEngine.VFX.Utility.VFXVelocityBinder::ToString()
+// 0x00000148 System.String UnityEngine.VFX.Utility.VFXVelocityBinder::ToString()
 extern void VFXVelocityBinder_ToString_m1F67119485CFD21DB8903023EB78BB7D7123332F (void);
-// 0x0000013E System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::.ctor()
+// 0x00000149 System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::.ctor()
 extern void VFXVelocityBinder__ctor_m90ADA6EBDCAF56890C4078630ED7E2FF1519596B (void);
-// 0x0000013F System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::.cctor()
+// 0x0000014A System.Void UnityEngine.VFX.Utility.VFXVelocityBinder::.cctor()
 extern void VFXVelocityBinder__cctor_m7C6AB73CAF8BBCC29A192126B0126E1E887A82BB (void);
-// 0x00000140 System.Void UnityEngine.VFX.Utility.VFXBinderAttribute::.ctor(System.String)
+// 0x0000014B System.Void UnityEngine.VFX.Utility.VFXBinderAttribute::.ctor(System.String)
 extern void VFXBinderAttribute__ctor_m5685F22B447E9F6F9F0AD314B115F9ACAB27EED1 (void);
-// 0x00000141 System.Boolean UnityEngine.VFX.Utility.VFXBinderBase::IsValid(UnityEngine.VFX.VisualEffect)
-// 0x00000142 System.Void UnityEngine.VFX.Utility.VFXBinderBase::Reset()
+// 0x0000014C System.Boolean UnityEngine.VFX.Utility.VFXBinderBase::IsValid(UnityEngine.VFX.VisualEffect)
+// 0x0000014D System.Void UnityEngine.VFX.Utility.VFXBinderBase::Reset()
 extern void VFXBinderBase_Reset_m7C64FFDCB71B077590384C512E0776B33B23477E (void);
-// 0x00000143 System.Void UnityEngine.VFX.Utility.VFXBinderBase::Awake()
+// 0x0000014E System.Void UnityEngine.VFX.Utility.VFXBinderBase::Awake()
 extern void VFXBinderBase_Awake_mB78C136536D663C6188EA4575AC9F971F512B915 (void);
-// 0x00000144 System.Void UnityEngine.VFX.Utility.VFXBinderBase::OnEnable()
+// 0x0000014F System.Void UnityEngine.VFX.Utility.VFXBinderBase::OnEnable()
 extern void VFXBinderBase_OnEnable_mA026DDFCBD31D8800C70F6A291A8DB6387F2041E (void);
-// 0x00000145 System.Void UnityEngine.VFX.Utility.VFXBinderBase::OnDisable()
+// 0x00000150 System.Void UnityEngine.VFX.Utility.VFXBinderBase::OnDisable()
 extern void VFXBinderBase_OnDisable_mC6D17B49F6277356AD6F67652EE80B122920B577 (void);
-// 0x00000146 System.Void UnityEngine.VFX.Utility.VFXBinderBase::UpdateBinding(UnityEngine.VFX.VisualEffect)
-// 0x00000147 System.String UnityEngine.VFX.Utility.VFXBinderBase::ToString()
+// 0x00000151 System.Void UnityEngine.VFX.Utility.VFXBinderBase::UpdateBinding(UnityEngine.VFX.VisualEffect)
+// 0x00000152 System.String UnityEngine.VFX.Utility.VFXBinderBase::ToString()
 extern void VFXBinderBase_ToString_m7FA1FF8BC36F8140D98A49BEF82EA8CCAF2E8DB0 (void);
-// 0x00000148 System.Void UnityEngine.VFX.Utility.VFXBinderBase::.ctor()
+// 0x00000153 System.Void UnityEngine.VFX.Utility.VFXBinderBase::.ctor()
 extern void VFXBinderBase__ctor_m4C0835B8FFF0968BC5378A1D579ABD0168ECF7D3 (void);
-// 0x00000149 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::OnEnable()
+// 0x00000154 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::OnEnable()
 extern void VFXPropertyBinder_OnEnable_m867A5FEA5EDE524F0F7DF47EB86BF80128A6F298 (void);
-// 0x0000014A System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::OnValidate()
+// 0x00000155 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::OnValidate()
 extern void VFXPropertyBinder_OnValidate_m31AF250AFDCBBEAEEA73D29AF8793E25CEDF478D (void);
-// 0x0000014B System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::SafeDestroy(UnityEngine.Object)
+// 0x00000156 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::SafeDestroy(UnityEngine.Object)
 extern void VFXPropertyBinder_SafeDestroy_mC0D7545A9983B39C40B75E91486096B687D21F0E (void);
-// 0x0000014C System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::Reload()
+// 0x00000157 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::Reload()
 extern void VFXPropertyBinder_Reload_mC20E8C114F88956652BCFE1D1AB7701BA946CA4A (void);
-// 0x0000014D System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::Reset()
+// 0x00000158 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::Reset()
 extern void VFXPropertyBinder_Reset_mEE67C9046525E83EB402D542891D80149008D9D2 (void);
-// 0x0000014E System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::LateUpdate()
+// 0x00000159 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::LateUpdate()
 extern void VFXPropertyBinder_LateUpdate_mBF71A331AE3C80F8CFE288BBCF1CBF7B20A505BC (void);
-// 0x0000014F T UnityEngine.VFX.Utility.VFXPropertyBinder::AddPropertyBinder()
-// 0x00000150 T UnityEngine.VFX.Utility.VFXPropertyBinder::AddParameterBinder()
-// 0x00000151 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::ClearPropertyBinders()
+// 0x0000015A T UnityEngine.VFX.Utility.VFXPropertyBinder::AddPropertyBinder()
+// 0x0000015B T UnityEngine.VFX.Utility.VFXPropertyBinder::AddParameterBinder()
+// 0x0000015C System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::ClearPropertyBinders()
 extern void VFXPropertyBinder_ClearPropertyBinders_m0D6B59D73389A5A83E46E87D05B24ADE479CF13F (void);
-// 0x00000152 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::ClearParameterBinders()
+// 0x0000015D System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::ClearParameterBinders()
 extern void VFXPropertyBinder_ClearParameterBinders_mFD3FCF79B5B335810B8A754D503702EF15A06F6D (void);
-// 0x00000153 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemovePropertyBinder(UnityEngine.VFX.Utility.VFXBinderBase)
+// 0x0000015E System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemovePropertyBinder(UnityEngine.VFX.Utility.VFXBinderBase)
 extern void VFXPropertyBinder_RemovePropertyBinder_mBFC783DFBF28ED3BB9ACC607CECCF9EF4661E863 (void);
-// 0x00000154 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemoveParameterBinder(UnityEngine.VFX.Utility.VFXBinderBase)
+// 0x0000015F System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemoveParameterBinder(UnityEngine.VFX.Utility.VFXBinderBase)
 extern void VFXPropertyBinder_RemoveParameterBinder_mCD45A1A2731CCE0B9B4946F22C21794719E534D6 (void);
-// 0x00000155 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemovePropertyBinders()
-// 0x00000156 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemoveParameterBinders()
-// 0x00000157 System.Collections.Generic.IEnumerable`1<T> UnityEngine.VFX.Utility.VFXPropertyBinder::GetPropertyBinders()
-// 0x00000158 System.Collections.Generic.IEnumerable`1<T> UnityEngine.VFX.Utility.VFXPropertyBinder::GetParameterBinders()
-// 0x00000159 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::.ctor()
+// 0x00000160 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemovePropertyBinders()
+// 0x00000161 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::RemoveParameterBinders()
+// 0x00000162 System.Collections.Generic.IEnumerable`1<T> UnityEngine.VFX.Utility.VFXPropertyBinder::GetPropertyBinders()
+// 0x00000163 System.Collections.Generic.IEnumerable`1<T> UnityEngine.VFX.Utility.VFXPropertyBinder::GetParameterBinders()
+// 0x00000164 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder::.ctor()
 extern void VFXPropertyBinder__ctor_mAC0E583E26FEA725E8C676DD293C791173AA8A90 (void);
-// 0x0000015A System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::.ctor(System.Int32)
-// 0x0000015B System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.IDisposable.Dispose()
-// 0x0000015C System.Boolean UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::MoveNext()
-// 0x0000015D System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::<>m__Finally1()
-// 0x0000015E T UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.Generic.IEnumerator<T>.get_Current()
-// 0x0000015F System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.IEnumerator.Reset()
-// 0x00000160 System.Object UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.IEnumerator.get_Current()
-// 0x00000161 System.Collections.Generic.IEnumerator`1<T> UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-// 0x00000162 System.Collections.IEnumerator UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.IEnumerable.GetEnumerator()
-// 0x00000163 System.Void UnityEngine.VFX.Utility.VFXPropertyBindingAttribute::.ctor(System.String[])
+// 0x00000165 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::.ctor(System.Int32)
+// 0x00000166 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.IDisposable.Dispose()
+// 0x00000167 System.Boolean UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::MoveNext()
+// 0x00000168 System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::<>m__Finally1()
+// 0x00000169 T UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.Generic.IEnumerator<T>.get_Current()
+// 0x0000016A System.Void UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.IEnumerator.Reset()
+// 0x0000016B System.Object UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.IEnumerator.get_Current()
+// 0x0000016C System.Collections.Generic.IEnumerator`1<T> UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+// 0x0000016D System.Collections.IEnumerator UnityEngine.VFX.Utility.VFXPropertyBinder/<GetPropertyBinders>d__17`1::System.Collections.IEnumerable.GetEnumerator()
+// 0x0000016E System.Void UnityEngine.VFX.Utility.VFXPropertyBindingAttribute::.ctor(System.String[])
 extern void VFXPropertyBindingAttribute__ctor_m3619150CC621FD0D074BD7482574633A3F64ACB9 (void);
-static Il2CppMethodPointer s_methodPointers[355] = 
+static Il2CppMethodPointer s_methodPointers[366] = 
 {
 	VisualEffectActivationBehaviour_OnPlayableCreate_m43F78D3547B047A92030EA5A864CB40DC62E974A,
 	VisualEffectActivationBehaviour_SendEventEnter_m717D30F19084C58AAC91038D15B440CE8C13F0DA,
@@ -798,6 +820,12 @@ static Il2CppMethodPointer s_methodPointers[355] =
 	ShaderProperties__cctor_mB8FD640FD89E031EEC0FE22C16EDFD1C00293789,
 	Kernels__ctor_mAA8D1C254238AF617EC6C9D4EC508962EEFF3C56,
 	VFXMouseEventBinder_SetEventAttribute_m1B3CB78F8479F2CC6B557BA3F9D11491FB2E9A5A,
+	VFXMouseEventBinder_Awake_m4874D86408A47F0260FA827FD2AF8C2554916DEB,
+	VFXMouseEventBinder_RaycastMainCamera_m3B068FB3A911122EE5B531B03B64BF1885A2F5DF,
+	VFXMouseEventBinder_RayCastDrag_mA48A78CD33F70568B5C5B7D2CDEB2B3D474CE76A,
+	VFXMouseEventBinder_RayCastAndTriggerEvent_mE5CC4749C8EC6914625220934276B2AC29D1C520,
+	VFXMouseEventBinder_OnEnable_mC4E0DC107FD9FAD395002CBF5F36A58F766A398E,
+	VFXMouseEventBinder_OnDisable_mE638C97759BC680F7BAF72D74F4E6258E6C0E26A,
 	VFXMouseEventBinder_GetMousePosition_m8A04E522E9E3290D0CCC48ED2A90E44AD42D2120,
 	VFXMouseEventBinder_DoOnMouseDown_mB5F4554ED7949B6D6BFCA0E5B501F87F80B52694,
 	VFXMouseEventBinder_DoOnMouseUp_m3F48CD8795EB94D37B86275815D44A3284BC33BA,
@@ -812,6 +840,8 @@ static Il2CppMethodPointer s_methodPointers[355] =
 	VFXMouseEventBinder_OnMouseEnter_m272A0B2F3AEE5879A24F128112C53D5DFF391494,
 	VFXMouseEventBinder_OnMouseExit_m8BA4CEE9A4D40589E6437FD8C97FD8226AED8657,
 	VFXMouseEventBinder__ctor_m269FBD4E25512D754602BA4322D36979B9B4C991,
+	VFXMouseEventBinder_U3CAwakeU3Eb__12_0_m32B96CDA0C466364249D8AD0597A12B067E00513,
+	VFXMouseEventBinder_U3CAwakeU3Eb__12_1_m969BEE4465D53C7F39A4510668D1A418687CA062,
 	VFXRigidBodyCollisionEventBinder_SetEventAttribute_m418F73D31B12BEEA39C810335B4D1FBADAA2F499,
 	VFXRigidBodyCollisionEventBinder_OnCollisionEnter_mBC06344BAB974CC3104ADFFFDDBC13805AD7CD29,
 	VFXRigidBodyCollisionEventBinder__ctor_m0A4CEA80864876A7B38C26DDFB83715944486D6F,
@@ -920,6 +950,9 @@ static Il2CppMethodPointer s_methodPointers[355] =
 	VFXInputTouchBinder_GetTouchPosition_mA0555635D0689F84EF0929162BFE644E996C36C5,
 	VFXInputTouchBinder_ToString_m5AF94A7C372FADD51886F7462851C236B09288FF,
 	VFXInputTouchBinder__ctor_mFE6C77657C9A6F1F34DEA017A22A8653C02437E6,
+	U3CU3Ec__cctor_m7A41CFB54598238F522460F60D0C1DBF140F5C12,
+	U3CU3Ec__ctor_m9AB57595F56A5AD38DD8DDFF11254F497A21AF07,
+	U3CU3Ec_U3CGetTouchCountU3Eb__20_0_m1C7DAEF04F30D57567824E2E97A7DE426E36462F,
 	VFXLightBinder_get_ColorProperty_m985EDD04353195BBD32B94DF66317A170C93CAFD,
 	VFXLightBinder_set_ColorProperty_m202E67AB1B8A2265BBB8D4C1DB75646977469158,
 	VFXLightBinder_get_BrightnessProperty_mF1E9B4E4B53714CAF652F56B563BFD1E2C794AD1,
@@ -1060,373 +1093,384 @@ static Il2CppMethodPointer s_methodPointers[355] =
 	NULL,
 	VFXPropertyBindingAttribute__ctor_m3619150CC621FD0D074BD7482574633A3F64ACB9,
 };
-static const int32_t s_InvokerIndices[355] = 
+static const int32_t s_InvokerIndices[366] = 
 {
-	4958,
-	4951,
-	4951,
-	8670,
-	6211,
-	6057,
-	1873,
-	6211,
-	1426,
-	4958,
-	4958,
-	6211,
-	1137,
-	6211,
-	1399,
-	1399,
-	1399,
-	6211,
-	11095,
-	6211,
-	1399,
-	1399,
-	1399,
-	6211,
-	11095,
-	6211,
-	1399,
-	1399,
-	1399,
-	6211,
-	11095,
-	1399,
-	1399,
-	1399,
-	6211,
-	11095,
-	6211,
-	2503,
-	6057,
-	4923,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	11055,
-	6211,
-	6085,
-	2721,
-	6211,
-	6211,
-	6201,
-	6200,
-	107,
-	47,
-	6211,
-	175,
-	108,
-	6211,
-	6211,
-	6211,
-	51,
-	1655,
-	6211,
-	6211,
-	3723,
-	3723,
-	6211,
-	6211,
-	3723,
-	3723,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	1396,
-	6211,
-	6211,
-	6211,
-	6085,
-	6211,
-	6211,
-	1272,
-	4844,
-	2196,
-	4844,
-	11095,
-	11095,
-	4951,
-	4951,
-	11090,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	4951,
-	4951,
-	6211,
-	4951,
-	4951,
-	4951,
-	4951,
-	6211,
-	4951,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
-	6211,
+	5771,
+	5764,
+	5764,
+	10292,
+	7291,
+	7122,
+	2444,
+	7291,
+	1612,
+	5771,
+	5771,
+	7291,
+	1384,
+	7291,
+	1587,
+	1587,
+	1587,
+	7291,
+	13006,
+	7291,
+	1587,
+	1587,
+	1587,
+	7291,
+	13006,
+	7291,
+	1587,
+	1587,
+	1587,
+	7291,
+	13006,
+	1587,
+	1587,
+	1587,
+	7291,
+	13006,
+	7291,
+	2863,
+	7122,
+	5733,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	12954,
+	7291,
+	7153,
+	3132,
+	7291,
+	7291,
+	7281,
+	7280,
+	116,
+	53,
+	7291,
+	186,
+	117,
+	7291,
+	7291,
+	7291,
+	82,
+	2175,
+	7291,
+	7291,
+	5076,
+	5076,
+	7291,
+	7291,
+	5076,
+	5076,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	1583,
+	7291,
+	7291,
+	7291,
+	7153,
+	7291,
+	7291,
+	1434,
+	5639,
+	2521,
+	5639,
+	13006,
+	13006,
+	5764,
+	5764,
+	7291,
+	7291,
+	7291,
+	5764,
+	7291,
+	7291,
+	13001,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	5998,
+	5998,
+	5764,
+	5764,
+	7291,
+	5764,
+	5764,
+	5764,
+	5764,
+	7291,
+	5764,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
+	7291,
 	0,
-	4951,
-	6211,
+	5764,
+	7291,
 	0,
-	4951,
-	6085,
-	6211,
-	6211,
-	5058,
+	5764,
+	7153,
+	7291,
+	7291,
+	5880,
 	0,
-	6211,
-	10136,
-	10136,
-	9987,
-	8670,
-	6211,
-	4951,
-	6085,
-	6085,
-	4951,
-	6085,
-	4951,
-	4209,
-	6211,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6211,
-	6211,
-	6211,
-	1859,
-	6211,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	6085,
-	4951,
-	4209,
-	6211,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	6085,
-	4951,
-	4209,
-	6211,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	4209,
-	4951,
-	6133,
-	6133,
-	6198,
-	6085,
-	6211,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	4209,
-	4951,
-	6057,
-	4578,
-	6085,
-	6211,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6211,
-	4209,
-	4951,
-	6211,
-	6085,
-	6211,
-	6085,
-	4951,
-	6211,
-	6211,
-	6211,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6211,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	6085,
-	4951,
-	6085,
-	4951,
-	6211,
-	6211,
-	6211,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	6211,
-	6211,
-	6211,
-	4209,
-	4951,
-	4508,
-	6085,
-	6211,
-	6085,
-	4951,
-	6211,
-	6211,
-	6211,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	6211,
-	6211,
-	6211,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	4951,
-	6085,
-	6211,
-	6085,
-	4951,
-	4209,
-	6211,
-	4951,
-	6085,
-	6211,
-	11095,
-	4951,
+	7291,
+	11808,
+	11808,
+	11696,
+	10292,
+	7291,
+	5764,
+	7153,
+	7153,
+	5764,
+	7153,
+	5764,
+	4034,
+	7291,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7291,
+	7291,
+	7291,
+	2431,
+	7291,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	7153,
+	5764,
+	4034,
+	7291,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	7153,
+	5764,
+	4034,
+	7291,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	4034,
+	5764,
+	7043,
+	7043,
+	7278,
+	7153,
+	7291,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	4034,
+	5764,
+	7122,
+	5296,
+	7153,
+	7291,
+	13006,
+	7291,
+	4034,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7291,
+	4034,
+	5764,
+	7291,
+	7153,
+	7291,
+	7153,
+	5764,
+	7291,
+	7291,
+	7291,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7291,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	7153,
+	5764,
+	7153,
+	5764,
+	7291,
+	7291,
+	7291,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	7291,
+	7291,
+	7291,
+	4034,
+	5764,
+	5203,
+	7153,
+	7291,
+	7153,
+	5764,
+	7291,
+	7291,
+	7291,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	7291,
+	7291,
+	7291,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	5764,
+	7153,
+	7291,
+	7153,
+	5764,
+	4034,
+	7291,
+	5764,
+	7153,
+	7291,
+	13006,
+	5764,
 	0,
-	6211,
-	6211,
-	6211,
-	6211,
+	7291,
+	7291,
+	7291,
+	7291,
 	0,
-	6085,
-	6211,
-	6211,
-	6211,
-	10332,
-	6211,
-	6211,
-	6211,
-	0,
-	0,
-	6211,
-	6211,
-	4951,
-	4951,
-	0,
-	0,
-	0,
-	0,
-	6211,
-	0,
-	0,
+	7153,
+	7291,
+	7291,
+	7291,
+	12125,
+	7291,
+	7291,
+	7291,
 	0,
 	0,
+	7291,
+	7291,
+	5764,
+	5764,
+	0,
+	0,
+	0,
+	0,
+	7291,
 	0,
 	0,
 	0,
 	0,
 	0,
-	4951,
+	0,
+	0,
+	0,
+	0,
+	5764,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[7] = 
 {
-	{ 0x0200003D, { 7, 6 } },
-	{ 0x0600014F, { 0, 1 } },
-	{ 0x06000150, { 1, 1 } },
-	{ 0x06000155, { 2, 1 } },
-	{ 0x06000156, { 3, 1 } },
-	{ 0x06000157, { 4, 2 } },
-	{ 0x06000158, { 6, 1 } },
+	{ 0x0200003E, { 7, 6 } },
+	{ 0x0600015A, { 0, 1 } },
+	{ 0x0600015B, { 1, 1 } },
+	{ 0x06000160, { 2, 1 } },
+	{ 0x06000161, { 3, 1 } },
+	{ 0x06000162, { 4, 2 } },
+	{ 0x06000163, { 6, 1 } },
 };
 extern const uint32_t g_rgctx_GameObject_AddComponent_TisT_tFAEA91CA1ACEC8F6A91141D3637947892D96BBB0_mDF058388EE983F4ACCE73E5EB60AC3D934A76A1D;
 extern const uint32_t g_rgctx_VFXPropertyBinder_AddPropertyBinder_TisT_t83DBF61A5ADA9E2C60986AC36E3F33B00AFE76BC_m2BE8428571F42FF1E62A5B038E0C43CB45C2E7F7;
@@ -1461,7 +1505,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_VisualEffectGraph_Runtime_Code
 const Il2CppCodeGenModule g_Unity_VisualEffectGraph_Runtime_CodeGenModule = 
 {
 	"Unity.VisualEffectGraph.Runtime.dll",
-	355,
+	366,
 	s_methodPointers,
 	0,
 	NULL,

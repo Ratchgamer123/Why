@@ -142,11 +142,25 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 	String_t* ___FalseString_6;
 };
 
+// System.Double
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
+{
+	// System.Double System.Double::m_value
+	double ___m_value_0;
+};
+
 // System.Int32
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	// System.Int32 System.Int32::m_value
 	int32_t ___m_value_0;
+};
+
+// System.Int64
+struct Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3 
+{
+	// System.Int64 System.Int64::m_value
+	int64_t ___m_value_0;
 };
 
 // System.IntPtr
@@ -160,6 +174,94 @@ struct IntPtr_t_StaticFields
 {
 	// System.IntPtr System.IntPtr::Zero
 	intptr_t ___Zero_1;
+};
+
+// UnityEngineInternal.Input.NativeInputEvent
+struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					// UnityEngineInternal.Input.NativeInputEventType UnityEngineInternal.Input.NativeInputEvent::type
+					int32_t ___type_1;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					int32_t ___type_1_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___sizeInBytes_2_OffsetPadding[4];
+					// System.UInt16 UnityEngineInternal.Input.NativeInputEvent::sizeInBytes
+					uint16_t ___sizeInBytes_2;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___sizeInBytes_2_OffsetPadding_forAlignmentOnly[4];
+					uint16_t ___sizeInBytes_2_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___deviceId_3_OffsetPadding[6];
+					// System.UInt16 UnityEngineInternal.Input.NativeInputEvent::deviceId
+					uint16_t ___deviceId_3;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___deviceId_3_OffsetPadding_forAlignmentOnly[6];
+					uint16_t ___deviceId_3_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___time_4_OffsetPadding[8];
+					// System.Double UnityEngineInternal.Input.NativeInputEvent::time
+					double ___time_4;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___time_4_OffsetPadding_forAlignmentOnly[8];
+					double ___time_4_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___eventId_5_OffsetPadding[16];
+					// System.Int32 UnityEngineInternal.Input.NativeInputEvent::eventId
+					int32_t ___eventId_5;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___eventId_5_OffsetPadding_forAlignmentOnly[16];
+					int32_t ___eventId_5_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+			};
+		};
+		uint8_t NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8__padding[20];
+	};
 };
 
 // UnityEngineInternal.Input.NativeInputEventBuffer
@@ -233,6 +335,13 @@ struct NativeInputEventBuffer_t4EE5873AD7998E0E83C9F8585C338AB14C9101FD
 		};
 		uint8_t NativeInputEventBuffer_t4EE5873AD7998E0E83C9F8585C338AB14C9101FD__padding[20];
 	};
+};
+
+// System.Single
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	// System.Single System.Single::m_value
+	float ___m_value_0;
 };
 
 // System.Void
@@ -531,6 +640,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeUpdateCallback_Invoke_mC4B7018AE8E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Action`2<System.Int32,System.String> UnityEngineInternal.Input.NativeInputSystem::get_onDeviceDiscovered()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* NativeInputSystem_get_onDeviceDiscovered_m7999CE102F66BB67257862F4DF70669B318E29DC (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* V_0 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var);
+		Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* L_0 = ((NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_StaticFields*)il2cpp_codegen_static_fields_for(NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var))->___s_OnDeviceDiscoveredCallback_3;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void UnityEngineInternal.Input.NativeInputSystem::set_onDeviceDiscovered(System.Action`2<System.Int32,System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_set_onDeviceDiscovered_m42370AEB4560BE9110FB59944D4E47F5B471DFE1 (Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* L_0 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var);
+		((NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_StaticFields*)il2cpp_codegen_static_fields_for(NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var))->___s_OnDeviceDiscoveredCallback_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_StaticFields*)il2cpp_codegen_static_fields_for(NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var))->___s_OnDeviceDiscoveredCallback_3), (void*)L_0);
+		Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* L_1 = ((NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_StaticFields*)il2cpp_codegen_static_fields_for(NativeInputSystem_tCFE5554EBC0D3EE1DAD80FC55CE0DE38A3DDC5EE_il2cpp_TypeInfo_var))->___s_OnDeviceDiscoveredCallback_3;
+		NativeInputSystem_set_hasDeviceDiscoveredCallback_m2E3D1F06C4889BF357605229E11E87555245EBED((bool)((!(((RuntimeObject*)(Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6*)L_1) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0), NULL);
+		return;
+	}
+}
 // System.Void UnityEngineInternal.Input.NativeInputSystem::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem__cctor_m6A57ED781C2707E4F793E2C78636AED670A7D226 (const RuntimeMethod* method) 
 {
@@ -719,6 +878,73 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_set_hasDeviceDiscovere
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (NativeInputSystem_set_hasDeviceDiscoveredCallback_m2E3D1F06C4889BF357605229E11E87555245EBED_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::set_hasDeviceDiscoveredCallback(System.Boolean)");
 	_il2cpp_icall_func(___value0);
+}
+// System.Double UnityEngineInternal.Input.NativeInputSystem::get_currentTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double NativeInputSystem_get_currentTime_m74CA30007EBB0E701F888443A2E4758339B2F764 (const RuntimeMethod* method) 
+{
+	typedef double (*NativeInputSystem_get_currentTime_m74CA30007EBB0E701F888443A2E4758339B2F764_ftn) ();
+	static NativeInputSystem_get_currentTime_m74CA30007EBB0E701F888443A2E4758339B2F764_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_get_currentTime_m74CA30007EBB0E701F888443A2E4758339B2F764_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::get_currentTime()");
+	double icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+// System.Double UnityEngineInternal.Input.NativeInputSystem::get_currentTimeOffsetToRealtimeSinceStartup()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double NativeInputSystem_get_currentTimeOffsetToRealtimeSinceStartup_m898F6908BE8AFECEE9B20ABE5AF0E518FAD94228 (const RuntimeMethod* method) 
+{
+	typedef double (*NativeInputSystem_get_currentTimeOffsetToRealtimeSinceStartup_m898F6908BE8AFECEE9B20ABE5AF0E518FAD94228_ftn) ();
+	static NativeInputSystem_get_currentTimeOffsetToRealtimeSinceStartup_m898F6908BE8AFECEE9B20ABE5AF0E518FAD94228_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_get_currentTimeOffsetToRealtimeSinceStartup_m898F6908BE8AFECEE9B20ABE5AF0E518FAD94228_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::get_currentTimeOffsetToRealtimeSinceStartup()");
+	double icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+// System.Int32 UnityEngineInternal.Input.NativeInputSystem::AllocateDeviceId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeInputSystem_AllocateDeviceId_mAC24A153C4BE2F1F32E9E674EBB7D4B56C868E82 (const RuntimeMethod* method) 
+{
+	typedef int32_t (*NativeInputSystem_AllocateDeviceId_mAC24A153C4BE2F1F32E9E674EBB7D4B56C868E82_ftn) ();
+	static NativeInputSystem_AllocateDeviceId_mAC24A153C4BE2F1F32E9E674EBB7D4B56C868E82_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_AllocateDeviceId_mAC24A153C4BE2F1F32E9E674EBB7D4B56C868E82_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::AllocateDeviceId()");
+	int32_t icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+// System.Void UnityEngineInternal.Input.NativeInputSystem::QueueInputEvent(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_QueueInputEvent_m316E7C47A9EB60CE9097020FDB7517F085729E6C (intptr_t ___inputEvent0, const RuntimeMethod* method) 
+{
+	typedef void (*NativeInputSystem_QueueInputEvent_m316E7C47A9EB60CE9097020FDB7517F085729E6C_ftn) (intptr_t);
+	static NativeInputSystem_QueueInputEvent_m316E7C47A9EB60CE9097020FDB7517F085729E6C_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_QueueInputEvent_m316E7C47A9EB60CE9097020FDB7517F085729E6C_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::QueueInputEvent(System.IntPtr)");
+	_il2cpp_icall_func(___inputEvent0);
+}
+// System.Int64 UnityEngineInternal.Input.NativeInputSystem::IOCTL(System.Int32,System.Int32,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t NativeInputSystem_IOCTL_m621D812F5A83D696EE98475A877AA750D246B695 (int32_t ___deviceId0, int32_t ___code1, intptr_t ___data2, int32_t ___sizeInBytes3, const RuntimeMethod* method) 
+{
+	typedef int64_t (*NativeInputSystem_IOCTL_m621D812F5A83D696EE98475A877AA750D246B695_ftn) (int32_t, int32_t, intptr_t, int32_t);
+	static NativeInputSystem_IOCTL_m621D812F5A83D696EE98475A877AA750D246B695_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_IOCTL_m621D812F5A83D696EE98475A877AA750D246B695_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::IOCTL(System.Int32,System.Int32,System.IntPtr,System.Int32)");
+	int64_t icallRetVal = _il2cpp_icall_func(___deviceId0, ___code1, ___data2, ___sizeInBytes3);
+	return icallRetVal;
+}
+// System.Void UnityEngineInternal.Input.NativeInputSystem::SetPollingFrequency(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_SetPollingFrequency_m48849AAAB200C17E60BD38964A1AD52390752D9C (float ___hertz0, const RuntimeMethod* method) 
+{
+	typedef void (*NativeInputSystem_SetPollingFrequency_m48849AAAB200C17E60BD38964A1AD52390752D9C_ftn) (float);
+	static NativeInputSystem_SetPollingFrequency_m48849AAAB200C17E60BD38964A1AD52390752D9C_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_SetPollingFrequency_m48849AAAB200C17E60BD38964A1AD52390752D9C_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::SetPollingFrequency(System.Single)");
+	_il2cpp_icall_func(___hertz0);
+}
+// System.Void UnityEngineInternal.Input.NativeInputSystem::Update(UnityEngineInternal.Input.NativeInputUpdateType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_Update_m1AA42896EE1B197EE51781411326E243C102BAF5 (int32_t ___updateType0, const RuntimeMethod* method) 
+{
+	typedef void (*NativeInputSystem_Update_m1AA42896EE1B197EE51781411326E243C102BAF5_ftn) (int32_t);
+	static NativeInputSystem_Update_m1AA42896EE1B197EE51781411326E243C102BAF5_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NativeInputSystem_Update_m1AA42896EE1B197EE51781411326E243C102BAF5_ftn)il2cpp_codegen_resolve_icall ("UnityEngineInternal.Input.NativeInputSystem::Update(UnityEngineInternal.Input.NativeInputUpdateType)");
+	_il2cpp_icall_func(___updateType0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
