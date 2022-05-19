@@ -29672,7 +29672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_OnFocusChanged_m7ED93DAED3A
 		//     // In the editor, the player loop will always be run even if the Game View does not have focus. This
 		//     // amounts to runInBackground being always true in the editor, regardless of what the setting in
 		//     // the Player Settings window is.
-		//     
+		// 
 		//     // If, however, "Game View Focus" is set to "Exactly As In Player", we force code here down the same
 		//     // path as in the player.
 		//     gameViewFocus != InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView || m_Runtime.runInBackground;

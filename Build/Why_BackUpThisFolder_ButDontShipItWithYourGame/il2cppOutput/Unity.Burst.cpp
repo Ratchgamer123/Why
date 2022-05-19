@@ -2688,14 +2688,10 @@ struct EmbeddedAttribute_tB15AE7271F787DA6A515EA05BEC5B218E147E15A  : public Att
 // UnityEngine.Hash128
 struct Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 
 {
-	// System.UInt32 UnityEngine.Hash128::m_u32_0
-	uint32_t ___m_u32_0_0;
-	// System.UInt32 UnityEngine.Hash128::m_u32_1
-	uint32_t ___m_u32_1_1;
-	// System.UInt32 UnityEngine.Hash128::m_u32_2
-	uint32_t ___m_u32_2_2;
-	// System.UInt32 UnityEngine.Hash128::m_u32_3
-	uint32_t ___m_u32_3_3;
+	// System.UInt64 UnityEngine.Hash128::u64_0
+	uint64_t ___u64_0_0;
+	// System.UInt64 UnityEngine.Hash128::u64_1
+	uint64_t ___u64_1_1;
 };
 
 // System.Int16
@@ -9769,8 +9765,8 @@ IL_002a:
 
 IL_0032:
 	{
-		// ForceBurstCompilationSynchronously = false;
-		((BurstCompilerOptions_t5F93118F305E1B0C950C6F9AF8BCA74033DA01C9_StaticFields*)il2cpp_codegen_static_fields_for(BurstCompilerOptions_t5F93118F305E1B0C950C6F9AF8BCA74033DA01C9_il2cpp_TypeInfo_var))->___ForceBurstCompilationSynchronously_97 = (bool)0;
+		// ForceBurstCompilationSynchronously = true;
+		((BurstCompilerOptions_t5F93118F305E1B0C950C6F9AF8BCA74033DA01C9_StaticFields*)il2cpp_codegen_static_fields_for(BurstCompilerOptions_t5F93118F305E1B0C950C6F9AF8BCA74033DA01C9_il2cpp_TypeInfo_var))->___ForceBurstCompilationSynchronously_97 = (bool)1;
 	}
 
 IL_0038:

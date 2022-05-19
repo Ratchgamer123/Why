@@ -492,6 +492,8 @@ struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct StateChanged_t6DC116251B1ED50EC475CFF0195AB6625478485F;
 // UnityEngine.Display/DisplaysUpdatedDelegate
 struct DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68;
+// Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_
+struct PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
@@ -532,6 +534,7 @@ IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il
 IL2CPP_EXTERN_C RuntimeClass* Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LightProbes_tB0E0051ED428658D51E611C9E4B6FE3A49EB094D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A_il2cpp_TypeInfo_var;
@@ -1312,6 +1315,12 @@ struct JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C  : public RuntimeOb
 {
 };
 
+struct JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_StaticFields
+{
+	// Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_ Unity.Jobs.LowLevel.Unsafe.JobsUtility::PanicFunction
+	PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* ___PanicFunction_0;
+};
+
 // UnityEngine.Logger
 struct Logger_t608FFEA1E140B6BE2CCB01C86ACB219533C172A0  : public RuntimeObject
 {
@@ -1808,14 +1817,10 @@ struct GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49  : public Stack_tB
 // UnityEngine.Hash128
 struct Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 
 {
-	// System.UInt32 UnityEngine.Hash128::m_u32_0
-	uint32_t ___m_u32_0_0;
-	// System.UInt32 UnityEngine.Hash128::m_u32_1
-	uint32_t ___m_u32_1_1;
-	// System.UInt32 UnityEngine.Hash128::m_u32_2
-	uint32_t ___m_u32_2_2;
-	// System.UInt32 UnityEngine.Hash128::m_u32_3
-	uint32_t ___m_u32_3_3;
+	// System.UInt64 UnityEngine.Hash128::u64_0
+	uint64_t ___u64_0_0;
+	// System.UInt64 UnityEngine.Hash128::u64_1
+	uint64_t ___u64_1_1;
 };
 
 // Unity.IL2CPP.CompilerServices.Il2CppEagerStaticClassConstructionAttribute
@@ -3858,6 +3863,11 @@ struct DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68  : publ
 {
 };
 
+// Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_
+struct PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02  : public MulticastDelegate_t
+{
+};
+
 // System.ArgumentNullException
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
 {
@@ -3963,6 +3973,41 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
 	{
 		m_Items[index] = value;
+	}
+};
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Delegate_t* m_Items[1];
+
+	inline Delegate_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Delegate_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
 // System.UInt64[]
@@ -4262,41 +4307,6 @@ struct KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3  : public Runtim
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 value)
 	{
 		m_Items[index] = value;
-	}
-};
-// System.Delegate[]
-struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Delegate_t* m_Items[1];
-
-	inline Delegate_t* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Delegate_t** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Delegate_t* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline Delegate_t* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Delegate_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
 // UnityEngine.Camera[]
@@ -5138,6 +5148,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JobsUtility_ScheduleParallelFor_Injected
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JobsUtility_ScheduleParallelForTransform_Injected_mD90BFD5264B05027D426D27E7311D0A691954976 (JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B* ___parameters0, intptr_t ___transfromAccesssArray1, JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08* ___ret2, const RuntimeMethod* method) ;
 // System.IntPtr Unity.Jobs.LowLevel.Unsafe.JobsUtility::CreateJobReflectionData(System.Type,System.Type,System.Object,System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t JobsUtility_CreateJobReflectionData_mA38915E5A40FAFA940DB77B618060D9B3E8EDA1B (Type_t* ___wrapperJobType0, Type_t* ___userJobType1, RuntimeObject* ___managedJobFunction02, RuntimeObject* ___managedJobFunction13, RuntimeObject* ___managedJobFunction24, const RuntimeMethod* method) ;
+// System.Void Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_inline (PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method) ;
 // System.Void Unity.Jobs.LowLevel.Unsafe.JobsUtility/JobScheduleParameters::.ctor(System.Void*,System.IntPtr,Unity.Jobs.JobHandle,Unity.Jobs.LowLevel.Unsafe.ScheduleMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JobScheduleParameters__ctor_m5FFED3B28A1FA2C3EC7D1C50A7D7E788C411CE04 (JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B* __this, void* ___i_jobData0, intptr_t ___i_reflectionData1, JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 ___i_dependency2, int32_t ___i_scheduleMode3, const RuntimeMethod* method) ;
 // System.Void Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Free(System.Void*,Unity.Collections.Allocator)
@@ -6601,10 +6613,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderTextureDescriptor_get_useDynamicSc
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hash128__ctor_m4C7478EE2EED2085265B895E483B128CCAA6D011 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, uint32_t ___u32_00, uint32_t ___u32_11, uint32_t ___u32_22, uint32_t ___u32_33, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Hash128::.ctor(System.UInt64,System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hash128__ctor_m0B61E717B3FF7D7BBD8FF12C8C8327C18A2AAAF3 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, uint64_t ___u64_00, uint64_t ___u64_11, const RuntimeMethod* method) ;
-// System.UInt64 UnityEngine.Hash128::get_u64_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Hash128_get_u64_0_mCA2981F425AAD6F5E10415DFF3F484E931FCC507 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, const RuntimeMethod* method) ;
-// System.UInt64 UnityEngine.Hash128::get_u64_1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Hash128_get_u64_1_m165A7DA7444650E888C90748FD8BCAE2A7403E62 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Hash128::op_LessThan(UnityEngine.Hash128,UnityEngine.Hash128)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_op_LessThan_mA4A5D4D26DF36B95EB8F38603C2B70649DBBC5D2 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___x0, Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___y1, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Hash128::op_GreaterThan(UnityEngine.Hash128,UnityEngine.Hash128)
@@ -6623,8 +6631,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_op_Equality_m02C167BEC21C10481E0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_Equals_m28FADCC2F9A565AF152A53BCEEF88F798716B104 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Hash128::Equals(UnityEngine.Hash128)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_Equals_mF6BED87E0744D6DFFF8026614BDA8F4E6712063D (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___obj0, const RuntimeMethod* method) ;
-// System.Int32 System.UInt32::GetHashCode()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UInt32_GetHashCode_mB9A03A037C079ADF0E61516BECA1AB05F92266BC (uint32_t* __this, const RuntimeMethod* method) ;
+// System.Int32 System.UInt64::GetHashCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UInt64_GetHashCode_m65D9FD0102B6B01BF38D986F060F0BDBC29B4F92 (uint64_t* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Hash128::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Hash128_GetHashCode_m22816EE33CD973D11CD1917DEF7A0E0EC229E1D8 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Hash128::CompareTo(System.Object)
@@ -8029,6 +8037,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JobsUtility_set_JobCompilerEnabled_m7FC4
 	_il2cpp_icall_func = (JobsUtility_set_JobCompilerEnabled_m7FC4478E64C86BAA36B2828E71D6A9BD08DF148A_ftn)il2cpp_codegen_resolve_icall ("Unity.Jobs.LowLevel.Unsafe.JobsUtility::set_JobCompilerEnabled(System.Boolean)");
 	_il2cpp_icall_func(___value0);
 }
+// System.Void Unity.Jobs.LowLevel.Unsafe.JobsUtility::InvokePanicFunction()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JobsUtility_InvokePanicFunction_m8A9BE7DF849C2EA60E5DF188D7CB7D74FDCFF007 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* V_0 = NULL;
+	bool V_1 = false;
+	{
+		PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* L_0 = ((JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_StaticFields*)il2cpp_codegen_static_fields_for(JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_il2cpp_TypeInfo_var))->___PanicFunction_0;
+		V_0 = L_0;
+		PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* L_1 = V_0;
+		V_1 = (bool)((((RuntimeObject*)(PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02*)L_1) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		goto IL_0018;
+	}
+
+IL_0011:
+	{
+		PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* L_3 = V_0;
+		NullCheck(L_3);
+		PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_inline(L_3, NULL);
+	}
+
+IL_0018:
+	{
+		return;
+	}
+}
 // System.Void Unity.Jobs.LowLevel.Unsafe.JobsUtility::Schedule_Injected(Unity.Jobs.LowLevel.Unsafe.JobsUtility/JobScheduleParameters&,Unity.Jobs.JobHandle&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JobsUtility_Schedule_Injected_mE1C374BED8057D4BF47229EB3C1B893F56E3211C (JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B* ___parameters0, JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08* ___ret1, const RuntimeMethod* method) 
 {
@@ -8087,6 +8133,85 @@ IL2CPP_EXTERN_C  void JobScheduleParameters__ctor_m5FFED3B28A1FA2C3EC7D1C50A7D7E
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B*>(__this + _offset);
 	JobScheduleParameters__ctor_m5FFED3B28A1FA2C3EC7D1C50A7D7E788C411CE04(_thisAdjusted, ___i_jobData0, ___i_reflectionData1, ___i_dependency2, ___i_scheduleMode3, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_Multicast(PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* currentDelegate = reinterpret_cast<PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_Open(PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(method);
+}
+void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_OpenStaticInvoker(PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method)
+{
+	InvokerActionInvoker0::Invoke(__this->___method_ptr_0, method, NULL);
+}
+void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_ClosedStaticInvoker(PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< RuntimeObject* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2);
+}
+IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02 (PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_reverse_pinvoke_function_ptr(__this));
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.Void Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PanicFunction___ctor_m17297514778BEA5F35E562880A6C317CF34856DF (PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 0;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_Open;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_Multicast;
+}
+// System.Void Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A (PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -18419,16 +18544,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Screen_set_fullScreen_m46FCC49722BE6E27B
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Screen_set_fullScreen_m46FCC49722BE6E27B92301D55A834C24B48B9EA2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Screen::set_fullScreen(System.Boolean)");
 	_il2cpp_icall_func(___value0);
-}
-// UnityEngine.FullScreenMode UnityEngine.Screen::get_fullScreenMode()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_fullScreenMode_m9651FE8CD208A00D617869E4CAB43607AD9FA23D (const RuntimeMethod* method) 
-{
-	typedef int32_t (*Screen_get_fullScreenMode_m9651FE8CD208A00D617869E4CAB43607AD9FA23D_ftn) ();
-	static Screen_get_fullScreenMode_m9651FE8CD208A00D617869E4CAB43607AD9FA23D_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Screen_get_fullScreenMode_m9651FE8CD208A00D617869E4CAB43607AD9FA23D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Screen::get_fullScreenMode()");
-	int32_t icallRetVal = _il2cpp_icall_func();
-	return icallRetVal;
 }
 // System.Void UnityEngine.Screen::SetResolution(System.Int32,System.Int32,UnityEngine.FullScreenMode,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Screen_SetResolution_mBBD9738464E00D5F13D1654C7A7E366706DD0EE3 (int32_t ___width0, int32_t ___height1, int32_t ___fullscreenMode2, int32_t ___preferredRefreshRate3, const RuntimeMethod* method) 
@@ -33114,14 +33229,12 @@ IL2CPP_EXTERN_C  void RenderTextureDescriptor_set_useDynamicScale_m9335866C8754D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hash128__ctor_m4C7478EE2EED2085265B895E483B128CCAA6D011 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, uint32_t ___u32_00, uint32_t ___u32_11, uint32_t ___u32_22, uint32_t ___u32_33, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = ___u32_00;
-		__this->___m_u32_0_0 = L_0;
-		uint32_t L_1 = ___u32_11;
-		__this->___m_u32_1_1 = L_1;
-		uint32_t L_2 = ___u32_22;
-		__this->___m_u32_2_2 = L_2;
-		uint32_t L_3 = ___u32_33;
-		__this->___m_u32_3_3 = L_3;
+		uint32_t L_0 = ___u32_11;
+		uint32_t L_1 = ___u32_00;
+		__this->___u64_0_0 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_0)<<((int32_t)32)))|((int64_t)(uint64_t)L_1)));
+		uint32_t L_2 = ___u32_33;
+		uint32_t L_3 = ___u32_22;
+		__this->___u64_1_1 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_2)<<((int32_t)32)))|((int64_t)(uint64_t)L_3)));
 		return;
 	}
 }
@@ -33135,23 +33248,11 @@ IL2CPP_EXTERN_C  void Hash128__ctor_m4C7478EE2EED2085265B895E483B128CCAA6D011_Ad
 // System.Void UnityEngine.Hash128::.ctor(System.UInt64,System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hash128__ctor_m0B61E717B3FF7D7BBD8FF12C8C8327C18A2AAAF3 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, uint64_t ___u64_00, uint64_t ___u64_11, const RuntimeMethod* method) 
 {
-	uint32_t* V_0 = NULL;
-	uint32_t* V_1 = NULL;
 	{
-		V_0 = (uint32_t*)((uintptr_t)(&___u64_00));
-		V_1 = (uint32_t*)((uintptr_t)(&___u64_11));
-		uint32_t* L_0 = V_0;
-		int32_t L_1 = *((uint32_t*)L_0);
-		__this->___m_u32_0_0 = L_1;
-		uint32_t* L_2 = V_0;
-		int32_t L_3 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4)));
-		__this->___m_u32_1_1 = L_3;
-		uint32_t* L_4 = V_1;
-		int32_t L_5 = *((uint32_t*)L_4);
-		__this->___m_u32_2_2 = L_5;
-		uint32_t* L_6 = V_1;
-		int32_t L_7 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, 4)));
-		__this->___m_u32_3_3 = L_7;
+		uint64_t L_0 = ___u64_00;
+		__this->___u64_0_0 = L_0;
+		uint64_t L_1 = ___u64_11;
+		__this->___u64_1_1 = L_1;
 		return;
 	}
 }
@@ -33161,70 +33262,6 @@ IL2CPP_EXTERN_C  void Hash128__ctor_m0B61E717B3FF7D7BBD8FF12C8C8327C18A2AAAF3_Ad
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*>(__this + _offset);
 	Hash128__ctor_m0B61E717B3FF7D7BBD8FF12C8C8327C18A2AAAF3(_thisAdjusted, ___u64_00, ___u64_11, method);
-}
-// System.UInt64 UnityEngine.Hash128::get_u64_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Hash128_get_u64_0_mCA2981F425AAD6F5E10415DFF3F484E931FCC507 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, const RuntimeMethod* method) 
-{
-	uint32_t* V_0 = NULL;
-	uint32_t* V_1 = NULL;
-	uint64_t V_2 = 0;
-	{
-		uint32_t* L_0 = (&__this->___m_u32_0_0);
-		V_1 = L_0;
-		uint32_t* L_1 = V_1;
-		V_0 = (uint32_t*)((uintptr_t)L_1);
-		uint32_t* L_2 = V_0;
-		int64_t L_3 = *((int64_t*)L_2);
-		V_2 = L_3;
-		goto IL_0010;
-	}
-
-IL_0010:
-	{
-		uint64_t L_4 = V_2;
-		return L_4;
-	}
-}
-IL2CPP_EXTERN_C  uint64_t Hash128_get_u64_0_mCA2981F425AAD6F5E10415DFF3F484E931FCC507_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*>(__this + _offset);
-	uint64_t _returnValue;
-	_returnValue = Hash128_get_u64_0_mCA2981F425AAD6F5E10415DFF3F484E931FCC507(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.UInt64 UnityEngine.Hash128::get_u64_1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Hash128_get_u64_1_m165A7DA7444650E888C90748FD8BCAE2A7403E62 (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, const RuntimeMethod* method) 
-{
-	uint32_t* V_0 = NULL;
-	uint32_t* V_1 = NULL;
-	uint64_t V_2 = 0;
-	{
-		uint32_t* L_0 = (&__this->___m_u32_2_2);
-		V_1 = L_0;
-		uint32_t* L_1 = V_1;
-		V_0 = (uint32_t*)((uintptr_t)L_1);
-		uint32_t* L_2 = V_0;
-		int64_t L_3 = *((int64_t*)L_2);
-		V_2 = L_3;
-		goto IL_0010;
-	}
-
-IL_0010:
-	{
-		uint64_t L_4 = V_2;
-		return L_4;
-	}
-}
-IL2CPP_EXTERN_C  uint64_t Hash128_get_u64_1_m165A7DA7444650E888C90748FD8BCAE2A7403E62_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*>(__this + _offset);
-	uint64_t _returnValue;
-	_returnValue = Hash128_get_u64_1_m165A7DA7444650E888C90748FD8BCAE2A7403E62(_thisAdjusted, method);
-	return _returnValue;
 }
 // System.Int32 UnityEngine.Hash128::CompareTo(UnityEngine.Hash128)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Hash128_CompareTo_mFFE3648A372A7F3202897B266E14A6E2521BFE0C (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* __this, Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___rhs0, const RuntimeMethod* method) 
@@ -33410,26 +33447,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Hash128_GetHashCode_m22816EE33CD973D1
 {
 	int32_t V_0 = 0;
 	{
-		uint32_t* L_0 = (&__this->___m_u32_0_0);
+		uint64_t* L_0 = (&__this->___u64_0_0);
 		int32_t L_1;
-		L_1 = UInt32_GetHashCode_mB9A03A037C079ADF0E61516BECA1AB05F92266BC(L_0, NULL);
-		uint32_t* L_2 = (&__this->___m_u32_1_1);
+		L_1 = UInt64_GetHashCode_m65D9FD0102B6B01BF38D986F060F0BDBC29B4F92(L_0, NULL);
+		uint64_t* L_2 = (&__this->___u64_1_1);
 		int32_t L_3;
-		L_3 = UInt32_GetHashCode_mB9A03A037C079ADF0E61516BECA1AB05F92266BC(L_2, NULL);
-		uint32_t* L_4 = (&__this->___m_u32_2_2);
-		int32_t L_5;
-		L_5 = UInt32_GetHashCode_mB9A03A037C079ADF0E61516BECA1AB05F92266BC(L_4, NULL);
-		uint32_t* L_6 = (&__this->___m_u32_3_3);
-		int32_t L_7;
-		L_7 = UInt32_GetHashCode_mB9A03A037C079ADF0E61516BECA1AB05F92266BC(L_6, NULL);
-		V_0 = ((int32_t)(((int32_t)(((int32_t)(L_1^L_3))^L_5))^L_7));
-		goto IL_0033;
+		L_3 = UInt64_GetHashCode_m65D9FD0102B6B01BF38D986F060F0BDBC29B4F92(L_2, NULL);
+		V_0 = ((int32_t)(L_1^L_3));
+		goto IL_001b;
 	}
 
-IL_0033:
+IL_001b:
 	{
-		int32_t L_8 = V_0;
-		return L_8;
+		int32_t L_4 = V_0;
+		return L_4;
 	}
 }
 IL2CPP_EXTERN_C  int32_t Hash128_GetHashCode_m22816EE33CD973D11CD1917DEF7A0E0EC229E1D8_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
@@ -33517,61 +33548,41 @@ IL2CPP_EXTERN_C  int32_t Hash128_CompareTo_m1D249BA0DD01AF06E5B96B186E8A5F181BB3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_op_Equality_m02C167BEC21C10481E0C1702D933EBA4AAE4B41E (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___hash10, Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___hash21, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
-	int32_t G_B5_0 = 0;
+	int32_t G_B3_0 = 0;
 	{
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_0 = ___hash10;
-		uint32_t L_1 = L_0.___m_u32_0_0;
+		uint64_t L_1 = L_0.___u64_0_0;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_2 = ___hash21;
-		uint32_t L_3 = L_2.___m_u32_0_0;
-		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
+		uint64_t L_3 = L_2.___u64_0_0;
+		if ((!(((uint64_t)L_1) == ((uint64_t)L_3))))
 		{
-			goto IL_003b;
+			goto IL_001f;
 		}
 	}
 	{
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_4 = ___hash10;
-		uint32_t L_5 = L_4.___m_u32_1_1;
+		uint64_t L_5 = L_4.___u64_1_1;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_6 = ___hash21;
-		uint32_t L_7 = L_6.___m_u32_1_1;
-		if ((!(((uint32_t)L_5) == ((uint32_t)L_7))))
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_8 = ___hash10;
-		uint32_t L_9 = L_8.___m_u32_2_2;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_10 = ___hash21;
-		uint32_t L_11 = L_10.___m_u32_2_2;
-		if ((!(((uint32_t)L_9) == ((uint32_t)L_11))))
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_12 = ___hash10;
-		uint32_t L_13 = L_12.___m_u32_3_3;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_14 = ___hash21;
-		uint32_t L_15 = L_14.___m_u32_3_3;
-		G_B5_0 = ((((int32_t)L_13) == ((int32_t)L_15))? 1 : 0);
-		goto IL_003c;
+		uint64_t L_7 = L_6.___u64_1_1;
+		G_B3_0 = ((((int64_t)L_5) == ((int64_t)L_7))? 1 : 0);
+		goto IL_0020;
 	}
 
-IL_003b:
+IL_001f:
 	{
-		G_B5_0 = 0;
+		G_B3_0 = 0;
 	}
 
-IL_003c:
+IL_0020:
 	{
-		V_0 = (bool)G_B5_0;
-		goto IL_003f;
+		V_0 = (bool)G_B3_0;
+		goto IL_0023;
 	}
 
-IL_003f:
+IL_0023:
 	{
-		bool L_16 = V_0;
-		return L_16;
+		bool L_8 = V_0;
+		return L_8;
 	}
 }
 // System.Boolean UnityEngine.Hash128::op_LessThan(UnityEngine.Hash128,UnityEngine.Hash128)
@@ -33579,14 +33590,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_op_LessThan_mA4A5D4D26DF36B95EB8
 {
 	bool V_0 = false;
 	bool V_1 = false;
-	bool V_2 = false;
-	bool V_3 = false;
 	{
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_0 = ___x0;
-		uint32_t L_1 = L_0.___m_u32_0_0;
+		uint64_t L_1 = L_0.___u64_0_0;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_2 = ___y1;
-		uint32_t L_3 = L_2.___m_u32_0_0;
-		V_0 = (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)L_3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		uint64_t L_3 = L_2.___u64_0_0;
+		V_0 = (bool)((((int32_t)((((int64_t)L_1) == ((int64_t)L_3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_4 = V_0;
 		if (!L_4)
 		{
@@ -33595,71 +33604,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hash128_op_LessThan_mA4A5D4D26DF36B95EB8
 	}
 	{
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_5 = ___x0;
-		uint32_t L_6 = L_5.___m_u32_0_0;
+		uint64_t L_6 = L_5.___u64_0_0;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_7 = ___y1;
-		uint32_t L_8 = L_7.___m_u32_0_0;
-		V_1 = (bool)((!(((uint32_t)L_6) >= ((uint32_t)L_8)))? 1 : 0);
-		goto IL_0084;
+		uint64_t L_8 = L_7.___u64_0_0;
+		V_1 = (bool)((!(((uint64_t)L_6) >= ((uint64_t)L_8)))? 1 : 0);
+		goto IL_0038;
 	}
 
 IL_0027:
 	{
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_9 = ___x0;
-		uint32_t L_10 = L_9.___m_u32_1_1;
+		uint64_t L_10 = L_9.___u64_1_1;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_11 = ___y1;
-		uint32_t L_12 = L_11.___m_u32_1_1;
-		V_2 = (bool)((((int32_t)((((int32_t)L_10) == ((int32_t)L_12))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_13 = V_2;
-		if (!L_13)
-		{
-			goto IL_004d;
-		}
-	}
-	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_14 = ___x0;
-		uint32_t L_15 = L_14.___m_u32_1_1;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_16 = ___y1;
-		uint32_t L_17 = L_16.___m_u32_1_1;
-		V_1 = (bool)((!(((uint32_t)L_15) >= ((uint32_t)L_17)))? 1 : 0);
-		goto IL_0084;
+		uint64_t L_12 = L_11.___u64_1_1;
+		V_1 = (bool)((!(((uint64_t)L_10) >= ((uint64_t)L_12)))? 1 : 0);
+		goto IL_0038;
 	}
 
-IL_004d:
+IL_0038:
 	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_18 = ___x0;
-		uint32_t L_19 = L_18.___m_u32_2_2;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_20 = ___y1;
-		uint32_t L_21 = L_20.___m_u32_2_2;
-		V_3 = (bool)((((int32_t)((((int32_t)L_19) == ((int32_t)L_21))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_22 = V_3;
-		if (!L_22)
-		{
-			goto IL_0073;
-		}
-	}
-	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_23 = ___x0;
-		uint32_t L_24 = L_23.___m_u32_2_2;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_25 = ___y1;
-		uint32_t L_26 = L_25.___m_u32_2_2;
-		V_1 = (bool)((!(((uint32_t)L_24) >= ((uint32_t)L_26)))? 1 : 0);
-		goto IL_0084;
-	}
-
-IL_0073:
-	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_27 = ___x0;
-		uint32_t L_28 = L_27.___m_u32_3_3;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_29 = ___y1;
-		uint32_t L_30 = L_29.___m_u32_3_3;
-		V_1 = (bool)((!(((uint32_t)L_28) >= ((uint32_t)L_30)))? 1 : 0);
-		goto IL_0084;
-	}
-
-IL_0084:
-	{
-		bool L_31 = V_1;
-		return L_31;
+		bool L_13 = V_1;
+		return L_13;
 	}
 }
 // System.Boolean UnityEngine.Hash128::op_GreaterThan(UnityEngine.Hash128,UnityEngine.Hash128)
@@ -33792,12 +33757,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashUnsafeUtilities_ComputeHash128_mC759
 	uint64_t V_1 = 0;
 	{
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* L_0 = ___hash2;
-		uint64_t L_1;
-		L_1 = Hash128_get_u64_0_mCA2981F425AAD6F5E10415DFF3F484E931FCC507((Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*)L_0, NULL);
+		NullCheck(L_0);
+		uint64_t L_1 = L_0->___u64_0_0;
 		V_0 = L_1;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40* L_2 = ___hash2;
-		uint64_t L_3;
-		L_3 = Hash128_get_u64_1_m165A7DA7444650E888C90748FD8BCAE2A7403E62((Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*)L_2, NULL);
+		NullCheck(L_2);
+		uint64_t L_3 = L_2->___u64_1_1;
 		V_1 = L_3;
 		void* L_4 = ___data0;
 		uint64_t L_5 = ___dataSize1;
@@ -36246,6 +36211,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint16_t ProfilerRecorderDescript
 		uint16_t L_0 = __this->___flags_1;
 		return L_0;
 	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PanicFunction__Invoke_m1AF64BA1DC405B9451341076B6E099CBB173A12A_inline (PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LowMemoryCallback_Invoke_m3B2AE4EC5556D1D98237EF965477487AE4C7D708_inline (LowMemoryCallback_tF685A8AA4A24BB7603D190EB750E61C3F963026F* __this, const RuntimeMethod* method) 
 {

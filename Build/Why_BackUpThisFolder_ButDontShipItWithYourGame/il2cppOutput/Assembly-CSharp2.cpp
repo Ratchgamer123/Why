@@ -2245,6 +2245,10 @@ struct PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB  : public Base
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CradiusU3Ek__BackingField_29;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.PointerEventData::<radiusVariance>k__BackingField
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CradiusVarianceU3Ek__BackingField_30;
+	// System.Boolean UnityEngine.EventSystems.PointerEventData::<fullyExited>k__BackingField
+	bool ___U3CfullyExitedU3Ek__BackingField_31;
+	// System.Boolean UnityEngine.EventSystems.PointerEventData::<reentered>k__BackingField
+	bool ___U3CreenteredU3Ek__BackingField_32;
 };
 
 // UnityEngine.ScriptableObject
@@ -12265,28 +12269,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallRun_StopWallRun_m2B20FD7630DEE556105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallRun__ctor_m7977E3AED575D1E62F9B522A6394F0E4356E77AA (WallRun_t75189F5F766E22D76A2E4B1163230C982452C2B7* __this, const RuntimeMethod* method) 
 {
 	{
-		// [SerializeField] private float wallDistance = 0.5f;
-		__this->___wallDistance_5 = (0.5f);
+		// [SerializeField] private float wallDistance = 0.6f;
+		__this->___wallDistance_5 = (0.600000024f);
 		// [SerializeField] private float minimumJumpHeight = 1.5f;
 		__this->___minimumJumpHeight_6 = (1.5f);
-		// [SerializeField] private float wallRunGravity = 0.5f;
-		__this->___wallRunGravity_7 = (0.5f);
-		// [SerializeField] private float wallRunJumpForce = 6f;
-		__this->___wallRunJumpForce_8 = (6.0f);
-		// public float fov = 90f;
+		// [SerializeField] private float wallRunGravity = 0.2f;
+		__this->___wallRunGravity_7 = (0.200000003f);
+		// [SerializeField] private float wallRunJumpForce = 15.0f;
+		__this->___wallRunJumpForce_8 = (15.0f);
+		// public float fov = 90.0f;
 		__this->___fov_11 = (90.0f);
-		// public float wallRunfov = 110f;
+		// public float wallRunfov = 110.0f;
 		__this->___wallRunfov_12 = (110.0f);
-		// public float wallRunfovTime = 20f;
+		// public float wallRunfovTime = 20.0f;
 		__this->___wallRunfovTime_13 = (20.0f);
-		// [SerializeField] private float camTilt = 20f;
-		__this->___camTilt_14 = (20.0f);
-		// [SerializeField] private float camTiltTime = 20f;
-		__this->___camTiltTime_15 = (20.0f);
+		// [SerializeField] private float camTilt = 15.0f;
+		__this->___camTilt_14 = (15.0f);
+		// [SerializeField] private float camTiltTime = 25.0f;
+		__this->___camTiltTime_15 = (25.0f);
 		// [SerializeField] private float chromAb = 0.1f;
 		__this->___chromAb_16 = (0.100000001f);
-		// [SerializeField] private float wallRunChromAb = 0.2f;
-		__this->___wallRunChromAb_17 = (0.200000003f);
+		// [SerializeField] private float wallRunChromAb = 1.0f;
+		__this->___wallRunChromAb_17 = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

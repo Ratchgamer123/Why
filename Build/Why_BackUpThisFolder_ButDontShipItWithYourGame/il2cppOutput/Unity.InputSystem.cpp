@@ -13866,7 +13866,7 @@ IL_00c1:
 		}
 	}
 	{
-		// return (interactionState.totalTimeoutCompletionDone + timerCompletion * interactionState.timerDuration)  
+		// return (interactionState.totalTimeoutCompletionDone + timerCompletion * interactionState.timerDuration)
 		//     (interactionState.totalTimeoutCompletionDone + interactionState.totalTimeoutCompletionTimeRemaining);
 		InteractionState_t057CEDBCC55120B30A48DAD0A4111EF8FF62D3AE* L_35 = V_3;
 		float L_36;

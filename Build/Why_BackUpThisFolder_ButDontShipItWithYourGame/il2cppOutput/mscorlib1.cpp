@@ -18766,6 +18766,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BitConverter_SingleToInt32Bits_mA1902
 		return L_0;
 	}
 }
+// System.Single System.BitConverter::Int32BitsToSingle(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BitConverter_Int32BitsToSingle_m5DF5C3102E4C27098E9A6AE6F6B2C57622AF0043 (int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = *((float*)((uintptr_t)(&___value0)));
+		return L_0;
+	}
+}
 // System.Void System.BitConverter::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BitConverter__cctor_mBC74256DAA5DEEFA154AEA94923499558EA9E147 (const RuntimeMethod* method) 
 {

@@ -180,8 +180,6 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A;
 // UnityEngine.RequireComponent[]
 struct RequireComponentU5BU5D_t29B8922A4CC605C50E015637033A7A4B0EF564E9;
-// System.Single[]
-struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 // System.Diagnostics.StackFrame[]
 struct StackFrameU5BU5D_tF4310E8FAB8C2853A3F0843921BF9FBEC18ABBF7;
 // System.Diagnostics.StackTrace[]
@@ -667,7 +665,6 @@ struct ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A;
 struct ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C;
 struct ParameterModifierU5BU5D_t685261AD991B1E6582A0E53243DEE3B745E13364;
 struct RequireComponentU5BU5D_t29B8922A4CC605C50E015637033A7A4B0EF564E9;
-struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
@@ -3401,39 +3398,6 @@ struct GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E  : publi
 		m_Items[index] = value;
 	}
 };
-// System.Single[]
-struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
-{
-	ALIGN_FIELD (8) float m_Items[1];
-
-	inline float GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline float* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, float value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline float GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
-	{
-		m_Items[index] = value;
-	}
-};
 // System.Byte[]
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
 {
@@ -4218,8 +4182,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mathf_CorrelatedColorTemperatureToRGB_In
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Pow_mC4D86D57FB3DB07BB24147700CAF77DB15EA2EB3 (double ___x0, double ___y1, const RuntimeMethod* method) ;
 // System.Double System.Math::Log(System.Double,System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Log_m00DE509EBC0F78461570ED4F104B3010EB203FD1 (double ___a0, double ___newBase1, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Mathf::Repeat(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m1ACDE7EF466FB6CCAD29B3866E4A239A8530E9D5_inline (float ___t0, float ___length1, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector2::get_Item(System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_Item_m18BC65BB0512B16A1F9C8BE4B83A3E7BBAD7064D_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::set_Item(System.Int32,System.Single)
@@ -12637,97 +12599,6 @@ IL_000c:
 		return L_4;
 	}
 }
-// System.Single UnityEngine.Mathf::Min(System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Min_mE871C295DE57B4B797A84E7636E0ACCCAA7F6D5C (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___values0, const RuntimeMethod* method) 
-{
-	int32_t V_0 = 0;
-	float V_1 = 0.0f;
-	bool V_2 = false;
-	float V_3 = 0.0f;
-	int32_t V_4 = 0;
-	bool V_5 = false;
-	bool V_6 = false;
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = ___values0;
-		NullCheck(L_0);
-		V_0 = ((int32_t)(((RuntimeArray*)L_0)->max_length));
-		int32_t L_1 = V_0;
-		V_2 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
-		bool L_2 = V_2;
-		if (!L_2)
-		{
-			goto IL_0015;
-		}
-	}
-	{
-		V_3 = (0.0f);
-		goto IL_0047;
-	}
-
-IL_0015:
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___values0;
-		NullCheck(L_3);
-		int32_t L_4 = 0;
-		float L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
-		V_1 = L_5;
-		V_4 = 1;
-		goto IL_0038;
-	}
-
-IL_001e:
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = ___values0;
-		int32_t L_7 = V_4;
-		NullCheck(L_6);
-		int32_t L_8 = L_7;
-		float L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
-		float L_10 = V_1;
-		V_5 = (bool)((((float)L_9) < ((float)L_10))? 1 : 0);
-		bool L_11 = V_5;
-		if (!L_11)
-		{
-			goto IL_0031;
-		}
-	}
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_12 = ___values0;
-		int32_t L_13 = V_4;
-		NullCheck(L_12);
-		int32_t L_14 = L_13;
-		float L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
-		V_1 = L_15;
-	}
-
-IL_0031:
-	{
-		int32_t L_16 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_16, 1));
-	}
-
-IL_0038:
-	{
-		int32_t L_17 = V_4;
-		int32_t L_18 = V_0;
-		V_6 = (bool)((((int32_t)L_17) < ((int32_t)L_18))? 1 : 0);
-		bool L_19 = V_6;
-		if (L_19)
-		{
-			goto IL_001e;
-		}
-	}
-	{
-		float L_20 = V_1;
-		V_3 = L_20;
-		goto IL_0047;
-	}
-
-IL_0047:
-	{
-		float L_21 = V_3;
-		return L_21;
-	}
-}
 // System.Int32 UnityEngine.Mathf::Min(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_Min_mFEAD72DF4C4708B86BF464AB4F5F1468FAD8E784 (int32_t ___a0, int32_t ___b1, const RuntimeMethod* method) 
 {
@@ -12800,97 +12671,6 @@ IL_000c:
 	{
 		float L_4 = V_0;
 		return L_4;
-	}
-}
-// System.Single UnityEngine.Mathf::Max(System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Max_mDFA261F10D391C520F1E8B27A02F8EC44DEDA9F4 (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___values0, const RuntimeMethod* method) 
-{
-	int32_t V_0 = 0;
-	float V_1 = 0.0f;
-	bool V_2 = false;
-	float V_3 = 0.0f;
-	int32_t V_4 = 0;
-	bool V_5 = false;
-	bool V_6 = false;
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = ___values0;
-		NullCheck(L_0);
-		V_0 = ((int32_t)(((RuntimeArray*)L_0)->max_length));
-		int32_t L_1 = V_0;
-		V_2 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
-		bool L_2 = V_2;
-		if (!L_2)
-		{
-			goto IL_0015;
-		}
-	}
-	{
-		V_3 = (0.0f);
-		goto IL_0047;
-	}
-
-IL_0015:
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___values0;
-		NullCheck(L_3);
-		int32_t L_4 = 0;
-		float L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
-		V_1 = L_5;
-		V_4 = 1;
-		goto IL_0038;
-	}
-
-IL_001e:
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = ___values0;
-		int32_t L_7 = V_4;
-		NullCheck(L_6);
-		int32_t L_8 = L_7;
-		float L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
-		float L_10 = V_1;
-		V_5 = (bool)((((float)L_9) > ((float)L_10))? 1 : 0);
-		bool L_11 = V_5;
-		if (!L_11)
-		{
-			goto IL_0031;
-		}
-	}
-	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_12 = ___values0;
-		int32_t L_13 = V_4;
-		NullCheck(L_12);
-		int32_t L_14 = L_13;
-		float L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
-		V_1 = L_15;
-	}
-
-IL_0031:
-	{
-		int32_t L_16 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_16, 1));
-	}
-
-IL_0038:
-	{
-		int32_t L_17 = V_4;
-		int32_t L_18 = V_0;
-		V_6 = (bool)((((int32_t)L_17) < ((int32_t)L_18))? 1 : 0);
-		bool L_19 = V_6;
-		if (L_19)
-		{
-			goto IL_001e;
-		}
-	}
-	{
-		float L_20 = V_1;
-		V_3 = L_20;
-		goto IL_0047;
-	}
-
-IL_0047:
-	{
-		float L_21 = V_3;
-		return L_21;
 	}
 }
 // System.Int32 UnityEngine.Mathf::Max(System.Int32,System.Int32)
@@ -13431,48 +13211,6 @@ IL_000b:
 		return L_4;
 	}
 }
-// System.Single UnityEngine.Mathf::LerpAngle(System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_LerpAngle_m1ED3F488EFE973020124E59B6B6D439D9ACCFA42 (float ___a0, float ___b1, float ___t2, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	bool V_1 = false;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ___b1;
-		float L_1 = ___a0;
-		float L_2;
-		L_2 = Mathf_Repeat_m1ACDE7EF466FB6CCAD29B3866E4A239A8530E9D5_inline(((float)il2cpp_codegen_subtract(L_0, L_1)), (360.0f), NULL);
-		V_0 = L_2;
-		float L_3 = V_0;
-		V_1 = (bool)((((float)L_3) > ((float)(180.0f)))? 1 : 0);
-		bool L_4 = V_1;
-		if (!L_4)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		float L_5 = V_0;
-		V_0 = ((float)il2cpp_codegen_subtract(L_5, (360.0f)));
-	}
-
-IL_0023:
-	{
-		float L_6 = ___a0;
-		float L_7 = V_0;
-		float L_8 = ___t2;
-		float L_9;
-		L_9 = Mathf_Clamp01_mD921B23F47F5347996C56DC789D1DE16EE27D9B1_inline(L_8, NULL);
-		V_2 = ((float)il2cpp_codegen_add(L_6, ((float)il2cpp_codegen_multiply(L_7, L_9))));
-		goto IL_0030;
-	}
-
-IL_0030:
-	{
-		float L_10 = V_2;
-		return L_10;
-	}
-}
 // System.Boolean UnityEngine.Mathf::Approximately(System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mathf_Approximately_m1C8DD0BB6A2D22A7DCF09AD7F8EE9ABD12D3F620 (float ___a0, float ___b1, const RuntimeMethod* method) 
 {
@@ -13632,31 +13370,6 @@ IL_001b:
 		return L_7;
 	}
 }
-// System.Single UnityEngine.Mathf::PingPong(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_PingPong_m157C55BCFEA2BB96680B7B29D714C3F9390551C9 (float ___t0, float ___length1, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = ___t0;
-		float L_1 = ___length1;
-		float L_2;
-		L_2 = Mathf_Repeat_m1ACDE7EF466FB6CCAD29B3866E4A239A8530E9D5_inline(L_0, ((float)il2cpp_codegen_multiply(L_1, (2.0f))), NULL);
-		___t0 = L_2;
-		float L_3 = ___length1;
-		float L_4 = ___t0;
-		float L_5 = ___length1;
-		float L_6;
-		L_6 = fabsf(((float)il2cpp_codegen_subtract(L_4, L_5)));
-		V_0 = ((float)il2cpp_codegen_subtract(L_3, L_6));
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		float L_7 = V_0;
-		return L_7;
-	}
-}
 // System.Single UnityEngine.Mathf::InverseLerp(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_InverseLerp_m4E1DA076090EC56955724109B3EE12AA07548016 (float ___a0, float ___b1, float ___value2, const RuntimeMethod* method) 
 {
@@ -13693,44 +13406,6 @@ IL_0023:
 	{
 		float L_8 = V_1;
 		return L_8;
-	}
-}
-// System.Single UnityEngine.Mathf::DeltaAngle(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_DeltaAngle_m4B87B84265A48389AC3F5E3E8164570C6AECE5C3 (float ___current0, float ___target1, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	bool V_1 = false;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ___target1;
-		float L_1 = ___current0;
-		float L_2;
-		L_2 = Mathf_Repeat_m1ACDE7EF466FB6CCAD29B3866E4A239A8530E9D5_inline(((float)il2cpp_codegen_subtract(L_0, L_1)), (360.0f), NULL);
-		V_0 = L_2;
-		float L_3 = V_0;
-		V_1 = (bool)((((float)L_3) > ((float)(180.0f)))? 1 : 0);
-		bool L_4 = V_1;
-		if (!L_4)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		float L_5 = V_0;
-		V_0 = ((float)il2cpp_codegen_subtract(L_5, (360.0f)));
-	}
-
-IL_0023:
-	{
-		float L_6 = V_0;
-		V_2 = L_6;
-		goto IL_0027;
-	}
-
-IL_0027:
-	{
-		float L_7 = V_2;
-		return L_7;
 	}
 }
 // System.Void UnityEngine.Mathf::.cctor()
@@ -31030,29 +30705,6 @@ IL_0024:
 	{
 		bool L_4 = V_1;
 		return L_4;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m1ACDE7EF466FB6CCAD29B3866E4A239A8530E9D5_inline (float ___t0, float ___length1, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = ___t0;
-		float L_1 = ___t0;
-		float L_2 = ___length1;
-		float L_3;
-		L_3 = floorf(((float)(L_1/L_2)));
-		float L_4 = ___length1;
-		float L_5 = ___length1;
-		float L_6;
-		L_6 = Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline(((float)il2cpp_codegen_subtract(L_0, ((float)il2cpp_codegen_multiply(L_3, L_4)))), (0.0f), L_5, NULL);
-		V_0 = L_6;
-		goto IL_001b;
-	}
-
-IL_001b:
-	{
-		float L_7 = V_0;
-		return L_7;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_Item_m18BC65BB0512B16A1F9C8BE4B83A3E7BBAD7064D_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, int32_t ___index0, const RuntimeMethod* method) 
