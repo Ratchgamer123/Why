@@ -231,7 +231,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7386490803100880590}
   - component: {fileID: 7386490803100880584}
-  - component: {fileID: 7386490803100880586}
   - component: {fileID: 7386490803100880591}
   - component: {fileID: 153122976190526639}
   - component: {fileID: 2143167134}
@@ -285,7 +284,8 @@ MonoBehaviour:
   gravity: 3
   sensX: 50
   sensY: 50
-  cam: {fileID: 2120130103550219993}
+  camPos: {fileID: 2120130103550219993}
+  cam: {fileID: 2120130104608578355}
   walkSpeed: 4
   sprintSpeed: 6
   acceleration: 10
@@ -298,24 +298,13 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &7386490803100880586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7386490803100880589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1eb752818853d4dad33f0951ff039f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orientation: {fileID: 7386490803881533905}
   wallDistance: 0.6
   minimumJumpHeight: 1.5
   wallRunGravity: 0.2
   wallRunJumpForce: 15
-  cam: {fileID: 2120130104608578355}
+  walls:
+    serializedVersion: 2
+    m_Bits: 1024
   fov: 90
   wallRunfov: 110
   wallRunfovTime: 20

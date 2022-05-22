@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, ISaveable
 {
-    [Header("References")]
-    [SerializeField] Transform orientation;
+    [Header("Orientation")]
+    [SerializeField] private Transform orientation;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 20.0f;
@@ -17,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Camera")]
     public float sensX = 50.0f;
     public float sensY = 50.0f;
-    [SerializeField] Transform cam;
+    [SerializeField] private Transform camPos;
+    [SerializeField] private Camera cam;
     float mouseX;
     float mouseY;
 
@@ -37,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 27.0f;
 
     [Header("Keybinds")]
-    [SerializeField] KeyCode jumpKey = KeyCode.Space;
-    [SerializeField] KeyCode sprintKey = KeyCode.LeftShift;
+    [SerializeField] private KeyCode jumpKey = KeyCode.Space;
+    [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Drag")]
     [SerializeField] private float groundDrag = 6.0f;
@@ -48,13 +51,40 @@ public class PlayerMovement : MonoBehaviour
     float verticalMovement;
 
     [Header("Ground Detection")]
-    [SerializeField] Transform groundCheck;
-    [SerializeField] LayerMask groundMask;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundMask;
     float groundDistance = 0.4f;
 
-    bool isGrounded;
+    [Header("Wall Running")]
+    [SerializeField] private float wallDistance = 0.6f;
+    [SerializeField] private float minimumJumpHeight = 1.5f;
+    [SerializeField] private float wallRunGravity = 0.2f;
+    [SerializeField] private float wallRunJumpForce = 15.0f;
+    [SerializeField] private LayerMask walls;
 
-    WallRun wallRun;
+    [Header("Camera Effects")]
+    public float fov = 90.0f;
+    public float wallRunfov = 110.0f;
+    public float wallRunfovTime = 20.0f;
+    [SerializeField] private float camTilt = 15.0f;
+    [SerializeField] private float camTiltTime = 25.0f;
+    [SerializeField] private float chromAb = 0.1f;
+    [SerializeField] private float wallRunChromAb = 1.0f;
+    public Volume volume;
+
+    public float tilt { get; private set; }
+
+    ChromaticAberration chromatic;
+
+    public bool isWallRunning = false;
+
+    private bool wallLeft = false;
+    private bool wallRight = false;
+
+    RaycastHit leftWallHit;
+    RaycastHit rightWallHit;
+
+    bool isGrounded;
 
     Vector3 moveDirection;
     Vector3 slopeMoveDirection;
@@ -78,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
-        wallRun = GetComponent<WallRun>();
+        volume.profile.TryGet(out chromatic);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -100,6 +130,23 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
+        CheckWall();
+        if (AbleToWallRun())
+        {
+            if (wallLeft || wallRight)
+            {
+                StartWallRun();
+            }
+            else
+            {
+                StopWallRun();
+            }
+        }
+        else
+        {
+            StopWallRun();
+        }
+
         slopeMoveDirection = Vector3.ProjectOnPlane(moveDirection, slopeHit.normal);
     }
 
@@ -118,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        cam.transform.localRotation = Quaternion.Euler(xRotation, yRotation, wallRun.tilt);
+        camPos.transform.localRotation = Quaternion.Euler(xRotation, yRotation, tilt);
         orientation.transform.localRotation = Quaternion.Euler(0, yRotation, 0);
     }
 
@@ -147,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        if(!wallRun.isWallRunning)
+        if(!isWallRunning)
         {
             rb.AddForce(Physics.gravity * gravity, ForceMode.Acceleration);
         }
@@ -159,7 +206,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(slopeMoveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
         }
-        else if (wallRun.isWallRunning)
+        else if (isWallRunning)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * wallRunningMultiplier, ForceMode.Acceleration);
         }
@@ -174,12 +221,12 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(sprintKey) && isGrounded)
         {
             moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
-            wallRun.cam.fieldOfView = Mathf.Lerp(wallRun.cam.fieldOfView, wallRun.wallRunfov, wallRun.wallRunfovTime * Time.deltaTime);
+            cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, wallRunfov, wallRunfovTime * Time.deltaTime);
         }
         else
         {
             moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
-            Mathf.Lerp(wallRun.cam.fieldOfView, wallRun.fov, wallRun.wallRunfovTime * Time.deltaTime);
+            Mathf.Lerp(cam.fieldOfView, fov, wallRunfovTime * Time.deltaTime);
         }
     }
 
@@ -204,5 +251,98 @@ public class PlayerMovement : MonoBehaviour
     public void ResetTargetRotation()
     {
         TargetRotation = Quaternion.LookRotation(transform.forward, Vector3.up);
+    }
+
+    
+
+    private bool AbleToWallRun()
+    {
+        return !Physics.Raycast(transform.position, Vector3.down, minimumJumpHeight);
+    }
+
+    private void CheckWall()
+    {
+        wallLeft = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallDistance, walls);
+        wallRight = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallDistance, walls);
+    }
+
+    private void StartWallRun()
+    {
+        rb.useGravity = false;
+
+        chromatic.intensity.value = wallRunChromAb;
+
+        rb.AddForce(Vector3.down * wallRunGravity, ForceMode.Force);
+
+        chromatic.intensity.value = wallRunChromAb;
+
+        if (wallLeft)
+        {
+            tilt = Mathf.Lerp(tilt, -camTilt, camTiltTime * Time.deltaTime);
+        }
+        else if (wallRight)
+        {
+            tilt = Mathf.Lerp(tilt, camTilt, camTiltTime * Time.deltaTime);
+        }
+
+        cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, wallRunfov, wallRunfovTime * Time.deltaTime);
+
+        if (!isWallRunning) { AudioManager.instance.Play("OnWallRun"); }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (wallLeft)
+            {
+                Vector3 wallRunJumpDirection = transform.up + leftWallHit.normal;
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+                rb.AddForce(wallRunJumpDirection * wallRunJumpForce * 100, ForceMode.Force);
+            }
+            else if (wallRight)
+            {
+                Vector3 wallRunJumpDirection = transform.up + rightWallHit.normal;
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+                rb.AddForce(wallRunJumpDirection * wallRunJumpForce * 100, ForceMode.Force);
+            }
+
+            AudioManager.instance.Play("WallRunJumpOff");
+        }
+
+        isWallRunning = true;
+    }
+
+    private void StopWallRun()
+    {
+        rb.useGravity = true;
+
+        AudioManager.instance.StopAudio("OnWallRun");
+
+        cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, fov, wallRunfovTime * Time.deltaTime);
+        tilt = Mathf.Lerp(tilt, 0, camTiltTime * Time.deltaTime);
+
+        chromatic.intensity.value = Mathf.Lerp(chromatic.intensity.value, chromAb, camTiltTime * Time.deltaTime);
+
+        isWallRunning = false;
+    }
+
+    public object SaveState()
+    {
+        return new SaveData()
+        {
+            sensX = sensX,
+            sensY = sensY,
+        };
+    }
+
+    public void LoadState(object state)
+    {
+        SaveData saveData = (SaveData)state;
+        sensX = saveData.sensX;
+        sensY = saveData.sensY;
+    }
+
+    private struct SaveData
+    {
+        public float sensX;
+        public float sensY;
     }
 }
