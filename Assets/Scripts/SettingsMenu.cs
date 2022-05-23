@@ -4,20 +4,22 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
-public class SettingsMenu : MonoBehaviour
+public class SettingsMenu : MonoBehaviour, ISaveable
 {
     [SerializeField] private Material offStateMat;
     [SerializeField] private Material onStateMat;
 
-    [SerializeField] private Slider slider;
+    [SerializeField] private UniversalRenderPipelineAsset pipelineAsset;
 
     [SerializeField] private bool isVSyncDisabled = true;
     [SerializeField] private bool isFullscreen = true;
 
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private TMP_Dropdown dropdown;
+    [SerializeField] private TMP_Dropdown dropdownMSAA;
     Resolution[] resolutions;
 
     private void Start()
@@ -42,6 +44,8 @@ public class SettingsMenu : MonoBehaviour
         dropdown.AddOptions(options);
         dropdown.value = currentResolutionIndex;
         dropdown.RefreshShownValue();
+        dropdownMSAA.value = pipelineAsset.msaaSampleCount;
+        dropdownMSAA.RefreshShownValue();
     }
 
     public void ChangeVSyncState(Image image)
@@ -92,25 +96,37 @@ public class SettingsMenu : MonoBehaviour
         switch (index)
         {
             case 0:
-                QualitySettings.antiAliasing = 0;
+                pipelineAsset.msaaSampleCount = 0;
                 break;
             case 1:
-                QualitySettings.antiAliasing = 2;
+                pipelineAsset.msaaSampleCount = 2;
                 break;
             case 2:
-                QualitySettings.antiAliasing = 4;
+                pipelineAsset.msaaSampleCount = 4;
                 break;
             case 3:
-                QualitySettings.antiAliasing = 8;
+                pipelineAsset.msaaSampleCount = 8;
                 break;
         }
-        print(QualitySettings.antiAliasing);
     }
 
-    public void SaveState()
+    public object SaveState()
     {
         audioMixer.GetFloat("masterVolume", out float buffer);
-        PlayerPrefs.SetFloat("masterVolume", buffer);
-        print("SaveState");
+        return new SaveData()
+        {
+            masterVolume = buffer
+        };
+    }
+
+    public void LoadState(object state)
+    {
+        SaveData saveData = (SaveData)state;
+        audioMixer.SetFloat("masterVolume", saveData.masterVolume);
+    }
+
+    private struct SaveData
+    {
+        public float masterVolume;
     }
 }

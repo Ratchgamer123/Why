@@ -1098,11 +1098,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offStateMat: {fileID: 2100000, guid: e87cb04671b8a77479095c394b4409bd, type: 2}
   onStateMat: {fileID: 2100000, guid: 98c91092757be184390dc5335bd69044, type: 2}
-  slider: {fileID: 0}
+  pipelineAsset: {fileID: 11400000, guid: dd917faa5220cda49a8ac9f15a4a6c8c, type: 2}
   isVSyncDisabled: 1
   isFullscreen: 0
   audioMixer: {fileID: 24100000, guid: 5e423f6fea15bc546b45fd8d4c9dd05e, type: 2}
   dropdown: {fileID: 562128473}
+  dropdownMSAA: {fileID: 854824120}
 --- !u!1 &402972147
 GameObject:
   m_ObjectHideFlags: 0
