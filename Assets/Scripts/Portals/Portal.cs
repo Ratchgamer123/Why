@@ -42,7 +42,6 @@ public class Portal : MonoBehaviour
 
     void HandleTravellers()
     {
-
         for (int i = 0; i < trackedTravellers.Count; i++)
         {
             PortalTraveller traveller = trackedTravellers[i];

@@ -23,6 +23,7 @@ public class UIMenu : MonoBehaviour
 
     public GameObject mainMenu;
     public GameObject settingsMenu;
+    public GameObject controlsMenu;
 
     public string menuSongName;
 
@@ -69,7 +70,14 @@ public class UIMenu : MonoBehaviour
     public void MainMenuActivate()
     {
         settingsMenu.SetActive(false);
+        controlsMenu.SetActive(false);
         mainMenu.SetActive(true);
+    }
+
+    public void ControlsMenuActivate()
+    {
+        mainMenu.SetActive(false);
+        controlsMenu.SetActive(true);
     }
 
     public void ExitGame()

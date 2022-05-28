@@ -24,18 +24,25 @@ public class PauseMenu : MonoBehaviour
         sensYSlider.value = PlayerPrefs.GetFloat("playerSensY");
     }
 
-    private void Update()
+    private void OnEnable()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        PlayerMovement.PauseMenuBindingPressed += CheckMenuState;
+    }
+
+    private void OnDisable()
+    {
+        PlayerMovement.PauseMenuBindingPressed -= CheckMenuState;
+    }
+
+    private void CheckMenuState()
+    {
+        if (gameIsPaused)
         {
-            if (gameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            Resume();
+        }
+        else
+        {
+            Pause();
         }
     }
 

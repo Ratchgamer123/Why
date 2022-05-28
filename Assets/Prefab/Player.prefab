@@ -290,8 +290,6 @@ MonoBehaviour:
   sprintSpeed: 6
   acceleration: 10
   jumpForce: 27
-  jumpKey: 32
-  sprintKey: 304
   groundDrag: 6
   airDrag: 2
   groundCheck: {fileID: 7386490804739502600}

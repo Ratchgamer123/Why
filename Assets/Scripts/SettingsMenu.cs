@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
-public class SettingsMenu : MonoBehaviour, ISaveable
+public class SettingsMenu : MonoBehaviour
 {
     [SerializeField] private Material offStateMat;
     [SerializeField] private Material onStateMat;
@@ -73,6 +73,7 @@ public class SettingsMenu : MonoBehaviour, ISaveable
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("masterVolume", volume);
+        PlayerPrefs.SetFloat("masterVolume", volume);
     }
 
     public void SetFullscreen(Image image)
@@ -108,25 +109,5 @@ public class SettingsMenu : MonoBehaviour, ISaveable
                 pipelineAsset.msaaSampleCount = 8;
                 break;
         }
-    }
-
-    public object SaveState()
-    {
-        audioMixer.GetFloat("masterVolume", out float buffer);
-        return new SaveData()
-        {
-            masterVolume = buffer
-        };
-    }
-
-    public void LoadState(object state)
-    {
-        SaveData saveData = (SaveData)state;
-        audioMixer.SetFloat("masterVolume", saveData.masterVolume);
-    }
-
-    private struct SaveData
-    {
-        public float masterVolume;
     }
 }

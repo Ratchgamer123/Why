@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class Interactor : MonoBehaviour
 
     RaycastHit hit;
 
-    private void Update()
+    private void OnEnable()
     {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            FireRaycast();
-        }
+        PlayerMovement.InteractBindingPressed += FireRaycast;
+    }
+
+    private void OnDisable()
+    {
+        PlayerMovement.InteractBindingPressed -= FireRaycast;
     }
 
     private void FireRaycast()

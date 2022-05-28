@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour, ISaveable
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Orientation")]
     [SerializeField] private Transform orientation;
@@ -38,10 +40,6 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     [Header("Jumping")]
     [SerializeField] private float jumpForce = 27.0f;
-
-    [Header("Keybinds")]
-    [SerializeField] private KeyCode jumpKey = KeyCode.Space;
-    [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Drag")]
     [SerializeField] private float groundDrag = 6.0f;
@@ -84,6 +82,9 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     RaycastHit leftWallHit;
     RaycastHit rightWallHit;
 
+    Vector2 walkInput;
+    Vector2 camRotInput;
+
     bool isGrounded;
 
     Vector3 moveDirection;
@@ -91,16 +92,16 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     Rigidbody rb;
 
+    private MainControls controls;
+
+    #region Exterior Events
+    public static event Action InteractBindingPressed;
+    public static event Action PauseMenuBindingPressed;
+    #endregion
+
     private void Awake()
     {
-        if (!PlayerPrefs.HasKey("playerSensX") || !PlayerPrefs.HasKey("playerSensY"))
-        {
-            PlayerPrefs.SetFloat("playerSensX", 50.0f);
-            PlayerPrefs.SetFloat("playerSensY", 50.0f);
-        }
-
-        sensX = PlayerPrefs.GetFloat("playerSensX");
-        sensY = PlayerPrefs.GetFloat("playerSensY");
+        controls = new MainControls();
     }
 
     private void Start()
@@ -116,19 +117,30 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         TargetRotation = transform.rotation;
     }
 
+    private void OnEnable()
+    {
+        controls.Enable();
+        controls.Main.Jumping.performed += Jump;
+        controls.Main.Interact.performed += InteractBindingEventCall;
+        controls.Main.PauseMenu.performed += PauseMenuBindingEventCall;
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+        controls.Main.Jumping.performed -= Jump;
+        controls.Main.Interact.performed -= InteractBindingEventCall;
+        controls.Main.PauseMenu.performed -= PauseMenuBindingEventCall;
+    }
+
     private void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        
+
         MyInput();
 
         ControlDrag();
         ControlSpeed();
-
-        if (Input.GetKeyDown(jumpKey) && isGrounded)
-        {
-            Jump();
-        }
 
         CheckWall();
         if (AbleToWallRun())
@@ -148,17 +160,22 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         }
 
         slopeMoveDirection = Vector3.ProjectOnPlane(moveDirection, slopeHit.normal);
+
+        Debug.Log(controls.Main.CamRot.ReadValue<Vector2>());
     }
 
-    void MyInput()
+    private void MyInput()
     {
-        horizontalMovement = Input.GetAxisRaw("Horizontal");
-        verticalMovement = Input.GetAxisRaw("Vertical");
+        walkInput = controls.Main.WalkDirection.ReadValue<Vector2>();
+        horizontalMovement = walkInput.x;
+        verticalMovement = walkInput.y;
 
         moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
 
-        mouseX = Input.GetAxisRaw("Mouse X");
-        mouseY = Input.GetAxisRaw("Mouse Y");
+        camRotInput = controls.Main.CamRot.ReadValue<Vector2>();
+
+        mouseX = camRotInput.x;
+        mouseY = camRotInput.y;
 
         yRotation += mouseX * sensX * multiplier;
         xRotation -= mouseY * sensY * multiplier;
@@ -169,10 +186,25 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         orientation.transform.localRotation = Quaternion.Euler(0, yRotation, 0);
     }
 
-    private void Jump()
+    private void InteractBindingEventCall(InputAction.CallbackContext ctx)
     {
-        rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-        rb.AddForce(transform.up * jumpForce, ForceMode.VelocityChange);
+        InteractBindingPressed?.Invoke();
+    }
+
+    private void PauseMenuBindingEventCall(InputAction.CallbackContext ctx)
+    {
+        PauseMenuBindingPressed?.Invoke();
+    }
+
+    private void Jump(InputAction.CallbackContext ctx)
+    {
+        if (isGrounded)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            rb.AddForce(transform.up * jumpForce, ForceMode.VelocityChange);
+        }
+
+        WallJump();
     }
 
     private void ControlDrag()
@@ -194,7 +226,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     void MovePlayer()
     {
-        if(!isWallRunning)
+        if (!isWallRunning)
         {
             rb.AddForce(Physics.gravity * gravity, ForceMode.Acceleration);
         }
@@ -202,7 +234,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
         }
-        else if(isGrounded && OnSlope())
+        else if (isGrounded && OnSlope())
         {
             rb.AddForce(slopeMoveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
         }
@@ -218,7 +250,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     private void ControlSpeed()
     {
-        if(Input.GetKey(sprintKey) && isGrounded)
+        if (controls.Main.Sprinting.ReadValue<float>() == 1.0f && isGrounded)
         {
             moveSpeed = Mathf.Lerp(moveSpeed, sprintSpeed, acceleration * Time.deltaTime);
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, wallRunfov, wallRunfovTime * Time.deltaTime);
@@ -236,7 +268,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     {
         if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, 1.5f))
         {
-            if(slopeHit.normal != Vector3.up)
+            if (slopeHit.normal != Vector3.up)
             {
                 return true;
             }
@@ -253,7 +285,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         TargetRotation = Quaternion.LookRotation(transform.forward, Vector3.up);
     }
 
-    
+
 
     private bool AbleToWallRun()
     {
@@ -289,24 +321,6 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
         if (!isWallRunning) { AudioManager.instance.Play("OnWallRun"); }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (wallLeft)
-            {
-                Vector3 wallRunJumpDirection = transform.up + leftWallHit.normal;
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-                rb.AddForce(wallRunJumpDirection * wallRunJumpForce * 100, ForceMode.Force);
-            }
-            else if (wallRight)
-            {
-                Vector3 wallRunJumpDirection = transform.up + rightWallHit.normal;
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-                rb.AddForce(wallRunJumpDirection * wallRunJumpForce * 100, ForceMode.Force);
-            }
-
-            AudioManager.instance.Play("WallRunJumpOff");
-        }
-
         isWallRunning = true;
     }
 
@@ -324,25 +338,24 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         isWallRunning = false;
     }
 
-    public object SaveState()
+    private void WallJump()
     {
-        return new SaveData()
+        if(AbleToWallRun())
         {
-            sensX = sensX,
-            sensY = sensY,
-        };
-    }
-
-    public void LoadState(object state)
-    {
-        SaveData saveData = (SaveData)state;
-        sensX = saveData.sensX;
-        sensY = saveData.sensY;
-    }
-
-    private struct SaveData
-    {
-        public float sensX;
-        public float sensY;
+            if (wallLeft)
+            {
+                Vector3 wallRunJumpDirection = transform.up + leftWallHit.normal;
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+                rb.AddForce(wallRunJumpDirection * wallRunJumpForce * 100, ForceMode.Force);
+                AudioManager.instance.Play("WallRunJumpOff");
+            }
+            else if (wallRight)
+            {
+                Vector3 wallRunJumpDirection = transform.up + rightWallHit.normal;
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+                rb.AddForce(wallRunJumpDirection * wallRunJumpForce * 100, ForceMode.Force);
+                AudioManager.instance.Play("WallRunJumpOff");
+            }
+        }
     }
 }
