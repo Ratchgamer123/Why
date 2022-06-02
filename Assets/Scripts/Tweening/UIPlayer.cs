@@ -25,11 +25,15 @@ public class UIPlayer : MonoBehaviour
 
     private bool tweenComplete = true;
 
+    private void Start()
+    {
+        levelNotifText.text = SceneManager.GetActiveScene().name;
+        StartCoroutine(ShowLevelNotification());
+    }
+
     private void OnEnable()
     {
         Checkpoint.ShowNotification += CheckpointNotification;
-        levelNotifText.text = SceneManager.GetActiveScene().name;
-        StartCoroutine(ShowLevelNotification());
     }
 
     private void OnDisable()

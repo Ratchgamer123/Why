@@ -8,11 +8,6 @@ ShaderVariantCollection:
   m_PrefabAsset: {fileID: 0}
   m_Name: ShaderVariants
   m_Shaders:
-  - first: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
   - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
@@ -76,7 +71,7 @@ ShaderVariantCollection:
   - first: {fileID: 4800000, guid: e7857e9d0c934dc4f83f270f8447b006, type: 3}
     second:
       variants:
-      - keywords: _BLOOM_HQ _CHROMATIC_ABERRATION _DITHERING _HDR_GRADING
+      - keywords: _BLOOM_HQ _CHROMATIC_ABERRATION _HDR_GRADING
         passType: 0
   - first: {fileID: 4800000, guid: 5f1864addb451f54bae8c86d230f736e, type: 3}
     second:
@@ -85,13 +80,57 @@ ShaderVariantCollection:
         passType: 0
       - keywords: _BLOOM_HQ
         passType: 0
-  - first: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-    second:
-      variants:
-      - keywords: GLOW_ON
-        passType: 0
-  - first: {fileID: 4800000, guid: 4cb1a7a9b6fcaaa4ca9cf41303cf7d3c, type: 3}
+  - first: {fileID: 4800000, guid: 4293210a3280c4283b9872316017f1f9, type: 3}
     second:
       variants:
       - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: _CASTING_PUNCTUAL_LIGHT_SHADOW
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED LIGHTMAP_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS
+          _ADDITIONAL_LIGHT_SHADOWS _EMISSION _MAIN_LIGHT_SHADOWS _SHADOWS_SOFT
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED LIGHTMAP_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS
+          _ADDITIONAL_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS _METALLICSPECGLOSSMAP _NORMALMAP
+          _OCCLUSIONMAP _SHADOWS_SOFT
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED LIGHTMAP_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS
+          _ADDITIONAL_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS _SHADOWS_SOFT
+        passType: 13
+      - keywords: SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHT_SHADOWS
+          _DETAIL_MULX2 _MAIN_LIGHT_SHADOWS _METALLICSPECGLOSSMAP _NORMALMAP _PARALLAXMAP
+          _SHADOWS_SOFT
+        passType: 13
+      - keywords: SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHT_SHADOWS
+          _MAIN_LIGHT_SHADOWS _SHADOWS_SOFT _SURFACE_TYPE_TRANSPARENT
+        passType: 13
+  - first: {fileID: -6465566751694194690, guid: e40f409f1dbd6174cafd0128d0b26ef3, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: 
+        passType: 8
+      - keywords: _CASTING_PUNCTUAL_LIGHT_SHADOW
+        passType: 8
+  - first: {fileID: -6465566751694194690, guid: 330c1896b69aa744cb975c31b70c109c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHT_SHADOWS
+          _MAIN_LIGHT_SHADOWS _SHADOWS_SOFT
+        passType: 13
+  - first: {fileID: -6465566751694194690, guid: bbf2d06d9dcce554086f0dae1ae04782, type: 3}
+    second:
+      variants:
+      - keywords: SHADOWS_SHADOWMASK _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHT_SHADOWS
+          _MAIN_LIGHT_SHADOWS _SHADOWS_SOFT
         passType: 13

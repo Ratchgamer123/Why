@@ -160,8 +160,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         slopeMoveDirection = Vector3.ProjectOnPlane(moveDirection, slopeHit.normal);
-
-        Debug.Log(controls.Main.CamRot.ReadValue<Vector2>());
     }
 
     private void MyInput()

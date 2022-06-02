@@ -15,12 +15,12 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Player
   - Ground
   - Portal
   - Walls
   - JumpBoost
-  - 
+  - NoPlayerCollision
   - 
   - 
   - 

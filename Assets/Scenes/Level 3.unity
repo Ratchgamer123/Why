@@ -2433,6 +2433,11 @@ PrefabInstance:
       objectReference: {fileID: 1770895502}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73bc40d10b2e37c47af0af878d4afbed, type: 3}
+--- !u!1 &571586019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1702604592, guid: 73bc40d10b2e37c47af0af878d4afbed, type: 3}
+  m_PrefabInstance: {fileID: 571586018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &574569723
 Mesh:
   m_ObjectHideFlags: 0
@@ -2628,7 +2633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 571586019}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &580124981

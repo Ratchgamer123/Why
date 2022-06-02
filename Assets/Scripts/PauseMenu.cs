@@ -22,6 +22,7 @@ public class PauseMenu : MonoBehaviour
         volumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
         sensXSlider.value = PlayerPrefs.GetFloat("playerSensX");
         sensYSlider.value = PlayerPrefs.GetFloat("playerSensY");
+        Resume();
     }
 
     private void OnEnable()
@@ -101,5 +102,10 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(0);
+    }
+
+    public void LoadLevel(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }
